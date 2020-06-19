@@ -222,6 +222,13 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
+#wb_Text2
+{
+   color: #00BFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 21px;
+}
 #wb_Text2 div
 {
    text-align: center;
@@ -965,11 +972,97 @@ input:focus, textarea:focus, select:focus
    height: 50px;
    vertical-align: top;
 }
+#wb_FooterText 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_FooterText div
+{
+   text-align: center;
+}
+#FlexGrid1
+{
+   display: grid;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: 0px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px auto;
+   grid-template-areas:
+      "Blank Blank"
+      "L R";
+}
+#FlexGrid1 .Blank
+{
+   display: flex;
+   grid-area: Blank;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .L
+{
+   display: flex;
+   grid-area: L;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .R
+{
+   display: flex;
+   grid-area: R;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
 #wb_ResponsiveMenu1
 {
    background-color: rgba(0,0,0,0.00);
    display: block;
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    text-align: right;
    width: 100%;
@@ -1011,7 +1104,7 @@ input:focus, textarea:focus, select:focus
 #wb_ResponsiveMenu1 ul li a 
 {
    color: #FFFFFF;
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    font-size: 12px;
    font-style: normal;
@@ -1267,92 +1360,6 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
-#wb_FooterText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_FooterText div
-{
-   text-align: center;
-}
-#FlexGrid1
-{
-   display: grid;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size: 0px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px auto;
-   grid-template-areas:
-      "Blank Blank"
-      "L R";
-}
-#FlexGrid1 .Blank
-{
-   display: flex;
-   grid-area: Blank;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .L
-{
-   display: flex;
-   grid-area: L;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .R
-{
-   display: flex;
-   grid-area: R;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
 #Footer
 {
    background-color: #000000;
@@ -1515,8 +1522,12 @@ body
 }
 #wb_Text2
 {
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 21px;
    margin: 0;
    padding: 0;
+   text-align: center;
 }
 #wb_header
 {
@@ -1646,15 +1657,6 @@ body
 {
    width: 50px;
    height: 50px;
-}
-#wb_ResponsiveMenu1
-{
-   width: 254px !important;
-   height: 54px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   text-align: right;
 }
 #wb_FooterYear
 {
@@ -1793,6 +1795,15 @@ body
    align-items: center;
    -webkit-align-content: center;
    align-content: center;
+}
+#wb_ResponsiveMenu1
+{
+   width: 254px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: right;
 }
 #Footer
 {
@@ -1972,8 +1983,12 @@ body
 }
 #wb_Text2
 {
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
    margin: 0;
    padding: 0;
+   text-align: center;
 }
 #wb_header
 {
@@ -2104,15 +2119,6 @@ body
 {
    width: 50px;
    height: 50px;
-}
-#wb_ResponsiveMenu1
-{
-   width: 254px !important;
-   height: 54px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   text-align: right;
 }
 #wb_FooterYear
 {
@@ -2288,6 +2294,15 @@ body
    -webkit-align-content: center;
    align-content: center;
 }
+#wb_ResponsiveMenu1
+{
+   width: 254px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: right;
+}
 #Footer
 {
    top: 669px !important;
@@ -2358,7 +2373,7 @@ $(document).ready(function()
 <img src="https://i.imgur.com/Wh0jhHH.png" id="Image2" alt="">
 </div>
 <div id="wb_Text2">
-<span style="color:#00BFFF;font-family:Arial;font-size:21px;"><br></span><span style="color:#00BFFF;font-family:Arial;font-size:32px;"><strong>LINKS </strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;"><br> <a href="https://docs.google.com/document/d/16Zes5lYriP7BQKGV1ObRir5NONAZi02fOPcYBF_zYXk/edit?usp=sharing">Sting Ops Production Google Doc </a><br><a href="https://docs.google.com/document/d/1fUCk3XgM7UagnOydz1QWcVUmH5rKTBntsR5y3KLNSZA/edit?usp=sharing">Sting Ops Script Google Doc</a><br>Sting Ops Kickstarter [Coming Soon!]<br>Sting Ops Twitter [Coming Soon!]<br>Sting Ops Facebook Page [Coming Soon!]<br><a href="https://www.facebook.com/groups/1615328691931272/">Sting Ops Facebook Group</a></span>
+<span style="color:#00BFFF;"><br><strong>LINKS </strong></span><span style="color:#FFFFFF;"><br>Sting Ops Kickstarter [Coming Soon!]<br>Sting Ops Twitter [Coming Soon!]<br>Sting Ops Facebook Page [Coming Soon!]<br><a href="https://www.facebook.com/groups/1615328691931272/">Sting Ops Facebook Group</a><br>Aye Beeghe: <a href="https://www.facebook.com/aye.beeghe">Facebook</a>, <a href="https://www.youtube.com/user/AyeBeeghe">YouTube</a><br><a href="https://docs.google.com/document/d/16Zes5lYriP7BQKGV1ObRir5NONAZi02fOPcYBF_zYXk/edit?usp=sharing">Sting Ops Production Google Doc</a><br><a href="https://docs.google.com/document/d/1fUCk3XgM7UagnOydz1QWcVUmH5rKTBntsR5y3KLNSZA/edit?usp=sharing">Sting Ops Script Google Doc</a></span>
 </div>
 </div>
 <div class="R">

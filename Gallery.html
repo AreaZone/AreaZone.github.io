@@ -87,7 +87,7 @@ input:focus, textarea:focus, select:focus
 #wb_Collaborations
 {
    color: #FFFFFF;
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    font-size: 20px;
 }
@@ -170,7 +170,7 @@ input:focus, textarea:focus, select:focus
 #wb_MyAnimations
 {
    color: #FFFFFF;
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    font-size: 20px;
 }
@@ -1679,14 +1679,6 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
    margin: 0;
    text-align: center;
@@ -1694,7 +1686,7 @@ input:focus, textarea:focus, select:focus
 #wb_Title
 {
    color: #FFFFFF;
-   font-family: "Work Sans ExtraLight";
+   font-family: Tahoma;
    font-weight: normal;
    font-size: 37px;
 }
@@ -1708,6 +1700,15 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: z-index 500ms linear 0ms;
    -moz-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
+}
+#HiddenYouTube
+{
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
 }
 #Footer
 {
@@ -1767,7 +1768,7 @@ body
 }
 #wb_Collaborations
 {
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    font-size: 20px;
    margin: 0;
@@ -1851,7 +1852,7 @@ body
 }
 #wb_MyAnimations
 {
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
    font-size: 20px;
    margin: 0;
@@ -2478,29 +2479,36 @@ body
 }
 #wb_Title
 {
-   width: auto !important;
-   height: auto !important;
+   left: 0px !important;
+   top: 28px !important;
+   width: 1000px !important;
+   height: 44px !important;
    visibility: visible !important;
    display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
    background-color: transparent;
    background-image: none;
 }
 #wb_Title
 {
-   font-family: "Work Sans ExtraLight";
+   font-family: Tahoma;
    font-weight: normal;
    font-size: 37px;
    margin: 0;
    padding: 0;
    text-align: center;
+}
+#HiddenYouTube
+{
+   width: 305px !important;
+   height: 177px !important;
+   visibility: hidden !important;
+   display: none !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
 }
 #Footer
 {
@@ -2576,9 +2584,9 @@ body
 }
 #wb_Collaborations
 {
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
-   font-size: 20px;
+   font-size: 17px;
    margin: 0;
    padding: 0;
    text-align: center;
@@ -2660,9 +2668,9 @@ body
 }
 #wb_MyAnimations
 {
-   font-family: "Work Sans";
+   font-family: Arial;
    font-weight: normal;
-   font-size: 20px;
+   font-size: 17px;
    margin: 0;
    padding: 0;
    text-align: center;
@@ -2747,8 +2755,8 @@ body
 {
    width: 305px !important;
    height: 177px !important;
-   visibility: visible !important;
-   display: inline !important;
+   visibility: hidden !important;
+   display: none !important;
    -webkit-flex-grow: 0;
    flex-grow: 0;
    -webkit-flex-shrink: 0;
@@ -3316,29 +3324,36 @@ body
 }
 #wb_Title
 {
-   width: auto !important;
-   height: auto !important;
+   left: 0px !important;
+   top: 39px !important;
+   width: 319px !important;
+   height: 22px !important;
    visibility: visible !important;
    display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
    background-color: transparent;
    background-image: none;
 }
 #wb_Title
 {
-   font-family: "Work Sans ExtraLight";
+   font-family: Tahoma;
    font-weight: normal;
-   font-size: 21px;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: center;
+}
+#HiddenYouTube
+{
+   width: 305px !important;
+   height: 177px !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
 }
 #Footer
 {
@@ -3391,25 +3406,22 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:990px;float:left;clear:left;display:block;z-index:35;">
+<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:990px;float:left;clear:left;display:block;z-index:36;">
 <div id="GALLERY-overlay"></div>
 <div id="GALLERY_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="FlexGrid1">
 <div class="header">
-<div id="wb_Title">
-<span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA</strong></span>
-</div>
 </div>
 <div class="SoftwareAndHardware">
-<div id="wb_Software_Hardware" style="display:inline-block;width:616px;z-index:1;">
+<div id="wb_Software_Hardware" style="display:inline-block;width:616px;z-index:0;">
 <img src="https://i.imgur.com/PAnZwGV.jpg" id="Software_Hardware" alt="">
 </div>
 </div>
 <div class="Doodles">
 <div id="wb_Doodles">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">DOODLES [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">DOODLES [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span>
 </div>
-<div id="wb_DoodleGallery" style="display:inline-block;width:402px;height:321px;z-index:3;">
+<div id="wb_DoodleGallery" style="display:inline-block;width:402px;height:321px;z-index:2;">
 <div id="DoodleGallery">
    <div class="thumbnails">
       <div class="thumbnail">
@@ -3432,18 +3444,21 @@ $(document).ready(function()
 </div>
 <div class="VidTitle">
 <div id="wb_VideoProduction">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">VIDEO PRODUCTION</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">VIDEO PRODUCTION</span>
 </div>
 </div>
 <div class="AnimTitle">
 <div id="wb_Animations">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">ANIMATIONS</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">ANIMATIONS</span>
 </div>
 </div>
 <div class="Videos">
 <!-- YouTube Playlist -->
-<div id="YouTubePlaylist" style="display:inline-block;width:480px;height:270px;z-index:6">
+<div id="YouTubePlaylist" style="display:inline-block;width:480px;height:270px;z-index:5">
 <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<!-- YouTube Playlist -->
+<div id="HiddenYouTube" style="display:none;width:305px;height:177px;z-index:6">
+<iframe width="305" height="177" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 <div class="Animation">
 <div id="wb_Subermayne" style="display:inline-block;width:480px;height:270px;z-index:7;">
@@ -3453,12 +3468,12 @@ $(document).ready(function()
 </div>
 <div class="VidText">
 <div id="wb_VideoLinkText">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span>
 </div>
 </div>
 <div class="AnimText">
 <div id="wb_Newgrounds">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">NEWGROUNDS</span><span style="color:#FFFFFF;font-family:Calibri;font-size:21px;"> FLASH ANIMATIONS</span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;"> (old school)</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:21px;">NEWGROUNDS FLASH ANIMATIONS (old school)</span>
 </div>
 </div>
 <div class="NewGrounds1">
@@ -3482,16 +3497,18 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:15;">
+<span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA</strong></span></div>
 </div>
 </div>
 <div id="wb_HiddenHeader">
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:15;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:16;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:16;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:17;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -3510,12 +3527,12 @@ $(document).ready(function()
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:50px;height:50px;z-index:17;">
+<div id="wb_Image1" style="display:inline-block;width:50px;height:50px;z-index:18;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image1" alt=""></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1018;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1019;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -3548,10 +3565,10 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:978px;width:100%;height:65px;z-index:38;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:978px;width:100%;height:65px;z-index:39;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:33;">
-<div style="color:#87CEEB;font-size:16px;font-family:Work Sans;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:34;">
+<div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
    var startYear = "20XX";
@@ -3567,8 +3584,8 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:34;">
-<span style="color:#87CEEB;font-family:'Work Sans';font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:35;">
+<span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>
 </body>

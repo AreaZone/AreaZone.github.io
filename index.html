@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <title>THE AREA ZONE</title>
-<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body
 {
    background-color: #000000;
+   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -18,10 +22,38 @@ body
    padding: 0;
 }
 </style>
-<link href="cupertino/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,200" rel="stylesheet">
 <style>
+@-webkit-keyframes transform-wobble-center
+{
+   0% { -webkit-transform: rotate(0deg) ;  }
+   15% { -webkit-transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { -webkit-transform: rotate(0deg) skewX(10deg) ;  }
+   45% { -webkit-transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { -webkit-transform: rotate(0deg) skewX(4deg) ;  }
+   75% { -webkit-transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { -webkit-transform: rotate(0deg) skewX(0deg) ;  }
+}
+@-moz-keyframes transform-wobble-center
+{
+   0% { -moz-transform: rotate(0deg) ;  }
+   15% { -moz-transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { -moz-transform: rotate(0deg) skewX(10deg) ;  }
+   45% { -moz-transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { -moz-transform: rotate(0deg) skewX(4deg) ;  }
+   75% { -moz-transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { -moz-transform: rotate(0deg) skewX(0deg) ;  }
+}
+@keyframes transform-wobble-center
+{
+   0% { transform: rotate(0deg) ;  }
+   15% { transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { transform: rotate(0deg) skewX(10deg) ;  }
+   45% { transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { transform: rotate(0deg) skewX(4deg) ;  }
+   75% { transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { transform: rotate(0deg) skewX(0deg) ;  }
+}
 a
 {
    color: #00FFFF;
@@ -44,219 +76,79 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
-#SPLASH
+@media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
-   background-color: transparent;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
 }
-#SPLASH-overlay
+@media only screen and (max-width: 999px)
 {
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #191970;
-   opacity: 0.2;
 }
-#GALLERY
+#wb_TitleGrid
 {
-   background-color: transparent;
-   background-image: url(https://nasaviz.gsfc.nasa.gov/vis/a010000/a012000/a012086/c-1024.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#GALLERY-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #4B0082;
-   opacity: 0.2;
-}
-#ANIMATIONbox
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_Collaborations 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Collaborations div
-{
-   text-align: center;
-}
-#Mr-BondNewgrounds
-{
-   border: 0px solid transparent;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Newgrounds 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Newgrounds div
-{
-   text-align: center;
-}
-#Mr-Anewgrounds
-{
-   border: 0px solid transparent;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_MyAnimations 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_MyAnimations div
-{
-   text-align: center;
-}
-#Subermayne
-{
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   border-width: 0;
-}
-#wb_Animations 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Animations div
-{
-   text-align: center;
-}
-#ARTbox
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_Doodles 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Doodles div
-{
-   text-align: center;
-}
-#DoodleGallery
-{
-   box-sizing: border-box;
-   font-size: 0;
-   width: 100%;
-   height: 100%;
+   clear: both;
+   position: relative;
    table-layout: fixed;
    display: table;
-   margin: 0;
-}
-#DoodleGallery .thumbnails
-{
-   margin: 0;
-}
-#DoodleGallery .thumbnail
-{
-   position: relative;
-   min-height: 1px;
-   box-sizing: border-box;
-   float: left;
-   padding: 0;
-   width: 50%;
    text-align: center;
-   vertical-align: top;
-}
-#DoodleGallery .thumbnail img
-{
-   border: 0px #000000 solid;
-   display: block;
    width: 100%;
-   height: auto;
-   max-width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
    box-sizing: border-box;
+   margin: 0;
 }
-#DoodleGallery .clearfix:before,
-#DoodleGallery .clearfix:after,
-#DoodleGallery .thumbnails:before,
-#DoodleGallery .thumbnails:after
+#TitleGrid
+{
+   box-sizing: border-box;
+   padding: 80px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#TitleGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#TitleGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#TitleGrid > .row > .col-1
+{
+   float: left;
+}
+#TitleGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#TitleGrid:before,
+#TitleGrid:after,
+#TitleGrid .row:before,
+#TitleGrid .row:after
 {
    display: table;
    content: " ";
 }
-#DoodleGallery .clearfix:after,
-#DoodleGallery .thumbnails:after
+#TitleGrid:after,
+#TitleGrid .row:after
 {
    clear: both;
 }
-#DoodleGallery .visible-col2
+@media (max-width: 480px)
 {
-   display: block;
+#TitleGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
 }
-#VideoBox
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_VideoProduction 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_VideoProduction div
-{
-   text-align: center;
 }
 #wb_SplashTitle 
 {
@@ -265,11 +157,11 @@ input:focus, textarea:focus, select:focus
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_SplashTitle div
 {
-   text-align: left;
+   text-align: center;
 }
 #wb_SplashTitle:hover
 {
@@ -280,18 +172,32 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube1
 {
+   position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
    border-width: 0;
 }
+#wb_YouTube1
+{
+   display: block;
+   position: relative;
+   margin: 0;
+   height: 0;
+   overflow: hidden;
+   box-sizing: border-box;
+   padding-bottom: 56.25%;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+}
 #wb_SplashButtons
 {
    border: 0px solid #FFFFFF;
    background-color: transparent;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_SplashButtons ul
 {
@@ -306,7 +212,6 @@ input:focus, textarea:focus, select:focus
    float: left;
    margin: 0;
    padding: 0px 4px 0px 0px;
-   width: 180px;
 }
 #wb_SplashButtons a
 {
@@ -323,11 +228,10 @@ input:focus, textarea:focus, select:focus
    font-size: 12px;
    font-style: normal;
    text-decoration: none;
-   width: 168px;
    height: 28px;
+   line-height: 28px;
    padding: 0px 5px 0px 5px;
    vertical-align: middle;
-   line-height: 28px;
    text-align: center;
 }
 #wb_SplashButtons li:hover a, #wb_SplashButtons a:hover
@@ -352,760 +256,222 @@ input:focus, textarea:focus, select:focus
    height: 0;
    line-height: 0;
 }
-#wb_ResponsiveHeader1
-{
-   background-color: rgba(0,0,0,0.40);
-   display: block;
-   font-family: "Work Sans";
-   font-weight: normal;
-   text-align: right;
-   width: 100%;
-}
-#ResponsiveHeader1
-{
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.40);
-   display: inline-block;
-   height: 53px;
-}
-#wb_ResponsiveHeader1 ul
-{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-#wb_ResponsiveHeader1 ul:after
+#wb_YouTubeGrid
 {
    clear: both;
-   content: "";
-   display: block;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
 }
-#wb_ResponsiveHeader1 ul li
+#YouTubeGrid
 {
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.40);
-   display: list-item;
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#YouTubeGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#YouTubeGrid > .row > .col-1, #YouTubeGrid > .row > .col-2, #YouTubeGrid > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#YouTubeGrid > .row > .col-1, #YouTubeGrid > .row > .col-2, #YouTubeGrid > .row > .col-3
+{
    float: left;
-   list-style: none;
-   z-index: 9999;
 }
-#wb_ResponsiveHeader1 ul li i
-{
-   font-size: 20px;
-   width: 20px;
-}
-#wb_ResponsiveHeader1 ul li a 
-{
-   color: #FFFFFF;
-   font-family: "Work Sans";
-   font-weight: normal;
-   font-size: 12px;
-   font-style: normal;
-   padding: 10px 15px 10px 10px;
-   text-align: center;
-   text-decoration: none;
-}
-#wb_ResponsiveHeader1 > ul > li > a 
-{
-   height: 33px;
-}
-.ResponsiveHeader1 a 
-{
-   display: block;
-}
-#wb_ResponsiveHeader1 li a:hover, #wb_ResponsiveHeader1 li .active
-{ 
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul ul
-{
-   display: none;
-   position: absolute;
-   top: 53px;
-}
-#wb_ResponsiveHeader1 ul li:hover > ul
-{
-   display: list-item;
-}
-#wb_ResponsiveHeader1 ul ul li 
-{
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.39);
-   color: #FFFFFF;
-   float: none;
-   position: relative;
-   width: 110px;
-}
-#wb_ResponsiveHeader1 ul ul li a:hover, #wb_ResponsiveHeader1 ul ul li .active
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul ul li i 
-{
-   margin-right: 6px;
-   vertical-align: middle;
-}
-#wb_ResponsiveHeader1 ul ul li a 
-{
-   color: #FFFFFF;
-   padding: 10px 10px 10px 10px;
-   text-align: left;
-   vertical-align: middle;
-}
-#wb_ResponsiveHeader1 ul ul ul li 
-{
-   left: 110px;
-   position: relative;
-   top: -53px;
-}
-#wb_ResponsiveHeader1 .arrow-down 
-{
-   display: inline-block;
-   width: 0;
-   height: 0;
-   margin-left: 2px;
-   vertical-align: middle;
-   border-top: 4px solid #FFFFFF;
-   border-right: 4px solid transparent;
-   border-left: 4px solid transparent;
-   border-bottom: 0 dotted;
-}
-#wb_ResponsiveHeader1 .arrow-left 
-{
-   display: inline-block;
-   width: 0;
-   height: 0;
-   margin-left: 4px;
-   vertical-align: middle;
-   border-left: 4px solid #FFFFFF;
-   border-top: 4px solid transparent;
-   border-bottom: 4px solid transparent;
-   border-right: 0 dotted;
-}
-#wb_ResponsiveHeader1 li a:hover .arrow-down
-{ 
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul ul li a:hover .arrow-left, #wb_ResponsiveHeader1 ul ul li .active .arrow-left
-{ 
-   border-left-color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 .toggle,[id^=ResponsiveHeader1-submenu]
-{
-   display: none;
-}
-@media all and (max-width:1300px) 
-{
-#wb_ResponsiveHeader1 
-{
-   margin: 0;
-   text-align: left;
-}
-#wb_ResponsiveHeader1 ul li a, #wb_ResponsiveHeader1 .toggle
-{
-   font-size: 12px;
-   font-weight: normal;
-   font-style: normal;
-   padding: 10px 10px 10px 10px;
-}
-#wb_ResponsiveHeader1 .toggle + a
-{
-   display: none !important;
-}
-.ResponsiveHeader1 
-{
-   display: none;
-   z-index: 9999;
-}
-#ResponsiveHeader1 
+#YouTubeGrid > .row > .col-1
 {
    background-color: transparent;
-   display: none;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
 }
-#wb_ResponsiveHeader1 > ul > li > a 
+#YouTubeGrid > .row > .col-2
 {
-   height: auto;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
 }
-#wb_ResponsiveHeader1 .toggle 
+#YouTubeGrid > .row > .col-3
 {
-   display: block;
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.40);
-   color: #FFFFFF;
-   padding: 0px 10px 0px 10px;
-   line-height: 40px;
-   text-decoration: none;
-   border: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
 }
-#wb_ResponsiveHeader1 .toggle:hover 
+#YouTubeGrid:before,
+#YouTubeGrid:after,
+#YouTubeGrid .row:before,
+#YouTubeGrid .row:after
 {
-   background-color: #4B0082;
-   color: #FFFFFF;
+   display: table;
+   content: " ";
 }
-[id^=ResponsiveHeader1-submenu]:checked + ul 
+#YouTubeGrid:after,
+#YouTubeGrid .row:after
 {
-   display: block !important;
+   clear: both;
 }
-#ResponsiveHeader1-title
+@media (max-width: 480px)
 {
-   height: 53px;
-   line-height: 53px !important;
-   text-align: center;
-}
-#wb_ResponsiveHeader1 ul li 
-{
-   display: block;
-   width: 100%;
-   text-align: right;
-}
-#wb_ResponsiveHeader1 ul ul .toggle,
-#wb_ResponsiveHeader1 ul ul a 
-{
-   padding: 0 20px;
-}
-#wb_ResponsiveHeader1 a:hover,
-#wb_ResponsiveHeader1 ul ul ul a 
-{
-   background-color: #000000;
-   color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul li ul li .toggle,
-#wb_ResponsiveHeader1 ul ul a 
-{
-   background-color: #000000;
-   color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul ul ul a 
-{
-   padding: 10px 10px 10px 30px;
-}
-#wb_ResponsiveHeader1 ul li a 
-{
-   text-align: right;
-}
-#wb_ResponsiveHeader1 ul li a br 
-{
-   display: none;
-}
-#wb_ResponsiveHeader1 ul li i 
-{
-   margin-right: 6px;
-}
-#wb_ResponsiveHeader1 ul ul 
+#YouTubeGrid > .row > .col-1, #YouTubeGrid > .row > .col-2, #YouTubeGrid > .row > .col-3
 {
    float: none;
-   position: static;
+   width: 100% !important;
 }
-#wb_ResponsiveHeader1 ul ul li:hover > ul,
-#wb_ResponsiveHeader1 ul li:hover > ul 
-{
-   display: none;
 }
-#wb_ResponsiveHeader1 ul ul li 
+#wb_ButtonsGrid
 {
-   display: block;
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
    width: 100%;
-}
-#wb_ResponsiveHeader1 ul ul ul li 
-{
-   position: static;
-}
-#ResponsiveHeader1-icon 
-{
-   display: block;
-   position: absolute;
-   right: 15px;
-   top: 14px;
-}
-#ResponsiveHeader1-icon span 
-{
-   display: block;
-   margin-top: 4px;
-   height: 2px;
-   background-color: #FFFFFF;
-   color: #FFFFFF;
-   width: 24px;
-}
-#wb_ResponsiveHeader1 ul li ul li .toggle:hover
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 .toggle .arrow-down 
-{
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 .toggle:hover .arrow-down, #wb_ResponsiveHeader1 li .active .arrow-down
-{ 
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul li ul li .toggle .arrow-down 
-{
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveHeader1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveHeader1 ul li ul li .active .arrow-down
-{ 
-   border-top-color: #FFFFFF;
-}
-}
-#CONTACT
-{
    background-color: transparent;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
    margin: 0;
 }
-#CONTACT-overlay
+#ButtonsGrid
 {
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #191970;
-   opacity: 0.2;
+   box-sizing: border-box;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding: 0px 0px 5px 0px;
+   margin-right: auto;
+   margin-left: auto;
 }
-#wb_GalleryArea 
+#ButtonsGrid > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#ButtonsGrid > .col-1
+{
+   -webkit-flex: 0 0 auto;
+   flex: 0 0 auto;
+}
+#ButtonsGrid > .col-1
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: right;
-}
-#wb_GalleryArea div
-{
-   text-align: right;
-}
-#wb_GalleryArea:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_VideoLinkText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
+   border: 0px solid #FFFFFF;
+   flex-basis: 100%;
+   max-width: 100%;
+   -webkit-align-self: center;
+   align-self: center;
+   -webkit-justify-content: center;
+   justify-content: center;
    text-align: center;
 }
-#wb_VideoLinkText div
+@media (max-width: 0px)
 {
+#ButtonsGrid > .col-1
+{
+   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_StingOpsGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
    text-align: center;
-}
-#wb_ContactPlace 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_ContactPlace div
-{
-   text-align: center;
-}
-#wb_ContactPlace:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_GalleryText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: right;
-}
-#wb_GalleryText div
-{
-   text-align: right;
-}
-#GalleryTextBackdrop
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#ContactTextBacking
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_ContactPageText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_ContactPageText div
-{
-   text-align: left;
-}
-#wb_DeviantArtSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_DeviantArtSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#DeviantArtSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#DeviantArtSocialLink i
-{
-   color: #05CC47;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 27px;
-}
-#wb_DeviantArtSocialLink:hover i
-{
-   color: #05CC47;
-}
-#wb_FacebookIconSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_FacebookIconSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#FacebookIconSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#FacebookIconSocialLink i
-{
-   color: #4267B2;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 41px;
-}
-#wb_FacebookIconSocialLink:hover i
-{
-   color: #4267B2;
-}
-#wb_YouTubeSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_YouTubeSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#YouTubeSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#YouTubeSocialLink i
-{
-   color: #FF0000;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 49px;
-}
-#wb_YouTubeSocialLink:hover i
-{
-   color: #FF0000;
-}
-#wb_TwitterSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_TwitterSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#TwitterSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#TwitterSocialLink i
-{
-   color: #1DA1F2;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 41px;
-}
-#wb_TwitterSocialLink:hover i
-{
-   color: #1DA1F2;
-}
-#PatreonSocialLink
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
    width: 100%;
-   height: 100%;
-}
-#SERVICES
-{
-   background-color: transparent;
-   background-image: url(https://previews.123rf.com/images/ismagilov/ismagilov1505/ismagilov150500085/40104818-pattern-of-one-hundred-dollar-bills-pile.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#SERVICES-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #4B0082;
-   opacity: 0.2;
-}
-#ServicesBacker
-{
-   background-color: #191970;
-   background-image: none;
-}
-#wb_SERVICEStext 
-{
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
    margin: 0;
-   text-align: left;
 }
-#wb_SERVICEStext div
+#StingOpsGrid
 {
-   text-align: left;
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
 }
-#wb_SERVICEStext:hover
+#StingOpsGrid > .row
 {
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
+   margin-right: -15px;
+   margin-left: -15px;
 }
-#Pricing1
+#StingOpsGrid > .row > .col-1
 {
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border: 5px groove #FFFFFF;
-   border-radius: 5px;
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
 }
-#wb_DigitalMediaPricing 
+#StingOpsGrid > .row > .col-1
+{
+   float: left;
+}
+#StingOpsGrid > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
+   border: 0px solid #FFFFFF;
+   width: 100%;
    text-align: center;
 }
-#wb_DigitalMediaPricing div
+#StingOpsGrid:before,
+#StingOpsGrid:after,
+#StingOpsGrid .row:before,
+#StingOpsGrid .row:after
 {
-   text-align: center;
+   display: table;
+   content: " ";
 }
-#wb_DigitalMediaPricing:hover
+#StingOpsGrid:after,
+#StingOpsGrid .row:after
 {
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
+   clear: both;
 }
-#Pricing3
+@media (max-width: 0px)
 {
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border: 5px groove #FFFFFF;
-   border-radius: 5px;
-}
-#wb_VideoPhotoPricing 
+#StingOpsGrid > .row > .col-1
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
+   float: none;
+   width: 100% !important;
 }
-#wb_VideoPhotoPricing div
-{
-   text-align: center;
 }
-#wb_VideoPhotoPricing:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#Pricing2
-{
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border: 5px groove #FFFFFF;
-   border-radius: 5px;
-}
-#wb_3DworkPricing 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_3DworkPricing div
-{
-   text-align: center;
-}
-#wb_3DworkPricing:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#ExtraServices
-{
-   background-color: #191970;
-   background-image: none;
-}
-#wb_ServicesExtraText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: right;
-}
-#wb_ServicesExtraText div
-{
-   text-align: right;
-}
-#wb_ServicesExtraText:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#TextArt1
-{
-   border-width: 0;
-   vertical-align: top;
-}
-#ABOUT
-{
-   background-color: transparent;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#ABOUT-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #191970;
-   opacity: 0.2;
-}
-#wb_AboutTitle 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_AboutTitle div
-{
-   text-align: center;
-}
-#wb_AboutTitle:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#FOOTER
+#MasterFooter
 {
    background-color: #000000;
    background: linear-gradient(to top, #000000 0%, #4B0082 100%);
@@ -1123,453 +489,1067 @@ input:focus, textarea:focus, select:focus
 {
    text-align: center;
 }
-#HEADER
+#wb_StingOpsImage
 {
-   background-color: rgba(0,191,255,0.00);
-   background-image: none;
-}
-#wb_GalleryShortText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
    margin: 0;
-   text-align: center;
+   vertical-align: top;
 }
-#wb_GalleryShortText div
+#StingOpsImage
 {
-   text-align: center;
+   border-width: 0;
+   display: inline-block;
+   width: 216px;
+   height: 46px;
+   vertical-align: top;
 }
-#wb_ContactPageTextSmall 
+#wb_AreaZoneEyeIcon
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
    margin: 0;
-   text-align: center;
-}
-#wb_ContactPageTextSmall div
-{
-   text-align: center;
-}
-#wb_ServicesTextSmall 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_ServicesTextSmall div
-{
-   text-align: center;
-}
-#wb_ServicesTextSmall:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_ServicesTextExtraSmall 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_ServicesTextExtraSmall div
-{
-   text-align: center;
-}
-#wb_ServicesTextExtraSmall:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#VideoBoxSmall
-{
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_VideoProductionSmall 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_VideoProductionSmall div
-{
-   text-align: center;
-}
-#wb_VideoLinkTextSmall 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_VideoLinkTextSmall div
-{
-   text-align: center;
-}
-#wb_AREAZONEheaderText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_AREAZONEheaderText div
-{
-   text-align: left;
+   vertical-align: top;
 }
 #AreaZoneEyeIcon
 {
    border: 0px solid #000000;
    padding: 0;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   vertical-align: top;
+}
+#wb_ResponsiveMenu1
+{
+   background-color: rgba(0,0,0,0.00);
+   display: block;
+   font-family: "Work Sans";
+   font-weight: normal;
+   text-align: right;
+   width: 100%;
+}
+#ResponsiveMenu1
+{
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.00);
+   display: inline-block;
+   height: 54px;
+}
+#wb_ResponsiveMenu1 ul
+{
+   list-style: none;
    margin: 0;
+   padding: 0;
+   position: relative;
+}
+#wb_ResponsiveMenu1 ul:after
+{
+   clear: both;
+   content: "";
+   display: block;
+}
+#wb_ResponsiveMenu1 ul li
+{
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.00);
+   display: list-item;
+   float: left;
+   list-style: none;
+   z-index: 9999;
+}
+#wb_ResponsiveMenu1 ul li i
+{
+   font-size: 20px;
+   width: 20px;
+}
+#wb_ResponsiveMenu1 ul li a 
+{
+   color: #FFFFFF;
+   font-family: "Work Sans";
+   font-weight: normal;
+   font-size: 12px;
+   font-style: normal;
+   padding: 10px 15px 10px 10px;
+   text-align: center;
+   text-decoration: none;
+}
+#wb_ResponsiveMenu1 > ul > li > a 
+{
+   height: 34px;
+}
+.ResponsiveMenu1 a 
+{
+   display: block;
+}
+#wb_ResponsiveMenu1 li a:hover, #wb_ResponsiveMenu1 li .active
+{ 
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul
+{
+   display: none;
+   position: absolute;
+   top: 54px;
+}
+#wb_ResponsiveMenu1 ul li:hover > ul
+{
+   display: list-item;
+}
+#wb_ResponsiveMenu1 ul ul li 
+{
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.39);
+   color: #FFFFFF;
+   float: none;
+   position: relative;
+   width: 109px;
+}
+#wb_ResponsiveMenu1 ul ul li a:hover, #wb_ResponsiveMenu1 ul ul li .active
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul li i 
+{
+   margin-right: 6px;
+   vertical-align: middle;
+}
+#wb_ResponsiveMenu1 ul ul li a 
+{
+   color: #FFFFFF;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   text-align: left;
+   vertical-align: middle;
+}
+#wb_ResponsiveMenu1 ul ul ul li
+{
+   left: 109px;
+   position: relative;
+   top: -54px;
+}
+#wb_ResponsiveMenu1 .arrow-down
+{
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 2px;
+   vertical-align: middle;
+   border-top: 4px solid #FFFFFF;
+   border-right: 4px solid transparent;
+   border-left: 4px solid transparent;
+   border-bottom: 0 dotted;
+}
+#wb_ResponsiveMenu1 .arrow-left
+{
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 4px;
+   vertical-align: middle;
+   border-left: 4px solid #FFFFFF;
+   border-top: 4px solid transparent;
+   border-bottom: 4px solid transparent;
+   border-right: 0 dotted;
+}
+#wb_ResponsiveMenu1 li a:hover .arrow-down
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul li a:hover .arrow-left, #wb_ResponsiveMenu1 ul ul li .active .arrow-left
+{ 
+   border-left-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle,[id^=ResponsiveMenu1-submenu]
+{
+   display: none;
+}
+@media all and (max-width:1000px) 
+{
+#wb_ResponsiveMenu1 
+{
+   margin: 0;
+   text-align: left;
+}
+#wb_ResponsiveMenu1 ul li a, #wb_ResponsiveMenu1 .toggle
+{
+   font-size: 12px;
+   font-weight: normal;
+   font-style: normal;
+   padding: 10px 10px 10px 10px;
+}
+#wb_ResponsiveMenu1 .toggle + a
+{
+   display: none !important;
+}
+.ResponsiveMenu1 
+{
+   display: none;
+   z-index: 9999;
+}
+#ResponsiveMenu1 
+{
+   background-color: transparent;
+   display: none;
+}
+#wb_ResponsiveMenu1 > ul > li > a 
+{
+   height: auto !important;
+}
+#wb_ResponsiveMenu1 .toggle 
+{
+   display: block;
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.00);
+   color: #FFFFFF;
+   padding: 0px 10px 0px 10px;
+   line-height: 40px;
+   text-decoration: none;
+   border: none;
+   position: relative;
+}
+#wb_ResponsiveMenu1 .toggle:hover 
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+[id^=ResponsiveMenu1-submenu]:checked + ul 
+{
+   display: block !important;
+}
+#ResponsiveMenu1-title
+{
+   height: 54px !important;
+   line-height: 54px !important;
+   text-align: center;
+}
+#wb_ResponsiveMenu1 ul li 
+{
+   display: block;
+   width: 100% !important;
+   text-align: right;
+}
+#wb_ResponsiveMenu1 ul ul .toggle,
+#wb_ResponsiveMenu1 ul ul a 
+{
+   padding: 0 20px;
+}
+#wb_ResponsiveMenu1 a:hover,
+#wb_ResponsiveMenu1 ul ul ul a 
+{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle,
+#wb_ResponsiveMenu1 ul ul a 
+{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul ul a 
+{
+   padding: 10px 10px 10px 30px;
+}
+#wb_ResponsiveMenu1 ul li a 
+{
+   text-align: right;
+}
+#wb_ResponsiveMenu1 ul li a br 
+{
+   display: none;
+}
+#wb_ResponsiveMenu1 ul li i 
+{
+   margin-right: 6px;
+}
+#wb_ResponsiveMenu1 ul ul 
+{
+   float: none;
+   position: static;
+}
+#wb_ResponsiveMenu1 ul ul li:hover > ul,
+#wb_ResponsiveMenu1 ul li:hover > ul 
+{
+   display: none;
+}
+#wb_ResponsiveMenu1 ul ul li 
+{
+   display: block;
+   width: 100%;
+}
+#wb_ResponsiveMenu1 ul ul ul li 
+{
+   position: static;
+}
+#ResponsiveMenu1-icon 
+{
+   display: block;
+   position: absolute;
+   right: 15px;
+   top: 15px;
+}
+#ResponsiveMenu1-icon span 
+{
+   display: block;
+   margin-top: 4px;
+   height: 2px;
+   background-color: #FFFFFF;
+   color: #FFFFFF;
+   width: 24px;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle:hover
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle .arrow-down 
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle:hover .arrow-down, #wb_ResponsiveMenu1 li .active .arrow-down
+{ 
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle .arrow-down 
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveMenu1 ul li ul li .active .arrow-down
+{ 
+   border-top-color: #FFFFFF;
+}
+}
+#wb_Image2
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   vertical-align: top;
+}
+#wb_HiddenHeader
+{
+   clear: both;
+   position: fixed;
    left: 0;
    top: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: none;
+   text-align: center;
    width: 100%;
-   height: 100%;
-}
-#EmailButton
-{
-   font-family: "Work Sans";
-   font-weight: bold;
-   font-size: 13px;
-   font-style: normal;
-}
-#wb_EmailButton
-{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
    margin: 0;
 }
-#wb_EmailButton .ui-button
+#HiddenHeader
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#HiddenHeader > .row
+{
+   display: grid;
+   grid-template-columns: repeat(12, 8.333333%);
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#HiddenHeader > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+   grid-column: span 12;
+}
+#HiddenHeader > .row > .col-1
+{
+}
+#HiddenHeader > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   grid-column: span 12;
+   -webkit-align-self: center;
+   align-self: center;
+   text-align: left;
+}
+@media (max-width: 320px)
+{
+#HiddenHeader > .row > .col-1
+{
+   width: 100%;
+   grid-column: span 12;
+}
+}
+#wb_MasterHeader
+{
+   clear: both;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: rgba(23,23,23,0.00);
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#MasterHeader
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#MasterHeader > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#MasterHeader > .row > .col-1, #MasterHeader > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#MasterHeader > .row > .col-1, #MasterHeader > .row > .col-2
+{
+   float: left;
+}
+#MasterHeader > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 8.33333333%;
+   text-align: left;
+}
+#MasterHeader > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 91.66666667%;
+   text-align: left;
+}
+#MasterHeader:before,
+#MasterHeader:after,
+#MasterHeader .row:before,
+#MasterHeader .row:after
+{
+   display: table;
+   content: " ";
+}
+#MasterHeader:after,
+#MasterHeader .row:after
+{
+   clear: both;
+}
+@media (max-width: 320px)
+{
+#MasterHeader > .row > .col-1, #MasterHeader > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+.TopMenu .hide 
+{
+   display: none!important;
+}
+.TopMenu .show 
+{
+   display: block!important;
+}
+.TopMenu .hidden
+{
+   display: none!important;
+   visibility: hidden!important;
+}
+.TopMenu .nav
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+   font-style: normal;
+   color: #2B2B2B;
+   text-align: left;
+}
+#TopMenu, .TopMenu .nav, .TopMenu *
 {
    margin: 0;
    padding: 0;
-   line-height: 48px;
+   box-sizing: border-box;
+   line-height: 1;
+   list-style: none;
 }
-#EmailButton
+.TopMenu .nav:before,
+.TopMenu .nav:after 
 {
-   color: #2779AA;
+   content: " ";
+   display: table;
+}
+.TopMenu .nav:after 
+{
+   clear: both;
+}
+.TopMenu .nav a 
+{
    text-decoration: none;
 }
-#EmailButton :hover
+.TopMenu .nav ul
 {
-   color: #0070A3;
+   margin-top: 0;
+   margin-bottom: 10px;
 }
-#EmailButton :active
+.TopMenu .nav ul ul
 {
-   color: #FFFFFF;
+   margin-bottom: 0;
 }
-#wb_EmailButton .ui-corner-all, #wb_EmailButton .ui-corner-left
+.TopMenu .container 
 {
-   border-bottom-left-radius: 6px;
-   border-top-left-radius: 6px;
+   margin-right: auto;
+   margin-left: auto;
+   padding: 0;
 }
-#wb_EmailButton .ui-corner-all, #wb_EmailButton .ui-corner-right
+.TopMenu .container:before,
+.TopMenu .container:after 
 {
-   border-bottom-right-radius: 6px;
-   border-top-right-radius: 6px;
+   content: " ";
+   display: table;
 }
-#wb_EmailButton .ui-button
+.TopMenu .container:after 
 {
+   clear: both;
+}
+.TopMenu .collapse 
+{
+   display: none;
+}
+.TopMenu .collapse.in 
+{
+   display: block;
+}
+.TopMenu .collapsing 
+{
+   position: relative;
+   height: 0;
+   overflow: hidden;
+   -webkit-transition: height .35s ease;
+   transition: height .35s ease;
+}
+.TopMenu .caret 
+{
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 4px;
+   vertical-align: middle;
+   border-top: 4px solid #000;
+   border-right: 4px solid transparent;
+   border-left: 4px solid transparent;
+   border-bottom: 0 dotted;
+}
+.TopMenu .dropdown 
+{
+   position: relative;
+}
+.TopMenu .dropdown-toggle:focus 
+{
+   outline: 0;
+}
+.TopMenu .dropdown-menu 
+{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   display: none;
+   float: left;
+   min-width: 160px;
+   padding: 5px 0;
+   margin: 2px 0 0;
+   list-style: none;
+   font-size: 16px;
    background-color: #FFFFFF;
    background-image: none;
-   border: 1px solid #9370DB;
-   color: #4B0082;
+   border: 1px solid rgba(197,197,197,0.00);
+   border-radius: 0px;
+   background-clip: padding-box;
 }
-#wb_EmailButton .ui-state-hover, #wb_EmailButton .ui-button:hover
+.TopMenu .dropdown-menu .divider 
 {
-   border-color: #9370DB;
-   background-color: #87CEEB;
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #C5C5C5;
+}
+.TopMenu .dropdown-menu>li>a 
+{
+   display: block;
+   padding: 3px 20px 3px 20px;
+   clear: both;
+   line-height: 1.428571429;
+   color: #2B2B2B;
+   white-space: nowrap;
+}
+.TopMenu .dropdown-menu>li>a:hover,
+.TopMenu .dropdown-menu>li>a:focus 
+{
+   text-decoration: none;
+   color: #2B2B2B;
+   background-color: #EDEDED;
    background-image: none;
-   color: #4B0082;
 }
-#wb_EmailButton .ui-state-active, #wb_EmailButton .ui-button:active
+.TopMenu .dropdown-menu>.active>a,
+.TopMenu .dropdown-menu>.active>a:hover,
+.TopMenu .dropdown-menu>.active>a:focus 
 {
-   border-color: #9370DB;
-   background-color: #4B0082;
+   color: #fff;
+   text-decoration: none;
+   outline: 0;
+   background-color: #343A40;
+}
+.TopMenu .open>.dropdown-menu 
+{
+   display: block;
+}
+.TopMenu .open>a 
+{
+   outline: 0;
+}
+.TopMenu .dropdown-header 
+{
+   display: block;
+   padding: 3px 20px;
+   line-height: 1.428571429;
+   color: #aeaeae;
+}
+.TopMenu .dropdown-backdrop 
+{
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   z-index: 990;
+}
+.TopMenu .nav>li 
+{
+   position: relative;
+   display: block;
+}
+.TopMenu .nav>li>a 
+{
+   position: relative;
+   display: block;
+   padding: 15px 15px 15px 15px;
+}
+.TopMenu .nav .open>a,
+.TopMenu .nav .open>a:hover,
+.TopMenu .nav .open>a:focus 
+{
+   background-color: #ccc;
+   border-color: #343A40;
+}
+.TopMenu .nav .nav-divider 
+{
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #C5C5C5;
+}
+.TopMenu .nav>li>a>img 
+{
+   max-width: none;
+}
+.TopMenu .nav .caret 
+{
+   border-top-color: #343A40;
+   border-bottom-color: #343A40;
+}
+.TopMenu
+{
+   position: relative;
+   border: 1px solid transparent;
+   background-color: transparent;
    background-image: none;
-   color: #FFA500;
 }
-#wb_EmailButton .ui-button .ui-icon
+.TopMenu:before,
+.TopMenu:after 
 {
-   background-image: url(images/index-EmailButton-default.png);
-   background-position: 0 0;
+   content: " ";
+   display: table;
 }
-#wb_EmailButton .ui-button:hover .ui-icon
+.TopMenu:after 
 {
-   background-image: url(images/index-EmailButton-hover.png);
-   background-position: 0 0;
+   clear: both;
 }
-#wb_EmailButton .ui-button:active .ui-icon
+.TopMenu .navbar-header:before,
+.TopMenu .navbar-header:after 
 {
-   background-image: url(images/index-EmailButton-active.png);
-   background-position: 0 0;
+   content: " ";
+   display: table;
 }
-#wb_EmailButton .ui-visual-focus
+.TopMenu .navbar-header:after 
 {
+   clear: both;
+}
+.TopMenu-navbar-collapse 
+{
+   overflow-x: visible;
+   -webkit-overflow-scrolling: touch;
+}
+.TopMenu-navbar-collapse:before,
+.TopMenu-navbar-collapse:after 
+{
+   content: " ";
+   display: table;
+}
+.TopMenu-navbar-collapse:after 
+{
+   clear: both;
+}
+.TopMenu-navbar-collapse.in 
+{
+   overflow-y: auto;
+}
+.TopMenu .navbar-toggle 
+{
+   position: relative;
+   float: right;
+   padding: 16px 10px 15px 10px;
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-radius: 0px;
+}
+.TopMenu .navbar-toggle .icon-bar 
+{
+   display: block;
+   width: 22px;
+   height: 2px;
+   border-radius: 1px;
+}
+.TopMenu .navbar-toggle .icon-bar+.icon-bar 
+{
+   margin-top: 4px;
+}
+.TopMenu .navbar-nav 
+{
+   margin: 6px -15px;
+}
+.TopMenu .navbar-nav>li>.dropdown-menu 
+{
+   margin-top: 0;
+}
+.TopMenu .navbar-nav>li>a 
+{
+   color: #2B2B2B;
+}
+.TopMenu .navbar-nav>li>a:hover,
+.TopMenu .navbar-nav>li>a:focus 
+{
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
+   text-decoration: none;
+}
+.TopMenu .navbar-nav>.active>a,
+.TopMenu .navbar-nav>.active>a:hover,
+.TopMenu .navbar-nav>.active>a:focus 
+{
+   color: #2B2B2B;
+   background-color: #EDEDED;
+   background-image: none;
+}
+.TopMenu .navbar-toggle 
+{
+   border: 1px solid rgba(43,43,43,0.10);
+}
+.TopMenu .navbar-toggle:hover,
+.TopMenu .navbar-toggle:focus 
+{
+   background-color: transparent;
+}
+.TopMenu .navbar-toggle .icon-bar 
+{
+   background-color: #A2A2A2;
+}
+.TopMenu-navbar-collapse
+{
+   border-color: rgba(197,197,197,0.00);
+}
+.TopMenu .navbar-nav>.dropdown>a:hover .caret,
+.TopMenu .navbar-nav>.dropdown>a:focus .caret 
+{
+   border-top-color: #2B2B2B;
+   border-bottom-color: #2B2B2B;
+}
+.TopMenu .navbar-nav>.open>a,
+.TopMenu .navbar-nav>.open>a:hover,
+.TopMenu .navbar-nav>.open>a:focus 
+{
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
+}
+.TopMenu .navbar-nav>.open>a .caret,
+.TopMenu .navbar-nav>.open>a:hover .caret,
+.TopMenu .navbar-nav>.open>a:focus .caret 
+{
+   border-top-color: #2B2B2B;
+   border-bottom-color: #2B2B2B;
+}
+.TopMenu .navbar-nav>.dropdown>a .caret 
+{
+   border-top-color: #2B2B2B;
+   border-bottom-color: #2B2B2B;
+}
+.TopMenu .navbar-link 
+{
+   color: #2B2B2B;
+}
+.TopMenu .navbar-link:hover 
+{
+   color: #2B2B2B;
+}
+.TopMenu .navbar-header
+{
+   color: #A2A2A2;
+   height: 48px;
+}
+@media (min-width: 480px) 
+{
+.TopMenu .navbar-right .dropdown-menu 
+{
+   right: 0;
+   left: auto;
+}
+.TopMenu .navbar-header 
+{
+   float: left;
+}
+.TopMenu-navbar-collapse 
+{
+   width: auto;
+   border-top: 0;
    box-shadow: none;
 }
-#AboutTabs.ui-widget
+.TopMenu-navbar-collapse.collapse 
 {
-   font-size: 1em !important;
+   display: block!important;
+   height: auto!important;
+   padding-bottom: 0;
+   overflow: visible!important;
 }
-#AboutTabs
+.TopMenu-navbar-collapse.in 
 {
-   background-color: #191970;
-   background-image: none;
-   border: 1px solid #000000;
-   padding: 4px 4px 4px 4px;
+   overflow-y: auto;
+}
+.TopMenu .navbar-toggle
+{
+   display: none;
+}
+.TopMenu .navbar-nav 
+{
+   float: right;
    margin: 0;
 }
-#AboutTabs .ui-tabs-nav
+.TopMenu .navbar-nav>li 
 {
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   line-height: 1.0;
-   padding: 4px 4px 0px 4px;
+   float: left;
 }
-#AboutTabs .ui-tabs-nav li
+.TopMenu .container>.navbar-header,
+.TopMenu .container>.TopMenu-navbar-collapse 
 {
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   margin: 0px 2px -1px 0px;
-   text-align: left;
+   margin-right: 0;
+   margin-left: 0;
 }
-#AboutTabs .ui-tabs-nav li a
+.TopMenu .navbar-nav>.dropdown>a:hover .caret,
+.TopMenu .navbar-nav>.dropdown>a:focus .caret 
 {
-   padding: 8px 10px 8px 10px;
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
 }
-#AboutTabs, #AboutTabs .ui-corner-all, #AboutTabs .ui-corner-top
-{
-   border-top-left-radius: 6px;
-   border-top-right-radius: 6px;
 }
-#AboutTabs, #AboutTabs .ui-corner-all, #AboutTabs .ui-corner-bottom
+@media (max-width: 480px) 
 {
-   border-bottom-right-radius: 6px;
-   border-bottom-left-radius: 6px;
+.TopMenu 
+{
+   border-color: rgba(23,23,23,0.00);
 }
-#AboutTabs .ui-helper-reset
+.TopMenu .navbar-nav 
 {
-   line-height: 16px;
-}
-#AboutTabs .ui-widget-content
-{
-   background-color: #191970;
-   background-image: none;
-   border-color: #000000;
-}
-#AboutTabs .ui-widget-header
-{
-   border: 1px solid #000000;
-   background-color: #000000;
+   margin: 0;
+   background-color: #FFFFFF;
    background-image: none;
 }
-#AboutTabs .ui-state-default, #AboutTabs .ui-widget-content .ui-state-default
+.TopMenu .navbar-nav .open .dropdown-menu 
 {
-   border-color: #000000;
-   background-color: #4B0082;
+   position: static;
+   float: none;
+   width: auto;
+   margin-top: 0;
+   background-color: transparent;
+   border: 0;
+   box-shadow: none;
+}
+.TopMenu .navbar-nav .open .dropdown-menu>li>a,
+.TopMenu .navbar-nav .open .dropdown-menu .dropdown-header 
+{
+   padding: 5px 15px 5px 25px;
+}
+.TopMenu .navbar-nav .open .dropdown-menu>li>a 
+{
+   line-height: 20px;
+}
+.TopMenu .navbar-nav .open .dropdown-menu>li>a:hover,
+.TopMenu .navbar-nav .open .dropdown-menu>li>a:focus 
+{
    background-image: none;
 }
-#AboutTabs .ui-state-hover, #AboutTabs .ui-widget-content .ui-state-hover
+}
+@media (min-width: 480px) 
 {
-   border-color: #000000;
-   background-color: #191970;
+.TopMenu 
+{
+   background-color: transparent;
+   background-image: none;
+   border-color: rgba(23,23,23,0.00);
+   border-radius: 0px;
+}
+.TopMenu .navbar-nav>li>a 
+{
+   color: #A2A2A2;
+}
+.TopMenu .navbar-nav>li>a:hover,
+.TopMenu .navbar-nav>li>a:focus 
+{
+   color: #007BFF;
+   background-color: transparent;
    background-image: none;
 }
-#AboutTabs .ui-state-active, #AboutTabs .ui-widget-content .ui-state-active
+.TopMenu .navbar-nav>.active>a,
+.TopMenu .navbar-nav>.active>a:hover,
+.TopMenu .navbar-nav>.active>a:focus 
 {
-   border-color: #000000;
-   background-color: #191970;
+   color: #007BFF;
+   background-color: transparent;
    background-image: none;
 }
-#AboutTabs .ui-state-default a, #AboutTabs .ui-widget-content .ui-state-default a
+.TopMenu .navbar-nav>.open>a,
+.TopMenu .navbar-nav>.open>a:hover,
+.TopMenu .navbar-nav>.open>a:focus 
 {
-   color: #FFFFFF;
+   background-color: transparent;
+   background-image: none;
+   color: #007BFF;
 }
-#AboutTabs .ui-state-hover a, #AboutTabs .ui-widget-content .ui-state-hover a
+.TopMenu .navbar-nav>.dropdown>a:hover .caret 
 {
-   color: #FFFFFF;
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
 }
-#AboutTabs .ui-state-active a, #AboutTabs .ui-widget-content .ui-state-active a
+.TopMenu .navbar-nav>.dropdown>a .caret
 {
-   color: #00BFFF;
+   border-top-color: #A2A2A2;
+   border-bottom-color: #A2A2A2;
 }
-#AboutTabs .ui-tabs-panel
+.TopMenu .navbar-nav > li.active > a > .caret,
+.TopMenu .navbar-nav > li.active > a:hover > .caret,
+.TopMenu .navbar-nav > li.active > a:focus > .caret
 {
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+.TopMenu .navbar-nav>.open>a .caret,
+.TopMenu .navbar-nav>.open>a:hover .caret,
+.TopMenu .navbar-nav>.open>a:focus .caret 
+{
+   border-top-color: #007BFF;
+   border-bottom-color: #007BFF;
+}
+.TopMenu .navbar-link 
+{
+   color: #A2A2A2;
+}
+.TopMenu .navbar-link:hover 
+{
+   color: #fff;
+}
+}
+#TopMenu i
+{
+   font-size: 16px;
    position: relative;
    left: 0;
    top: 0;
-   padding: 0;
+   margin-right: 4px;
+   width: 16px;
 }
-#AboutTabs .description
+#TopMenu li
 {
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
+   color: #A2A2A2;
+   -webkit-transition: color 500ms linear 0ms;
+   -moz-transition: color 500ms linear 0ms;
+   transition: color 500ms linear 0ms;
 }
-#wb_AboutText1 
+#TopMenu li:hover
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
+   color: #007BFF;
+   -webkit-transition: color 500ms linear 0ms;
+   -moz-transition: color 500ms linear 0ms;
+   transition: color 500ms linear 0ms;
 }
-#wb_AboutText1 div
+#TopMenu li a
 {
-   text-align: center;
+   color: #A2A2A2;
+   -webkit-transition: color 500ms linear 0ms;
+   -moz-transition: color 500ms linear 0ms;
+   transition: color 500ms linear 0ms;
 }
-#wb_AboutText1:hover
+#TopMenu li a:hover
 {
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
+   color: #007BFF;
+   -webkit-transition: color 500ms linear 0ms;
+   -moz-transition: color 500ms linear 0ms;
+   transition: color 500ms linear 0ms;
 }
-#wb_AboutText2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_AboutText2 div
-{
-   text-align: center;
-}
-#wb_AboutText2:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_AboutTextSmall 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_AboutTextSmall div
-{
-   text-align: left;
-}
-@media only screen and (max-width: 1299px)
+@media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
 body
 {
    background-color: #000000;
-   background-image: none;
-}
-#SPLASH
-{
-   height: 433px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
    background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
    background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#SPLASH
-{
-   width: 100%;
-   margin: 0;
-}
-#SPLASH_Container
-{
-   width: 320px !important;
-}
-#GALLERY
-{
-   height: 1375px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(https://nasaviz.gsfc.nasa.gov/vis/a010000/a012000/a012086/c-1024.jpg);
+   background-position: center center;
    background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
 }
-#GALLERY
+#wb_TitleGrid
 {
-   width: 100%;
-   margin: 0;
-}
-#GALLERY_Container
-{
-   width: 320px !important;
-}
-#ANIMATIONbox
-{
-   left: 0px !important;
-   top: 975px !important;
-   width: 320px !important;
-   height: 390px !important;
    visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_Collaborations
-{
-   left: 165px !important;
-   top: 337px !important;
-   width: 155px !important;
-   height: 24px !important;
-   visibility: visible !important;
-   display: inline !important;
+   display: table !important;
    font-size: 8px;
    font-family: Arial;
    font-weight: normal;
@@ -1578,230 +1558,40 @@ body
    background-color: transparent;
    background-image: none;
 }
-#wb_Collaborations
+#wb_TitleGrid
 {
-   margin: 0;
-   padding: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
 }
-#wb_Mr-BondNewgrounds
+#TitleGrid
 {
-   left: 178px !important;
-   top: 247px !important;
-   width: 140px !important;
-   height: 90px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
+   padding: 80px 15px 10px 15px;
 }
-#wb_Newgrounds
+#TitleGrid .row
 {
-   left: 0px !important;
-   top: 222px !important;
-   width: 320px !important;
-   height: 25px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
+   margin-right: -15px;
+   margin-left: -15px;
 }
-#wb_Newgrounds
+#TitleGrid > .row > .col-1
 {
-   margin: 0;
-   padding: 0;
+   padding-right: 15px;
+   padding-left: 15px;
 }
-#wb_Mr-Anewgrounds
-{
-   left: 0px !important;
-   top: 247px !important;
-   width: 140px !important;
-   height: 90px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#wb_MyAnimations
-{
-   left: 0px !important;
-   top: 337px !important;
-   width: 140px !important;
-   height: 48px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_MyAnimations
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Subermayne
-{
-   left: 0px !important;
-   top: 42px !important;
-   width: 320px !important;
-   height: 180px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-}
-#wb_Animations
-{
-   left: 0px !important;
-   top: 10px !important;
-   width: 318px !important;
-   height: 32px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_Animations
-{
-   margin: 0;
-   padding: 0;
-}
-#ARTbox
-{
-   left: 11px !important;
-   top: 370px !important;
-   width: 302px !important;
-   height: 297px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_Doodles
-{
-   left: 0px !important;
-   top: 8px !important;
-   width: 302px !important;
-   height: 32px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_Doodles
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_DoodleGallery
-{
-   left: 0px !important;
-   top: 40px !important;
-   width: 300px !important;
-   height: 0px !important;
-   visibility: visible !important;
-   display: inline !important;
-   color: #FFFFFF;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-   margin: 0;
-}
-#DoodleGallery .thumbnail
-{
-   width: 50%;
-}
-#DoodleGallery .visible-col2
+#TitleGrid > .row > .col-1
 {
    display: block;
-}
-#VideoBox
-{
-   left: 0px !important;
-   top: -46px !important;
-   width: 681px !important;
-   height: 438px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_VideoProduction
-{
-   left: 2px !important;
-   top: 156px !important;
-   width: 318px !important;
-   height: 32px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_VideoProduction
-{
-   margin: 0;
-   padding: 0;
-}
-#YouTubePlaylist
-{
-   left: 361px !important;
-   top: 0px !important;
-   width: 320px !important;
-   height: 178px !important;
-   visibility: hidden !important;
-   display: none !important;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
 }
 #wb_SplashTitle
 {
-   left: 606px !important;
-   top: 271px !important;
-   width: 551px !important;
-   height: 118px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
+   visibility: visible !important;
+   display: block !important;
    background-color: transparent;
    background-image: none;
+   box-shadow: 0px 0px 0px #00BFFF;
 }
 #wb_SplashTitle
 {
@@ -1810,28 +1600,20 @@ body
 }
 #wb_YouTube1
 {
-   left: 0px !important;
-   top: 104px !important;
-   width: 320px !important;
-   height: 180px !important;
+   width: 100% !important;
    visibility: visible !important;
-   display: inline !important;
+   display: block !important;
    margin: 0;
 }
 #wb_SplashButtons
 {
-   left: 15px !important;
-   top: 296px !important;
-   width: 292px !important;
-   height: 102px !important;
    visibility: visible !important;
-   display: inline !important;
+   display: inline-block !important;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_SplashButtons li
 {
-   width: 180px;
 }
 #wb_SplashButtons a
 {
@@ -1846,9 +1628,7 @@ body
    font-size: 12px;
    font-style: normal;
    text-decoration: none;
-   width: 168px;
    height: 28px;
-   padding: 0px 5px 0px 5px;
    line-height: 28px;
    text-align: center;
 }
@@ -1859,613 +1639,143 @@ body
    background-image: none;
    border: 1px solid #FFFFFF;
 }
-#wb_SplashButtons ul
+#wb_YouTubeGrid
 {
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_YouTubeGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#YouTubeGrid
+{
+   padding: 0px 15px 0px 15px;
+}
+#YouTubeGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#YouTubeGrid > .row > .col-1, #YouTubeGrid > .row > .col-2, #YouTubeGrid > .row > .col-3
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#YouTubeGrid > .row > .col-1
+{
+   display: block;
+   width: 33.33333333%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#YouTubeGrid > .row > .col-2
+{
+   display: block;
+   width: 33.33333333%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#YouTubeGrid > .row > .col-3
+{
+   display: block;
+   width: 33.33333333%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#wb_ButtonsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_ButtonsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ButtonsGrid
+{
+   padding: 0px 0px 5px 0px;
+}
+#ButtonsGrid > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#ButtonsGrid > .col-1
+{
+   display: block;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-self: center;
+   align-self: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+#wb_StingOpsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_StingOpsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#StingOpsGrid
+{
+   padding: 0px 15px 0px 15px;
+}
+#StingOpsGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#StingOpsGrid > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#StingOpsGrid > .row > .col-1
+{
+   display: block;
    width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: center;
 }
-#wb_SplashButtons li
-{
-   padding: 0 0px 4px 0px;
-   width: 100%;
-}
-#wb_SplashButtons a
-{
-   float: none;
-   width: 100%;
-}
-#wb_ResponsiveHeader1
+#MasterFooter
 {
    left: 0px !important;
-   top: 1px !important;
-   width: 320px !important;
-   height: 54px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   text-align: right;
-}
-#CONTACT
-{
-   height: 1215px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#CONTACT
-{
-   width: 100%;
-   margin: 0;
-}
-#CONTACT_Container
-{
-   width: 320px !important;
-}
-#Disqus
-{
-   left: 0px !important;
-   top: 457px !important;
-   width: 321px !important;
-   height: 735px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_GalleryArea
-{
-   left: 0px !important;
-   top: 61px !important;
-   width: 300px !important;
-   height: 43px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_GalleryArea
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_VideoLinkText
-{
-   left: 2px !important;
-   top: 366px !important;
-   width: 316px !important;
-   height: 64px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_VideoLinkText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_ContactPlace
-{
-   left: 0px !important;
-   top: 65px !important;
-   width: 321px !important;
-   height: 43px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_ContactPlace
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_GalleryText
-{
-   left: 0px !important;
-   top: 0px !important;
-   width: 317px !important;
-   height: 523px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_GalleryText
-{
-   margin: 0;
-   padding: 0;
-}
-#GalleryTextBackdrop
-{
-   left: 1px !important;
-   top: -130px !important;
-   width: 318px !important;
-   height: 530px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#ContactTextBacking
-{
-   left: 0px !important;
-   top: 108px !important;
-   width: 572px !important;
-   height: 336px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#wb_ContactPageText
-{
-   left: 26px !important;
-   top: 14px !important;
-   width: 546px !important;
-   height: 300px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_ContactPageText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_DeviantArtSocialLink
-{
-   left: 0px !important;
-   top: 306px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   color: #05CC47;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-   margin: 0;
-   padding: 0;
-}
-#DeviantArtSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#DeviantArtSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 27px;
-}
-#wb_FacebookIconSocialLink
-{
-   left: 136px !important;
-   top: 306px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   color: #4267B2;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-   margin: 0;
-   padding: 0;
-}
-#FacebookIconSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#FacebookIconSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 41px;
-}
-#wb_YouTubeSocialLink
-{
-   left: 204px !important;
-   top: 306px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   color: #FF0000;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-   margin: 0;
-   padding: 0;
-}
-#YouTubeSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#YouTubeSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 49px;
-}
-#wb_TwitterSocialLink
-{
-   left: 68px !important;
-   top: 306px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   color: #1DA1F2;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-   margin: 0;
-   padding: 0;
-}
-#TwitterSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#TwitterSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 41px;
-}
-#wb_PatreonSocialLink
-{
-   left: 270px !important;
-   top: 311px !important;
-   width: 40px !important;
-   height: 40px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#SERVICES
-{
-   height: 1969px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(https://previews.123rf.com/images/ismagilov/ismagilov1505/ismagilov150500085/40104818-pattern-of-one-hundred-dollar-bills-pile.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#SERVICES
-{
-   width: 100%;
-   margin: 0;
-}
-#SERVICES_Container
-{
-   width: 320px !important;
-}
-#ServicesBacker
-{
-   left: 0px !important;
-   top: 71px !important;
-   width: 745px !important;
-   height: 160px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #191970;
-   background-image: none;
-}
-#wb_SERVICEStext
-{
-   left: 10px !important;
-   top: 3px !important;
-   width: 735px !important;
-   height: 118px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_SERVICEStext
-{
-   margin: 0;
-   padding: 0;
-}
-#Pricing1
-{
-   left: 0px !important;
-   top: 240px !important;
-   width: 309px !important;
-   height: 352px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border-radius: 5px;
-}
-#wb_DigitalMediaPricing
-{
-   left: 10px !important;
-   top: 3px !important;
-   width: 292px !important;
-   height: 315px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_DigitalMediaPricing
-{
-   margin: 0;
-   padding: 0;
-}
-#Pricing3
-{
-   left: 0px !important;
-   top: 981px !important;
-   width: 308px !important;
-   height: 542px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border-radius: 5px;
-}
-#wb_VideoPhotoPricing
-{
-   left: 10px !important;
-   top: 4px !important;
-   width: 292px !important;
-   height: 505px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_VideoPhotoPricing
-{
-   margin: 0;
-   padding: 0;
-}
-#Pricing2
-{
-   left: 0px !important;
-   top: 610px !important;
-   width: 308px !important;
-   height: 353px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #191970;
-   background: linear-gradient(45deg, #191970 0%, #006400 100%);
-   border-radius: 5px;
-}
-#wb_3DworkPricing
-{
-   left: 10px !important;
-   top: 3px !important;
-   width: 292px !important;
-   height: 315px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_3DworkPricing
-{
-   margin: 0;
-   padding: 0;
-}
-#ExtraServices
-{
-   left: 0px !important;
-   top: 1609px !important;
-   width: 832px !important;
-   height: 332px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #191970;
-   background-image: none;
-}
-#wb_ServicesExtraText
-{
-   left: 17px !important;
-   top: 14px !important;
-   width: 815px !important;
-   height: 318px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_ServicesExtraText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_TextArt1
-{
-   left: 1px !important;
-   top: 1551px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-}
-#ABOUT
-{
-   height: 434px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#ABOUT
-{
-   width: 100%;
-   margin: 0;
-}
-#ABOUT_Container
-{
-   width: 320px !important;
-}
-#wb_AboutTitle
-{
-   left: 15px !important;
-   top: 60px !important;
-   width: 285px !important;
-   height: 86px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_AboutTitle
-{
-   margin: 0;
-   padding: 0;
-}
-#FOOTER
-{
-   left: 0px !important;
-   top: 5426px !important;
+   top: 900px !important;
    height: 55px !important;
    visibility: visible !important;
    display: inline !important;
@@ -2477,273 +1787,79 @@ body
    background-color: #000000;
    background: linear-gradient(to top, #000000 0%, #4B0082 100%);
 }
-#FOOTER
+#MasterFooter
 {
    width: 100%;
 }
-#FOOTER_Container
-{
-   width: 320px !important;
-}
 #wb_FooterText
 {
-   left: 0px !important;
-   top: 25px !important;
-   width: 320px !important;
-   height: 13px !important;
    visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
+   display: block !important;
    background-color: transparent;
    background-image: none;
 }
 #wb_FooterText
 {
-   margin: 0;
-   padding: 0;
-}
-#HEADER
-{
-   height: 69px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(0,191,255,0.00);
-   background-image: none;
-}
-#HEADER_Container
-{
-   width: 320px !important;
-}
-#wb_GalleryShortText
-{
-   left: 10px !important;
-   top: 104px !important;
-   width: 300px !important;
-   height: 266px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.39);
-   background-image: none;
-   background-image: none;
-}
-#wb_GalleryShortText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_ContactPageTextSmall
-{
-   left: 0px !important;
-   top: 117px !important;
-   width: 320px !important;
-   height: 180px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_ContactPageTextSmall
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_ServicesTextSmall
-{
-   left: 12px !important;
-   top: 73px !important;
-   width: 297px !important;
-   height: 146px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #4B0082;
-   background-image: none;
-   background-image: none;
-}
-#wb_ServicesTextSmall
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_ServicesTextExtraSmall
-{
-   left: 0px !important;
-   top: 1662px !important;
-   width: 320px !important;
-   height: 278px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #4B0082;
-   background-image: none;
-   background-image: none;
-}
-#wb_ServicesTextExtraSmall
-{
-   margin: 0;
-   padding: 0;
-}
-#VideoBoxSmall
-{
-   left: 0px !important;
-   top: 681px !important;
-   width: 320px !important;
-   height: 282px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(25,25,112,0.20);
-   background-image: none;
-}
-#YouTubePlaylistSmall
-{
-   left: 0px !important;
-   top: 53px !important;
-   width: 320px !important;
-   height: 178px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_VideoProductionSmall
-{
-   left: 1px !important;
-   top: 9px !important;
-   width: 318px !important;
-   height: 32px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_VideoProductionSmall
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_VideoLinkTextSmall
-{
-   left: 2px !important;
-   top: 231px !important;
-   width: 318px !important;
-   height: 38px !important;
-   visibility: visible !important;
-   display: inline !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_VideoLinkTextSmall
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_AREAZONEheaderText
-{
-   left: 60px !important;
-   top: 0px !important;
-   width: 226px !important;
-   height: 38px !important;
-   visibility: hidden !important;
-   display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_AREAZONEheaderText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_AreaZoneEyeIcon
-{
-   left: 0px !important;
-   top: 1px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
    margin: 0;
    padding: 0;
 }
 #wb_FooterYear
 {
-   left: 0px !important;
-   top: 9px !important;
-   width: 320px !important;
-   height: 17px !important;
+   height: 23px !important;
    visibility: visible !important;
-   display: inline !important;
+   display: block !important;
 }
-#wb_EmailButton
+#wb_StingOpsImage
 {
-   left: 10px !important;
-   top: 378px !important;
-   width: 300px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#StingOpsImage
+{
+   width: 216px;
+   height: 46px;
+}
+#wb_AreaZoneEyeIcon
+{
+   width: 50px !important;
    height: 50px !important;
    visibility: visible !important;
-   display: inline !important;
+   display: inline-block !important;
    margin: 0;
+   padding: 0;
 }
-#AboutTabs
+#AreaZoneEyeIcon
 {
-   left: 10px !important;
-   top: 104px !important;
-   width: 988px !important;
-   height: 242px !important;
-   visibility: hidden !important;
-   display: none !important;
+   width: 50px;
+   height: 50px;
+}
+#wb_ResponsiveMenu1
+{
+   width: 290px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
    margin: 0;
+   text-align: right;
 }
-#wb_AboutText1
+#wb_Image2
 {
-   left: 268px !important;
-   top: -1064px !important;
-   width: 1172px !important;
-   height: 15px !important;
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Image2
+{
+   width: 50px;
+   height: 50px;
+}
+#wb_HiddenHeader
+{
    visibility: hidden !important;
    display: none !important;
    font-size: 8px;
@@ -2754,20 +1870,111 @@ body
    background-color: transparent;
    background-image: none;
 }
-#wb_AboutText1
+#wb_HiddenHeader
 {
-   margin: 0;
-   padding: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
 }
-#wb_AboutText2
+#HiddenHeader
 {
-   left: 270px !important;
-   top: -1063px !important;
-   width: 1172px !important;
-   height: 15px !important;
-   visibility: hidden !important;
-   display: none !important;
+   padding: 0px 15px 0px 15px;
+}
+#HiddenHeader .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#HiddenHeader > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#HiddenHeader > .row > .col-1
+{
+   display: block;
+   grid-column: span 12;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-self: center;
+   align-self: center;
+   text-align: left;
+}
+#wb_MasterHeader
+{
+   visibility: visible !important;
+   display: table !important;
    font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(23,23,23,0.00);
+   background-image: none;
+}
+#wb_MasterHeader
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#MasterHeader
+{
+   padding: 0px 15px 0px 15px;
+}
+#MasterHeader .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#MasterHeader > .row > .col-1, #MasterHeader > .row > .col-2
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#MasterHeader > .row > .col-1
+{
+   display: block;
+   width: 8.33333333%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#MasterHeader > .row > .col-2
+{
+   display: block;
+   width: 91.66666667%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#wb_TopMenu
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+}
+#TopMenu, .TopMenu .nav, .TopMenu .dropdown-menu
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+}
+}
+@media only screen and (max-width: 999px)
+{
+body
+{
+   background-color: #000000;
+   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+}
+#wb_TitleGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
    font-family: Arial;
    font-weight: normal;
    font-style: normal;
@@ -2775,17 +1982,225 @@ body
    background-color: transparent;
    background-image: none;
 }
-#wb_AboutText2
+#wb_TitleGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#TitleGrid
+{
+   padding: 80px 15px 10px 15px;
+}
+#TitleGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#TitleGrid > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#TitleGrid > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#wb_SplashTitle
+{
+   visibility: visible !important;
+   display: block !important;
+   background-color: transparent;
+   background-image: none;
+   box-shadow: 0px 0px 0px #000000;
+}
+#wb_SplashTitle
 {
    margin: 0;
    padding: 0;
 }
-#wb_AboutTextSmall
+#wb_YouTube1
 {
-   left: 12px !important;
-   top: 178px !important;
-   width: 297px !important;
-   height: 120px !important;
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+}
+#wb_SplashButtons
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: center;
+}
+#wb_SplashButtons li
+{
+}
+#wb_SplashButtons a
+{
+   color: #FFFFFF;
+   border: 1px solid #FFFFFF;
+   border-radius: 1px;
+   background-color: #4B0082;
+   background-color: rgba(75,0,130,0.20);
+   background-image: none;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 12px;
+   font-style: normal;
+   text-decoration: none;
+   height: 28px;
+   line-height: 28px;
+   text-align: center;
+}
+#wb_SplashButtons li:hover a, #wb_SplashButtons a:hover
+{
+   color: #FFFFFF;
+   background-color: #4B0082;
+   background-image: none;
+   border: 1px solid #FFFFFF;
+}
+#wb_YouTubeGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_YouTubeGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#YouTubeGrid
+{
+   padding: 0px 15px 0px 15px;
+}
+#YouTubeGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#YouTubeGrid > .row > .col-1, #YouTubeGrid > .row > .col-2, #YouTubeGrid > .row > .col-3
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#YouTubeGrid > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#YouTubeGrid > .row > .col-2
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#YouTubeGrid > .row > .col-3
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#wb_ButtonsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_ButtonsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ButtonsGrid
+{
+   padding: 0px 0px 5px 0px;
+}
+#ButtonsGrid > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#ButtonsGrid > .col-1
+{
+   display: block;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-self: center;
+   align-self: center;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+#wb_StingOpsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_StingOpsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#StingOpsGrid
+{
+   padding: 0px 15px 0px 15px;
+}
+#StingOpsGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#StingOpsGrid > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#StingOpsGrid > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: center;
+}
+#MasterFooter
+{
+   left: 0px !important;
+   top: 922px !important;
+   height: 55px !important;
    visibility: visible !important;
    display: inline !important;
    font-size: 8px;
@@ -2793,239 +2208,267 @@ body
    font-weight: normal;
    font-style: normal;
    text-decoration: none;
+   background-color: #000000;
+   background: linear-gradient(to top, #000000 0%, #4B0082 100%);
+}
+#MasterFooter
+{
+   width: 100%;
+}
+#wb_FooterText
+{
+   visibility: visible !important;
+   display: block !important;
    background-color: transparent;
    background-image: none;
 }
-#wb_AboutTextSmall
+#wb_FooterText
 {
    margin: 0;
    padding: 0;
+}
+#wb_FooterYear
+{
+   height: 17px !important;
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_StingOpsImage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#StingOpsImage
+{
+   width: 216px;
+   height: 46px;
+}
+#wb_AreaZoneEyeIcon
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#AreaZoneEyeIcon
+{
+   width: 50px;
+   height: 50px;
+}
+#wb_ResponsiveMenu1
+{
+   width: 254px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: right;
+}
+#wb_Image2
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Image2
+{
+   width: 50px;
+   height: 50px;
+}
+#wb_HiddenHeader
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_HiddenHeader
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#HiddenHeader
+{
+   padding: 0;
+}
+#HiddenHeader .row
+{
+   margin-right: -0px;
+   margin-left: -0px;
+}
+#HiddenHeader > .row > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#HiddenHeader > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   grid-column: span 12;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   -webkit-align-self: center;
+   align-self: center;
+   text-align: center;
+}
+#wb_MasterHeader
+{
+   visibility: hidden !important;
+   display: none !important;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(23,23,23,0.00);
+   background-image: none;
+}
+#wb_MasterHeader
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#MasterHeader
+{
+   padding: 0px 15px 0px 15px;
+}
+#MasterHeader .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#MasterHeader > .row > .col-1, #MasterHeader > .row > .col-2
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#MasterHeader > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#MasterHeader > .row > .col-2
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#wb_TopMenu
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+}
+#TopMenu, .TopMenu .nav, .TopMenu .dropdown-menu
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
 }
 }
 </style>
 <script src="jquery-1.12.4.min.js"></script>
-<script src="wb.parallax.min.js"></script>
-<script src="wb.lazyload.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb15.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#SPLASH').parallax();
-   $('#GALLERY').parallax();
-   $('#CONTACT').parallax();
-   $('#SERVICES').parallax();
-   $('#ABOUT').parallax();
-   $("#EmailButton").button();
-   $("#AboutTabs").tabs(
+   $("a[href*='#MasterHeader']").click(function(event)
    {
-      show: false,
-      hide: false,
-      event: 'click',
-      collapsible: false
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_MasterHeader').offset().top }, 600, 'easeOutCirc');
    });
-   $('img[data-src]').lazyload();
+   $(document).on('click','.TopMenu-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
 });
 </script>
 </head>
 <body>
-<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:955px;float:left;clear:left;display:block;z-index:84;">
-<div id="SPLASH-overlay"></div>
-<div id="SPLASH_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_SplashTitle" style="position:absolute;left:606px;top:271px;width:551px;height:118px;z-index:0;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>THE AREA ZONE<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">WELCOME BEYOND THE EDGE OF INFINITY; BEFORE THE END, AFTER THE BEGINNING... WELCOME TO ALEX POMORSKI'S WEBSITE, THE ZONE... OF AREAS. </span></div>
-<div id="wb_SplashButtons" style="position:absolute;left:605px;top:437px;width:552px;height:100px;z-index:1;">
-<ul role="menubar">
-<li class="firstmain"><a role="menuitem" href="#GALLERY" target="_self">ART,&nbsp;VIDEO,&nbsp;ETC.&nbsp;GALLERY</a>
-</li>
-<li><a role="menuitem" href="#ABOUT" target="_self">WHAT&nbsp;DO&nbsp;WE&nbsp;DO?</a>
-</li>
-<li><a role="menuitem" href="#CONTACT" target="_self">CONTACT&nbsp;US</a>
-</li>
-</ul>
+<div id="wb_TitleGrid">
+<div id="TitleGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_SplashTitle">
+<span style="color:#FFFFFF;font-family:Arial;font-size:21px;">ALEX POMORSKI PRESENTS THE<strong><br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:75px;"><strong>AREA <br>ZONE<br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:11px;">THE ZONE... OF AREAS. </span>
 </div>
-<div id="wb_YouTube1" style="position:absolute;left:143px;top:271px;width:441px;height:248px;z-index:2;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_YouTubeGrid">
+<div id="YouTubeGrid">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_YouTube1" style="display:inline-block;width:100%;z-index:1;">
 <iframe id="YouTube1" src="https://www.youtube.com/embed/4pmCDHxTc-U?rel=1&amp;modestbranding=1&amp;autohide=1"></iframe>
+
+</div>
+</div>
+<div class="col-3">
 </div>
 </div>
 </div>
-<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:1056px;float:left;clear:left;display:block;z-index:85;">
-<div id="GALLERY-overlay"></div>
-<div id="GALLERY_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="GalleryTextBackdrop" style="position:absolute;text-align:left;left:538px;top:120px;width:750px;height:343px;z-index:19;">
-<div id="wb_GalleryText" style="position:absolute;left:5px;top:14px;width:740px;height:315px;text-align:right;z-index:3;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">CHECK IT OUT, HERE ARE MY ARTS. I AM PROFICIENT IN THE SHAOLIN STYLE OF DIGITAL MEDIA DESIGN.<br><br><strong><u>SOFTWARE PROFICIENCY</u></strong>:<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:15px;"><u>2D</u>: PHOTOSHOP, ILLUSTRATOR, ANIMATE/FLASH, INDESIGN, MICROSOFT PAINT, PENCILS &amp; PAPER<br><u>3D</u>: ZBRUSH, BLENDER, MAYA, SUBSTANCE PAINTER, MARVELOUS DESIGNER<br><u>VIDEO</u>: AFTER EFFECTS, PREMIERE<br><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;"><strong><u>HARDWARE PROFICIENCY</u></strong>:<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:15px;">WACOM CINTIQ INTERACTIVE PEN DISPLAY, SONY A7RII MIRRORLESS CAMERA... and... computers.<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;"><br>LIKE MY WORK? <br>TALK TO US ON SOCIAL MEDIA AND/OR SEND US A MESSAGE ON THE <a href="#CONTACT">CONTACT</a> PAGE.</span></div>
 </div>
-<div id="ANIMATIONbox" style="position:absolute;text-align:left;left:0px;top:472px;width:512px;height:452px;z-index:20;">
-<div id="wb_Collaborations" style="position:absolute;left:250px;top:425px;width:177px;height:24px;text-align:center;z-index:4;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:20px;"><a href="https://mr-bond.newgrounds.com/movies" title="Mr-Bond's Newgrounds (we worked together on many videos)">Collaborations</a></span></div>
-<div id="wb_Mr-BondNewgrounds" style="position:absolute;left:268px;top:335px;width:140px;height:90px;z-index:5;">
-<a href="https://mr-bond.newgrounds.com/movies" title="Mr-Bond&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/186000/flash_186719.gif?f1322704392" id="Mr-BondNewgrounds" alt="Mr-Bond&#39;s Animations"></a></div>
-<div id="wb_Newgrounds" style="position:absolute;left:0px;top:303px;width:512px;height:25px;text-align:center;z-index:6;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">NEWGROUNDS (old school)</span></div>
-<div id="wb_Mr-Anewgrounds" style="position:absolute;left:97px;top:335px;width:140px;height:90px;z-index:7;">
-<a href="https://mr-a.newgrounds.com/movies" title="Mr-A&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/354000/flash_354072.gif?f1322705103" id="Mr-Anewgrounds" alt="Mr-A&#39;s Animations"></a></div>
-<div id="wb_MyAnimations" style="position:absolute;left:85px;top:425px;width:165px;height:24px;text-align:center;z-index:8;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:20px;"><a href="https://mr-a.newgrounds.com/movies" title="Mr-A's Newgrounds">My Animations</a></span></div>
-<div id="wb_Subermayne" style="position:absolute;left:17px;top:32px;width:480px;height:270px;z-index:9;">
-<iframe id="Subermayne" src="https://www.youtube.com/embed/pLQRg8XdbHE?rel=1&amp;autohide=0"></iframe>
-</div>
-<div id="wb_Animations" style="position:absolute;left:2px;top:0px;width:510px;height:32px;text-align:center;z-index:10;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">ANIMATIONS</span></div>
-</div>
-<div id="VideoBox" style="position:absolute;text-align:left;left:773px;top:480px;width:510px;height:388px;z-index:21;">
-<div id="wb_VideoProduction" style="position:absolute;left:0px;top:0px;width:510px;height:32px;text-align:center;z-index:11;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">VIDEO PRODUCTION</span></div>
-<div id="wb_VideoLinkText" style="position:absolute;left:14px;top:302px;width:480px;height:64px;text-align:center;z-index:12;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span></div>
-<!-- YouTube Playlist -->
-<div id="YouTubePlaylist" style="position:absolute;left:14px;top:32px;width:480px;height:270px;z-index:13">
-<iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-<div id="wb_GalleryArea" style="position:absolute;left:0px;top:68px;width:1288px;height:43px;text-align:right;z-index:22;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>GALLERY AREA</strong></span></div>
-<div id="ARTbox" style="position:absolute;text-align:left;left:34px;top:68px;width:425px;height:380px;z-index:23;">
-<div id="wb_Doodles" style="position:absolute;left:10px;top:11px;width:402px;height:32px;text-align:center;z-index:14;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">DOODLES [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span></div>
-<div id="wb_DoodleGallery" style="position:absolute;left:10px;top:52px;width:402px;height:321px;z-index:15;">
-<div id="DoodleGallery">
-   <div class="thumbnails">
-      <div class="thumbnail">
-         <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/db2p5ik-6d09fa1d-8e38-4ddb-9149-ee2de1d535ec.png/v1/fill/w_894,h_894,strp/cool_haired_anime_chicks__no_background__by_uzersname_db2p5ik-pre.png"><img alt="" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/db2p5ik-6d09fa1d-8e38-4ddb-9149-ee2de1d535ec.png/v1/fill/w_894,h_894,strp/cool_haired_anime_chicks__no_background__by_uzersname_db2p5ik-pre.png"></a>
-      </div>
-      <div class="thumbnail">
-         <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/da8xeva-5d4d1b19-bea6-45fa-b65f-32e0ef65c948.png/v1/fill/w_894,h_894,q_70,strp/benjamin_franklin_4th_of_july__full__by_uzersname_da8xeva-pre.jpg"><img alt="" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/da8xeva-5d4d1b19-bea6-45fa-b65f-32e0ef65c948.png/v1/fill/w_894,h_894,q_70,strp/benjamin_franklin_4th_of_july__full__by_uzersname_da8xeva-pre.jpg"></a>
-      </div>
-      <div class="clearfix visible-col2"></div>
-      <div class="thumbnail">
-         <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/d75smvv-9e91abda-0970-49c3-a2de-0f68f803a1ea.jpg/v1/fill/w_1192,h_670,q_70,strp/salamandestruction__missile__by_uzersname_d75smvv-pre.jpg"><img alt="" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/d75smvv-9e91abda-0970-49c3-a2de-0f68f803a1ea.jpg/v1/fill/w_1192,h_670,q_70,strp/salamandestruction__missile__by_uzersname_d75smvv-pre.jpg"></a>
-      </div>
-      <div class="thumbnail">
-         <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/db6cycc-297a891f-d150-4a3b-85ac-bd5881515ab4.png/v1/fill/w_1155,h_692,q_70,strp/krillin_punching_saitama__version_1__by_uzersname_db6cycc-pre.jpg"><img alt="" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/9e6dac1f-f395-4757-bbfe-c132ba90a7bb/db6cycc-297a891f-d150-4a3b-85ac-bd5881515ab4.png/v1/fill/w_1155,h_692,q_70,strp/krillin_punching_saitama__version_1__by_uzersname_db6cycc-pre.jpg"></a>
-      </div>
-      <div class="clearfix visible-col2"></div>
-   </div>
-</div></div>
-</div>
-<div id="wb_GalleryShortText" style="position:absolute;left:2px;top:336px;width:740px;height:168px;visibility:hidden;text-align:center;z-index:24;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:12px;">CHECK IT OUT, HERE ARE MY ARTS. I AM PROFICIENT IN THE SHAOLIN STYLE OF DIGITAL MEDIA DESIGN.<br><br><strong><u>SOFTWARE PROFICIENCY</u></strong>:<br><u>2D</u>: PHOTOSHOP, ILLUSTRATOR, ANIMATE/FLASH, INDESIGN, MICROSOFT PAINT, PENCILS &amp; PAPER<br><u>3D</u>: ZBRUSH, BLENDER, MAYA, SUBSTANCE PAINTER, MARVELOUS DESIGNER<br><u>VIDEO</u>: AFTER EFFECTS, PREMIERE<br><br><strong><u>HARDWARE PROFICIENCY</u></strong>:<br>WACOM CINTIQ INTERACTIVE PEN DISPLAY, SONY A7RII MIRRORLESS CAMERA... and... computers.<br><br>LIKE MY WORK? <br>TALK TO US ON SOCIAL MEDIA AND/OR SEND US A MESSAGE ON THE <a href="#CONTACT">CONTACT</a> PAGE.</span></div>
-<div id="VideoBoxSmall" style="position:absolute;text-align:left;visibility:hidden;left:354px;top:357px;width:634px;height:270px;z-index:25;">
-<!-- YouTube Playlist -->
-<div id="YouTubePlaylistSmall" style="position:absolute;left:147px;top:92px;width:320px;height:178px;visibility:hidden;z-index:16">
-<iframe width="320" height="178" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div id="wb_VideoProductionSmall" style="position:absolute;left:124px;top:82px;width:510px;height:32px;visibility:hidden;text-align:center;z-index:17;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;">VIDEO PRODUCTION</span></div>
-<div id="wb_VideoLinkTextSmall" style="position:absolute;left:0px;top:0px;width:480px;height:38px;visibility:hidden;text-align:center;z-index:18;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:16px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span></div>
-</div>
-</div>
-</div>
-<div id="CONTACT" style="position:relative;text-align:center;width:100%;height:1009px;float:left;clear:left;display:block;z-index:86;">
-<div id="CONTACT-overlay"></div>
-<div id="CONTACT_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="ContactTextBacking" style="position:absolute;text-align:left;left:34px;top:126px;width:1232px;height:228px;z-index:39;">
-<div id="wb_ContactPageText" style="position:absolute;left:26px;top:14px;width:1190px;height:200px;z-index:38;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">WHEN YOU GAZE LONG INTO THE ABYSS, THE ABYSS ALSO GAZES BACK INTO YOU AND SEES YOUR MESSAGE AND REPLIES. <br><br>MESSAGE US WITH ANY OF YOUR COMMENTS, CONCERNS, OR JUST TO SAY SOMETHING NICE (I MAY PUT IN A TESTIMONIALS PAGE OR SOMETHING). <br><br>PLEASE ALSO CHECK OUT OUR SOCIAL MEDIA LINKS (BELOW), LIKE, COMMENT, SUBSCRIBE, DONATE TO OUR PATREON, ETC. </span></div>
-</div>
-<div id="wb_DeviantArtSocialLink" style="position:absolute;left:39px;top:369px;width:50px;height:50px;text-align:center;z-index:40;">
-<a href="https://www.deviantart.com/uzersname" title="DeviantArt"><div id="DeviantArtSocialLink"><i class="fa fa-deviantart"></i></div></a></div>
-<div id="wb_FacebookIconSocialLink" style="position:absolute;left:461px;top:369px;width:50px;height:50px;text-align:center;z-index:41;">
-<a href="https://www.facebook.com/The-Area-Zone-372052026208332/" title="Facebook"><div id="FacebookIconSocialLink"><i class="fa fa-facebook-official"></i></div></a></div>
-<div id="wb_YouTubeSocialLink" style="position:absolute;left:672px;top:369px;width:50px;height:50px;text-align:center;z-index:42;">
-<a href="https://www.youtube.com/user/theAreaZone" title="YouTube"><div id="YouTubeSocialLink"><i class="fa fa-youtube-play"></i></div></a></div>
-<div id="wb_TwitterSocialLink" style="position:absolute;left:250px;top:369px;width:50px;height:50px;text-align:center;z-index:43;">
-<a href="https://twitter.com/TheAreaZone" title="Twitter"><div id="TwitterSocialLink"><i class="fa fa-twitter-square"></i></div></a></div>
-<div id="wb_ContactPlace" style="position:absolute;left:0px;top:66px;width:1300px;height:43px;text-align:center;z-index:44;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>CONTACT PLACE</strong></span></div>
-<div id="wb_ContactPageTextSmall" style="position:absolute;left:475px;top:117px;width:546px;height:120px;visibility:hidden;text-align:center;z-index:45;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">WHEN YOU GAZE LONG INTO THE ABYSS, THE ABYSS ALSO GAZES BACK INTO YOU AND SEES YOUR MESSAGE AND REPLIES. <br><br>MESSAGE US WITH ANY OF YOUR COMMENTS, CONCERNS, OR JUST TO SAY SOMETHING NICE (I MAY PUT IN A TESTIMONIALS PAGE OR SOMETHING). <br><br>PLEASE ALSO CHECK OUT OUR SOCIAL MEDIA LINKS (BELOW), LIKE, COMMENT, SUBSCRIBE, DONATE TO OUR PATREON, ETC. </span></div>
-<div id="wb_PatreonSocialLink" style="position:absolute;left:883px;top:374px;width:40px;height:40px;z-index:46;">
-<a href="https://www.patreon.com/areazone" title="Patreon"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="PatreonSocialLink" alt=""></a></div>
-<!-- Disqus -->
-<div id="Disqus" style="position:absolute;left:34px;top:440px;width:1232px;height:540px;z-index:47">
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = 'https://areazone.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
-<div id="wb_EmailButton" style="position:absolute;left:1085px;top:369px;width:181px;height:50px;z-index:48;">
-<a class="ui-button ui-widget ui-corner-all" id="EmailButton" href="mailto:theareazone@gmail.com" id="EmailButton" style="width:100%;height:100%;">SEND EMAIL</a></div>
-</div>
-</div>
-<div id="SERVICES" style="position:relative;text-align:center;width:100%;height:1054px;float:left;clear:left;display:block;z-index:87;">
-<div id="SERVICES-overlay"></div>
-<div id="SERVICES_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="Pricing3" style="position:absolute;text-align:left;left:858px;top:68px;width:398px;height:529px;z-index:56;">
-<div id="wb_VideoPhotoPricing" style="position:absolute;left:10px;top:12px;width:379px;height:473px;text-align:center;z-index:51;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>VIDEO/PHOTO<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:13px;"><strong>PHOTO SHOOTS, VIDEOGRAPHY, SPYING ON PEOPLE, DOCTORING PHOTOS, ETC. </strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$25</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR OF SHOOTING<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$10</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR OF PHOTO RETOUCHING<br><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$15</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR OF VIDEO EDITING AND POST FX</span></div>
-</div>
-<div id="Pricing2" style="position:absolute;text-align:left;left:427px;top:213px;width:398px;height:413px;z-index:57;">
-<div id="wb_3DworkPricing" style="position:absolute;left:10px;top:29px;width:379px;height:300px;text-align:center;z-index:52;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>3D WORK<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:13px;"><strong>3D MODELS, SCULPTING, TEXTURING, CLOTHING, ETC.</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$25</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$10</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR OF REWORK</span></div>
-</div>
-<div id="Pricing1" style="position:absolute;text-align:left;left:10px;top:247px;width:398px;height:413px;z-index:58;">
-<div id="wb_DigitalMediaPricing" style="position:absolute;left:10px;top:33px;width:379px;height:300px;text-align:center;z-index:53;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>2D MEDIA<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:13px;"><strong>ILLUSTRATIONS, GRAPHIC DESIGN, PORN, SHIRTS, ETC.</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$20</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR<br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:37px;"><br></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:53px;"><strong>$10</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:27px;"> PER HOUR OF REWORK</span></div>
-</div>
-<div id="wb_ServicesTextExtraSmall" style="position:absolute;left:466px;top:1525px;width:815px;height:124px;text-align:center;z-index:59;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:16px;"><strong>CONTRACTS, PAYMENT, HAGGLING, ETC.<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">WHEN YOU REQUEST MY SERVICES, I WILL DO SOME BACKGROUND RESEARCH ON YOU. IF YOU SEEM LEGIT, I WILL PROVIDE A CONTRACT THAT GUARANTEES I GET PAID AND THAT YOU GET YOUR WORK FROM ME. 30% PAYMENT UP FRONT IS EXPECTED.<br><br>FOR ANY WORK I DO, I MUST BE ABLE TO USE THE FINISHED PRODUCT AS PART OF MY PORTFOLIO. <br><br>FOR PAYMENT, WE WILL DISCUSS HOW MANY HOURS IT IS LIKELY TO TAKE AND WHAT PRICE SEEMS RIGHT FOR THE WORK. THE PAYMENT SCALE ABOVE IS A REFERENCE POINT. I WILL ACCEPT PAYPAL OR COLD, HARD CASH.</span></div>
-<div id="wb_ServicesTextSmall" style="position:absolute;left:771px;top:607px;width:424px;height:88px;visibility:hidden;text-align:center;z-index:60;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>SERVICES REGION</strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:13px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">THIS PAGE SHOWS YOU HOW YOU CAN PAY ME MONEY. <br>CREATING THINGS ISN'T MY DAY JOB (YET), SO I'M NOT WORKING FOR FREE!</span></div>
-<div id="ExtraServices" style="position:absolute;text-align:left;left:434px;top:670px;width:849px;height:338px;z-index:61;">
-<div id="wb_ServicesExtraText" style="position:absolute;left:17px;top:10px;width:815px;height:318px;text-align:right;z-index:54;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>CONTRACTS, PAYMENT, HAGGLING, ETC.<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">WHEN YOU REQUEST MY SERVICES, I WILL DO SOME BACKGROUND RESEARCH ON YOU. IF YOU SEEM LEGIT, I WILL PROVIDE A CONTRACT THAT GUARANTEES I GET PAID AND THAT YOU GET YOUR WORK FROM ME. 30% PAYMENT UP FRONT IS EXPECTED.<br><br>FOR ANY WORK I DO, I MUST BE ABLE TO USE THE FINISHED PRODUCT AS PART OF MY PORTFOLIO. <br><br>FOR PAYMENT, WE WILL DISCUSS HOW MANY HOURS IT IS LIKELY TO TAKE AND WHAT PRICE SEEMS RIGHT FOR THE WORK. THE PAYMENT SCALE ABOVE IS A REFERENCE POINT. I WILL ACCEPT PAYPAL OR COLD, HARD CASH.</span></div>
-</div>
-<div id="wb_TextArt1" style="position:absolute;left:97px;top:773px;width:320px;height:91px;z-index:62;">
-<a href="#CONTACT"><img src="images/img0001.png" id="TextArt1" alt="CONTACT US TODAY!" title="CONTACT US TODAY!" style="width:320px;height:91px;"></a></div>
-<div id="ServicesBacker" style="position:absolute;text-align:left;left:82px;top:68px;width:753px;height:132px;z-index:63;">
-<div id="wb_SERVICEStext" style="position:absolute;left:10px;top:0px;width:735px;height:118px;z-index:55;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>SERVICES REGION<br></strong></span><span style="color:#FFFFFF;font-family:'Work Sans';font-size:21px;">THIS PAGE SHOWS YOU HOW YOU CAN PAY ME MONEY. <br>CREATING THINGS ISN'T MY DAY JOB (YET), SO I'M NOT WORKING FOR FREE!</span></div>
-</div>
-</div>
-</div>
-<div id="ABOUT" style="position:relative;text-align:center;width:100%;height:904px;float:left;clear:left;display:block;z-index:88;">
-<div id="ABOUT-overlay"></div>
-<div id="ABOUT_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="AboutTabs" style="position:absolute;left:51px;top:141px;width:1199px;height:141px;z-index:71;">
-<ul>
-<li><a href="#abouttabs-page-0"><span>WHAT IS THIS WEBSITE FOR?</span></a></li>
-<li><a href="#abouttabs-page-1"><span>IS THIS SITE SERIOUS?</span></a></li>
+<div id="wb_ButtonsGrid">
+<div id="ButtonsGrid">
+<div class="col-1">
+<div id="wb_SplashButtons" style="display:inline-block;width:100%;z-index:2;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="./Gallery.html" target="_self">GALLERY</a>
+</li>
+<li><a role="menuitem" href="./StingOps.html" target="_self">CURRENT&nbsp;PROJECTS</a>
+</li>
+<li><a role="menuitem" href="./About.html" target="_self">ABOUT</a>
+</li>
 </ul>
-<div style="height:119px;" id="abouttabs-page-0">
-<div id="wb_AboutText1" style="position:absolute;left:14px;top:43px;width:1180px;height:15px;text-align:center;z-index:69;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">IT IS ALEX POMORSKI'S CREATIVE HUB. A SOURCE FOR ALL HIS CREATIVE HOBBIES AND WORK.</span></div>
-</div>
-<div style="height:119px;" id="abouttabs-page-1">
-<div id="wb_AboutText2" style="position:absolute;left:5px;top:44px;width:1181px;height:15px;text-align:center;z-index:70;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">SOMEWHAT</span></div>
+
 </div>
 </div>
-<div id="wb_AboutTextSmall" style="position:absolute;left:530px;top:269px;width:250px;height:120px;visibility:hidden;z-index:72;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-size:13px;">• <strong><u>WHAT IS THIS SITE ABOUT?</u></strong><br>IT IS ALEX POMORSKI'S CREATIVE HUB. A SOURCE FOR ALL HIS CREATIVE HOBBIES AND WORK.<br><br>• <strong><u>IS THIS SITE SERIOUS? </u></strong><br>SOMEWHAT<br></span></div>
-<div id="wb_AboutTitle" style="position:absolute;left:39px;top:63px;width:1216px;height:43px;text-align:center;z-index:73;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:37px;"><strong>THE ABOUT ZONE</strong></span></div>
 </div>
 </div>
-<div id="FOOTER" style="position:absolute;text-align:center;left:0px;top:4978px;width:100%;height:55px;z-index:89;">
-<div id="FOOTER_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:9px;width:1300px;height:23px;z-index:74;">
-<div style="color:#87CEEB;font-size:12px;font-family:Work Sans;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
+<div id="wb_StingOpsGrid">
+<div id="StingOpsGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_StingOpsImage" style="display:inline-block;width:246px;height:76px;z-index:3;">
+<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/XRe4nKm[1].png" id="StingOpsImage" alt="Sting Ops"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="MasterFooter" style="position:absolute;text-align:center;left:0px;top:900px;width:100%;height:55px;z-index:14;">
+<div id="wb_FooterYear" style="display:inline-block;width:100%;z-index:4;">
+<div style="color:#87CEEB;font-size:16px;font-family:Work Sans;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
    var startYear = "20XX";
@@ -3040,28 +2483,74 @@ $(document).ready(function()
 </script>
 
 
+
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:24px;width:1300px;height:13px;text-align:center;z-index:75;">
-<span style="color:#87CEEB;font-family:'Work Sans';font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
+<div id="wb_FooterText">
+<span style="color:#87CEEB;font-family:'Work Sans';font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span>
 </div>
 </div>
-<div id="HEADER" style="position:fixed;text-align:center;left:0;top:0;right:0;height:63px;z-index:90;">
-<div id="HEADER_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_ResponsiveHeader1" style="position:absolute;left:0px;top:0px;width:1300px;height:54px;z-index:76;">
-<label class="toggle" for="ResponsiveHeader1-submenu" id="ResponsiveHeader1-title">AREA ZONE<span id="ResponsiveHeader1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
-<input type="checkbox" id="ResponsiveHeader1-submenu">
-<ul class="ResponsiveHeader1" id="ResponsiveHeader1" role="menu">
-<li><a role="menuitem" href="#GALLERY"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY</a></li>
-<li><a role="menuitem" href="#CONTACT"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
-<li><a role="menuitem" href="#SERVICES"><i class="fa fa-dollar fa-2x">&nbsp;</i><br>SERVICES</a></li>
-<li><a role="menuitem" href="#ABOUT"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
-<li><a role="menuitem" href="#SPLASH"><i class="fa fa-level-up fa-2x">&nbsp;</i><br>TOP</a></li>
+<div id="wb_HiddenHeader">
+<div id="HiddenHeader">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:inline-block;width:50px;height:50px;z-index:6;">
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image2" alt=""></a>
+</div>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:290px;height:54px;z-index:7;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
+<li><a role="menuitem" href="./StingOps.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
+<li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
+<li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_MasterHeader">
+<div id="MasterHeader">
+<div class="row">
+<div class="col-1">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:8;">
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_TopMenu" style="display:inline-block;width:100%;z-index:1009;">
+<div id="TopMenu" class="TopMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".TopMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="TopMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./Gallery.html"><i class="fa fa-paint-brush"></i>Gallery</a>
+</li>
+<li class="">
+<a href="./StingOps.html"><i class="fa fa-eye"></i>News/current projects</a>
+</li>
+<li class="">
+<a href="./About.html"><i class="fa fa-question"></i>About</a>
+</li>
+<li class="">
+<a href="./Contact.html"><i class="fa fa-comments"></i>Contact</a>
+</li>
 </ul>
 </div>
-<div id="wb_AREAZONEheaderText" style="position:absolute;left:60px;top:8px;width:226px;height:38px;z-index:77;">
-<span style="color:#FFFFFF;font-family:'Work Sans';font-weight:200;font-size:32px;">AREA ZONE</span></div>
-<div id="wb_AreaZoneEyeIcon" style="position:absolute;left:10px;top:2px;width:50px;height:50px;z-index:78;">
-<a href="#SPLASH" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

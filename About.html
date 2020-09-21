@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>THE AREA ZONE</title>
-<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body
 {
    background-color: #000000;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
+   background-image: url('https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg');
    background-attachment: fixed;
    background-position: center center;
    background-repeat: repeat;
@@ -21,9 +21,6 @@ body
    margin: 0;
    padding: 0;
 }
-</style>
-<link href="font-awesome.min.css" rel="stylesheet">
-<style>
 a
 {
    color: #00FFFF;
@@ -46,6 +43,9 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
+</style>
+<link href="font-awesome.min.css" rel="stylesheet">
+<style>
 @media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
 }
@@ -77,7 +77,6 @@ input:focus, textarea:focus, select:focus
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
 #wb_A1 
@@ -105,7 +104,6 @@ input:focus, textarea:focus, select:focus
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
 #wb_SelfPortrait
@@ -152,7 +150,6 @@ input:focus, textarea:focus, select:focus
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
 #FlexGridAbout
@@ -282,7 +279,6 @@ input:focus, textarea:focus, select:focus
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
-   -moz-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
 #wb_FooterText 
@@ -424,7 +420,7 @@ input:focus, textarea:focus, select:focus
 .ThemeableMenu1 .nav ul
 {
    margin-top: 0;
-   margin-bottom: 10px;
+   margin-bottom: 0;
 }
 .ThemeableMenu1 .nav ul ul
 {
@@ -450,7 +446,7 @@ input:focus, textarea:focus, select:focus
 {
    display: none;
 }
-.ThemeableMenu1 .collapse.in 
+.ThemeableMenu1 .collapse.show 
 {
    display: block;
 }
@@ -501,7 +497,7 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    background-clip: padding-box;
 }
-.ThemeableMenu1 .dropdown-menu .divider 
+.ThemeableMenu1 .dropdown-menu .divider
 {
    height: 1px;
    margin: 9px 0;
@@ -525,20 +521,21 @@ input:focus, textarea:focus, select:focus
    background-color: #EDEDED;
    background-image: none;
 }
-.ThemeableMenu1 .dropdown-menu>.active>a,
-.ThemeableMenu1 .dropdown-menu>.active>a:hover,
-.ThemeableMenu1 .dropdown-menu>.active>a:focus 
+.ThemeableMenu1 .dropdown-menu>li>a.active,
+.ThemeableMenu1 .dropdown-menu>li>a.active:hover,
+.ThemeableMenu1 .dropdown-menu>li>a.active:focus
 {
-   color: #fff;
+   color: #2B2B2B;
+   background-color: #EDEDED;
+   background-image: none;
    text-decoration: none;
    outline: 0;
-   background-color: #343A40;
 }
-.ThemeableMenu1 .open>.dropdown-menu 
+.ThemeableMenu1 .show>.dropdown-menu 
 {
    display: block;
 }
-.ThemeableMenu1 .open>a 
+.ThemeableMenu1 .show>a 
 {
    outline: 0;
 }
@@ -569,9 +566,9 @@ input:focus, textarea:focus, select:focus
    display: block;
    padding: 15px 15px 15px 15px;
 }
-.ThemeableMenu1 .nav .open>a,
-.ThemeableMenu1 .nav .open>a:hover,
-.ThemeableMenu1 .nav .open>a:focus 
+.ThemeableMenu1 .nav .show>a,
+.ThemeableMenu1 .nav .show>a:hover,
+.ThemeableMenu1 .nav .show>a:focus 
 {
    background-color: #ccc;
    border-color: #343A40;
@@ -595,27 +592,24 @@ input:focus, textarea:focus, select:focus
 .ThemeableMenu1
 {
    position: relative;
-   border: 1px solid transparent;
-   background-color: transparent;
-   background-image: none;
 }
 .ThemeableMenu1:before,
-.ThemeableMenu1:after 
+.ThemeableMenu1:after
 {
    content: " ";
    display: table;
 }
-.ThemeableMenu1:after 
+.ThemeableMenu1:after
 {
    clear: both;
 }
 .ThemeableMenu1 .navbar-header:before,
-.ThemeableMenu1 .navbar-header:after 
+.ThemeableMenu1 .navbar-header:after
 {
    content: " ";
    display: table;
 }
-.ThemeableMenu1 .navbar-header:after 
+.ThemeableMenu1 .navbar-header:after
 {
    clear: both;
 }
@@ -625,16 +619,16 @@ input:focus, textarea:focus, select:focus
    -webkit-overflow-scrolling: touch;
 }
 .ThemeableMenu1-navbar-collapse:before,
-.ThemeableMenu1-navbar-collapse:after 
+.ThemeableMenu1-navbar-collapse:after
 {
    content: " ";
    display: table;
 }
-.ThemeableMenu1-navbar-collapse:after 
+.ThemeableMenu1-navbar-collapse:after
 {
    clear: both;
 }
-.ThemeableMenu1-navbar-collapse.in 
+.ThemeableMenu1-navbar-collapse.show 
 {
    overflow-y: auto;
 }
@@ -654,48 +648,48 @@ input:focus, textarea:focus, select:focus
    height: 2px;
    border-radius: 1px;
 }
-.ThemeableMenu1 .navbar-toggle .icon-bar+.icon-bar 
+.ThemeableMenu1 .navbar-toggle .icon-bar+.icon-bar
 {
    margin-top: 4px;
 }
-.ThemeableMenu1 .navbar-nav 
+.ThemeableMenu1 .navbar-nav
 {
    margin: 6px -15px;
 }
-.ThemeableMenu1 .navbar-nav>li>.dropdown-menu 
+.ThemeableMenu1 .navbar-nav>li>.dropdown-menu
 {
    margin-top: 0;
 }
-.ThemeableMenu1 .navbar-nav>li>a 
+.ThemeableMenu1 .navbar-nav>li>a
 {
    color: #2B2B2B;
 }
 .ThemeableMenu1 .navbar-nav>li>a:hover,
-.ThemeableMenu1 .navbar-nav>li>a:focus 
+.ThemeableMenu1 .navbar-nav>li>a:focus
 {
    background-color: #EDEDED;
    background-image: none;
    color: #2B2B2B;
    text-decoration: none;
 }
-.ThemeableMenu1 .navbar-nav>.active>a,
-.ThemeableMenu1 .navbar-nav>.active>a:hover,
-.ThemeableMenu1 .navbar-nav>.active>a:focus 
+.ThemeableMenu1 .navbar-nav>li>a.active,
+.ThemeableMenu1 .navbar-nav>li>a.active:hover,
+.ThemeableMenu1 .navbar-nav>li>a.active:focus
 {
    color: #2B2B2B;
    background-color: #EDEDED;
    background-image: none;
 }
-.ThemeableMenu1 .navbar-toggle 
+.ThemeableMenu1 .navbar-toggle
 {
    border: 1px solid rgba(43,43,43,0.10);
 }
 .ThemeableMenu1 .navbar-toggle:hover,
-.ThemeableMenu1 .navbar-toggle:focus 
+.ThemeableMenu1 .navbar-toggle:focus
 {
    background-color: transparent;
 }
-.ThemeableMenu1 .navbar-toggle .icon-bar 
+.ThemeableMenu1 .navbar-toggle .icon-bar
 {
    background-color: #A2A2A2;
 }
@@ -704,69 +698,68 @@ input:focus, textarea:focus, select:focus
    border-color: rgba(197,197,197,0.00);
 }
 .ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret,
-.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret 
+.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret
 {
    border-top-color: #2B2B2B;
    border-bottom-color: #2B2B2B;
 }
-.ThemeableMenu1 .navbar-nav>.open>a,
-.ThemeableMenu1 .navbar-nav>.open>a:hover,
-.ThemeableMenu1 .navbar-nav>.open>a:focus 
+.ThemeableMenu1 .navbar-nav>.show>a,
+.ThemeableMenu1 .navbar-nav>.show>a:hover,
+.ThemeableMenu1 .navbar-nav>.show>a:focus
 {
    background-color: #EDEDED;
    background-image: none;
    color: #2B2B2B;
 }
-.ThemeableMenu1 .navbar-nav>.open>a .caret,
-.ThemeableMenu1 .navbar-nav>.open>a:hover .caret,
-.ThemeableMenu1 .navbar-nav>.open>a:focus .caret 
+.ThemeableMenu1 .navbar-nav>.show>a .caret,
+.ThemeableMenu1 .navbar-nav>.show>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.show>a:focus .caret
 {
    border-top-color: #2B2B2B;
    border-bottom-color: #2B2B2B;
 }
-.ThemeableMenu1 .navbar-nav>.dropdown>a .caret 
+.ThemeableMenu1 .navbar-nav>.dropdown>a .caret
 {
    border-top-color: #2B2B2B;
    border-bottom-color: #2B2B2B;
 }
-.ThemeableMenu1 .navbar-link 
+.ThemeableMenu1 .navbar-link
 {
    color: #2B2B2B;
 }
-.ThemeableMenu1 .navbar-link:hover 
+.ThemeableMenu1 .navbar-link:hover
 {
    color: #2B2B2B;
 }
 .ThemeableMenu1 .navbar-header
 {
    color: #A2A2A2;
-   height: 48px;
 }
 @media (min-width: 480px) 
 {
-.ThemeableMenu1 .navbar-right .dropdown-menu 
+.ThemeableMenu1 .navbar-right .dropdown-menu
 {
    right: 0;
    left: auto;
 }
-.ThemeableMenu1 .navbar-header 
+.ThemeableMenu1 .navbar-header
 {
    float: left;
 }
-.ThemeableMenu1-navbar-collapse 
+.ThemeableMenu1-navbar-collapse
 {
    width: auto;
    border-top: 0;
    box-shadow: none;
 }
-.ThemeableMenu1-navbar-collapse.collapse 
+.ThemeableMenu1-navbar-collapse.collapse
 {
    display: block!important;
    height: auto!important;
    padding-bottom: 0;
    overflow: visible!important;
 }
-.ThemeableMenu1-navbar-collapse.in 
+.ThemeableMenu1-navbar-collapse.show
 {
    overflow-y: auto;
 }
@@ -784,13 +777,13 @@ input:focus, textarea:focus, select:focus
    float: left;
 }
 .ThemeableMenu1 .container>.navbar-header,
-.ThemeableMenu1 .container>.ThemeableMenu1-navbar-collapse 
+.ThemeableMenu1 .container>.ThemeableMenu1-navbar-collapse
 {
    margin-right: 0;
    margin-left: 0;
 }
 .ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret,
-.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret 
+.ThemeableMenu1 .navbar-nav>.dropdown>a:focus .caret
 {
    border-top-color: #007BFF;
    border-bottom-color: #007BFF;
@@ -800,17 +793,19 @@ input:focus, textarea:focus, select:focus
 {
 .ThemeableMenu1 
 {
-   border-color: rgba(23,23,23,0.00);
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid rgba(23,23,23,0.00);
 }
-.ThemeableMenu1 .navbar-nav 
+.ThemeableMenu1 .navbar-nav
 {
    margin: 0;
    background-color: #FFFFFF;
    background-image: none;
 }
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu 
+.ThemeableMenu1 .navbar-nav .show .dropdown-menu
 {
-   position: static;
+   position: static !important;
    float: none;
    width: auto;
    margin-top: 0;
@@ -818,19 +813,14 @@ input:focus, textarea:focus, select:focus
    border: 0;
    box-shadow: none;
 }
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a,
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu .dropdown-header 
+.ThemeableMenu1 .navbar-nav .show .dropdown-menu>li>a,
+.ThemeableMenu1 .navbar-nav .show .dropdown-menu .dropdown-header
 {
    padding: 5px 15px 5px 25px;
 }
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a 
+.ThemeableMenu1 .navbar-nav .show .dropdown-menu>li>a 
 {
    line-height: 20px;
-}
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a:hover,
-.ThemeableMenu1 .navbar-nav .open .dropdown-menu>li>a:focus 
-{
-   background-image: none;
 }
 }
 @media (min-width: 480px) 
@@ -839,7 +829,7 @@ input:focus, textarea:focus, select:focus
 {
    background-color: transparent;
    background-image: none;
-   border-color: rgba(23,23,23,0.00);
+   border: 1px solid rgba(23,23,23,0.00);
    border-radius: 0px;
 }
 .ThemeableMenu1 .navbar-nav>li>a 
@@ -847,29 +837,29 @@ input:focus, textarea:focus, select:focus
    color: #A2A2A2;
 }
 .ThemeableMenu1 .navbar-nav>li>a:hover,
-.ThemeableMenu1 .navbar-nav>li>a:focus 
+.ThemeableMenu1 .navbar-nav>li>a:focus
 {
    color: #007BFF;
    background-color: transparent;
    background-image: none;
 }
-.ThemeableMenu1 .navbar-nav>.active>a,
-.ThemeableMenu1 .navbar-nav>.active>a:hover,
-.ThemeableMenu1 .navbar-nav>.active>a:focus 
+.ThemeableMenu1 .navbar-nav>li>a.active,
+.ThemeableMenu1 .navbar-nav>li>a.active:hover,
+.ThemeableMenu1 .navbar-nav>li>a.active:focus
 {
    color: #007BFF;
    background-color: transparent;
    background-image: none;
 }
-.ThemeableMenu1 .navbar-nav>.open>a,
-.ThemeableMenu1 .navbar-nav>.open>a:hover,
-.ThemeableMenu1 .navbar-nav>.open>a:focus 
+.ThemeableMenu1 .navbar-nav>.show>a,
+.ThemeableMenu1 .navbar-nav>.show>a:hover,
+.ThemeableMenu1 .navbar-nav>.show>a:focus
 {
    background-color: transparent;
    background-image: none;
    color: #007BFF;
 }
-.ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret 
+.ThemeableMenu1 .navbar-nav>.dropdown>a:hover .caret
 {
    border-top-color: #007BFF;
    border-bottom-color: #007BFF;
@@ -879,21 +869,21 @@ input:focus, textarea:focus, select:focus
    border-top-color: #A2A2A2;
    border-bottom-color: #A2A2A2;
 }
-.ThemeableMenu1 .navbar-nav > li.active > a > .caret,
-.ThemeableMenu1 .navbar-nav > li.active > a:hover > .caret,
-.ThemeableMenu1 .navbar-nav > li.active > a:focus > .caret
+.ThemeableMenu1 .navbar-nav > li > a.active > .caret,
+.ThemeableMenu1 .navbar-nav > li > a.active:hover > .caret,
+.ThemeableMenu1 .navbar-nav > li > a.active:focus > .caret
 {
    border-top-color: #007BFF;
    border-bottom-color: #007BFF;
 }
-.ThemeableMenu1 .navbar-nav>.open>a .caret,
-.ThemeableMenu1 .navbar-nav>.open>a:hover .caret,
-.ThemeableMenu1 .navbar-nav>.open>a:focus .caret 
+.ThemeableMenu1 .navbar-nav>.show>a .caret,
+.ThemeableMenu1 .navbar-nav>.show>a:hover .caret,
+.ThemeableMenu1 .navbar-nav>.show>a:focus .caret
 {
    border-top-color: #007BFF;
    border-bottom-color: #007BFF;
 }
-.ThemeableMenu1 .navbar-link 
+.ThemeableMenu1 .navbar-link
 {
    color: #A2A2A2;
 }
@@ -915,28 +905,24 @@ input:focus, textarea:focus, select:focus
 {
    color: #A2A2A2;
    -webkit-transition: color 500ms linear 0ms;
-   -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
 #ThemeableMenu1 li:hover
 {
    color: #007BFF;
    -webkit-transition: color 500ms linear 0ms;
-   -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
 #ThemeableMenu1 li a
 {
    color: #A2A2A2;
    -webkit-transition: color 500ms linear 0ms;
-   -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
 #ThemeableMenu1 li a:hover
 {
    color: #007BFF;
    -webkit-transition: color 500ms linear 0ms;
-   -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
 #wb_AreaZoneEyeIcon
@@ -1004,8 +990,14 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    grid-column: span 12;
-   -webkit-align-self: center;
-   align-self: center;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: center;
+   -webkit-align-self: stretch;
+   -webkit-align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
    text-align: left;
 }
 @media (max-width: 320px)
@@ -1061,8 +1053,6 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1 ul li
 {
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.00);
    display: list-item;
    float: left;
    list-style: none;
@@ -1073,8 +1063,10 @@ input:focus, textarea:focus, select:focus
    font-size: 20px;
    width: 20px;
 }
-#wb_ResponsiveMenu1 ul li a 
+#wb_ResponsiveMenu1 ul li a
 {
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.00);
    color: #FFFFFF;
    font-family: "Work Sans";
    font-weight: normal;
@@ -1093,7 +1085,7 @@ input:focus, textarea:focus, select:focus
    display: block;
 }
 #wb_ResponsiveMenu1 li a:hover, #wb_ResponsiveMenu1 li .active
-{ 
+{
    background-color: #4B0082;
    color: #FFFFFF;
 }
@@ -1109,12 +1101,15 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1 ul ul li 
 {
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.39);
-   color: #FFFFFF;
    float: none;
    position: relative;
    width: 109px;
+}
+#wb_ResponsiveMenu1 ul ul li a
+{
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.39);
+   color: #FFFFFF;
 }
 #wb_ResponsiveMenu1 ul ul li a:hover, #wb_ResponsiveMenu1 ul ul li .active
 {
@@ -1135,13 +1130,13 @@ input:focus, textarea:focus, select:focus
    text-align: left;
    vertical-align: middle;
 }
-#wb_ResponsiveMenu1 ul ul ul li
+#wb_ResponsiveMenu1 ul ul ul li 
 {
    left: 109px;
    position: relative;
    top: -54px;
 }
-#wb_ResponsiveMenu1 .arrow-down
+#wb_ResponsiveMenu1 .arrow-down 
 {
    display: inline-block;
    width: 0;
@@ -1153,7 +1148,7 @@ input:focus, textarea:focus, select:focus
    border-left: 4px solid transparent;
    border-bottom: 0 dotted;
 }
-#wb_ResponsiveMenu1 .arrow-left
+#wb_ResponsiveMenu1 .arrow-left 
 {
    display: inline-block;
    width: 0;
@@ -1166,7 +1161,7 @@ input:focus, textarea:focus, select:focus
    border-right: 0 dotted;
 }
 #wb_ResponsiveMenu1 li a:hover .arrow-down
-{
+{ 
    border-top-color: #FFFFFF;
 }
 #wb_ResponsiveMenu1 ul ul li a:hover .arrow-left, #wb_ResponsiveMenu1 ul ul li .active .arrow-left
@@ -1179,7 +1174,7 @@ input:focus, textarea:focus, select:focus
 }
 @media all and (max-width:1000px) 
 {
-#wb_ResponsiveMenu1 
+#wb_ResponsiveMenu1
 {
    margin: 0;
    text-align: left;
@@ -1207,7 +1202,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1 > ul > li > a 
 {
-   height: auto !important;
+   height: auto !important;   margin: 0;
 }
 #wb_ResponsiveMenu1 .toggle 
 {
@@ -1320,7 +1315,7 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 #wb_ResponsiveMenu1 .toggle:hover .arrow-down, #wb_ResponsiveMenu1 li .active .arrow-down
-{ 
+{
    border-top-color: #FFFFFF;
 }
 #wb_ResponsiveMenu1 ul li ul li .toggle .arrow-down 
@@ -1328,7 +1323,7 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 #wb_ResponsiveMenu1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveMenu1 ul li ul li .active .arrow-down
-{ 
+{
    border-top-color: #FFFFFF;
 }
 }
@@ -1343,7 +1338,7 @@ input:focus, textarea:focus, select:focus
 body
 {
    background-color: #000000;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
+   background-image: url('https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg');
    background-attachment: fixed;
    background-position: center center;
    background-repeat: repeat;
@@ -1362,8 +1357,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_AboutTitle
 {
@@ -1384,8 +1377,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_A1
 {
@@ -1426,8 +1417,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_WhoIsThisGuy
 {
@@ -1438,13 +1427,6 @@ body
 {
    visibility: visible !important;
    display: grid !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(0,0,0,0.20);
-   background-image: none;
 }
 #FlexGridAbout
 {
@@ -1706,8 +1688,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_Q1
 {
@@ -1726,8 +1706,6 @@ body
    height: 13px !important;
    visibility: visible !important;
    display: inline !important;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_FooterText
 {
@@ -1747,13 +1725,6 @@ body
 {
    visibility: visible !important;
    display: table !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(23,23,23,0.00);
-   background-image: none;
 }
 #wb_header
 {
@@ -1821,11 +1792,6 @@ body
 {
    visibility: hidden !important;
    display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
    background-color: transparent;
    background-image: none;
 }
@@ -1850,12 +1816,16 @@ body
 }
 #HiddenHeader > .row > .col-1
 {
-   display: block;
+   display: flex;
    grid-column: span 12;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   -webkit-align-self: center;
-   align-self: center;
+   -webkit-align-content: center;
+   -webkit-align-items: center;
+   align-content: center;
+   align-items: center;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
    text-align: left;
 }
 #wb_Image4
@@ -1888,17 +1858,15 @@ body
    visibility: visible !important;
    font-size: 8px;
    font-family: Arial;
-   font-weight: normal;
+   font-weight: 0;
    font-style: normal;
    text-decoration: none;
-   background-color: #000000;
-   background: linear-gradient(to top, #000000 0%, #4B0082 100%);
 }
 #Footer
 {
    width: 100%;
 }
-#Footer_Container
+#Footer-container
 {
    width: 1000px !important;
 }
@@ -1908,7 +1876,7 @@ body
 body
 {
    background-color: #000000;
-   background-image: url(https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg);
+   background-image: url('https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg');
    background-attachment: fixed;
    background-position: center center;
    background-repeat: no-repeat;
@@ -1928,8 +1896,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_AboutTitle
 {
@@ -1950,8 +1916,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_A1
 {
@@ -1992,8 +1956,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_WhoIsThisGuy
 {
@@ -2004,13 +1966,6 @@ body
 {
    visibility: visible !important;
    display: grid !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(0,0,0,0.20);
-   background-image: none;
 }
 #FlexGridAbout
 {
@@ -2272,8 +2227,6 @@ body
    flex-basis: 100%;
    -webkit-align-self: auto;
    align-self: auto;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_Q1
 {
@@ -2292,8 +2245,6 @@ body
    height: 13px !important;
    visibility: visible !important;
    display: inline !important;
-   background-color: transparent;
-   background-image: none;
 }
 #wb_FooterText
 {
@@ -2313,13 +2264,6 @@ body
 {
    visibility: hidden !important;
    display: none !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: rgba(23,23,23,0.00);
-   background-image: none;
 }
 #wb_header
 {
@@ -2387,11 +2331,6 @@ body
 {
    visibility: visible !important;
    display: table !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
    background-color: transparent;
    background-image: none;
 }
@@ -2416,13 +2355,17 @@ body
 }
 #HiddenHeader > .row > .col-1
 {
-   display: block;
+   display: flex;
    width: 100%;
    grid-column: span 12;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   -webkit-align-self: center;
-   align-self: center;
+   -webkit-align-content: center;
+   -webkit-align-items: center;
+   align-content: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
    text-align: center;
 }
 #wb_Image4
@@ -2455,17 +2398,15 @@ body
    visibility: visible !important;
    font-size: 13px;
    font-family: Arial;
-   font-weight: normal;
+   font-weight: 0;
    font-style: normal;
    text-decoration: none;
-   background-color: #000000;
-   background: linear-gradient(to top, #000000 0%, #4B0082 100%);
 }
 #Footer
 {
    width: 100%;
 }
-#Footer_Container
+#Footer-container
 {
    width: 320px !important;
 }
@@ -2474,7 +2415,8 @@ body
 <script src="jquery-1.12.4.min.js"></script>
 <script src="wb.lazyload.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="transition.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
 <script src="collapse.min.js"></script>
 <script src="dropdown.min.js"></script>
 <script>
@@ -2485,7 +2427,8 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
    {
       if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
       {
@@ -2531,7 +2474,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1006;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:6;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -2587,7 +2530,7 @@ $(document).ready(function()
 </div>
 </div>
 <div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:935px;width:100%;height:65px;z-index:14;">
-<div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="Footer-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:9;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>

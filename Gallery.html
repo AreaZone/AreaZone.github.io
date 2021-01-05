@@ -1067,12 +1067,12 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
-#wb_Image1
+#wb_AZicon
 {
    margin: 0;
    vertical-align: top;
 }
-#Image1
+#AZicon
 {
    border: 0px solid #000000;
    padding: 0;
@@ -1118,8 +1118,8 @@ input:focus, textarea:focus, select:focus
       "VidTitle VidTitle AnimTitle AnimTitle"
       "Videos Videos Animation Animation"
       "VidText VidText AnimText AnimText"
-      ". . NewGrounds1 NewGrounds2"
-      ". . NewGtext1 NewGtext2";
+      "OtherLinks OtherLinks NewGrounds1 NewGrounds2"
+      "OtherLinks OtherLinks NewGtext1 NewGtext2";
 }
 #FlexGrid1 .header
 {
@@ -1277,6 +1277,25 @@ input:focus, textarea:focus, select:focus
 {
    display: flex;
    grid-area: AnimText;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .OtherLinks
+{
+   display: flex;
+   grid-area: OtherLinks;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
@@ -1708,6 +1727,88 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
+#wb_OtherStuff 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_OtherStuff div
+{
+   text-align: center;
+}
+#wb_OtherStuff
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#LinksTable
+{
+   border: 1px solid transparent;
+   background-color: transparent;
+   background-image: none;
+   border-collapse: separate;
+   border-spacing: 1px;
+   margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#LinksTable td
+{
+   padding: 0;
+}
+#LinksTable p, #LinksTable ul
+{
+   margin: 0;
+   padding: 0;
+}
+#LinksTable .cell0
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: top;
+   font-size: 0;
+}
+#LinksTable .cell1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   font-size: 0;
+}
+#wb_GoogleDocsLinks 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_GoogleDocsLinks div
+{
+   text-align: center;
+}
+#wb_GoogleDocsLinks
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
 #Footer
 {
    background-color: #000000;
@@ -2095,7 +2196,7 @@ body
    font-weight: bold;
    font-size: 16px;
 }
-#wb_Image1
+#wb_AZicon
 {
    width: 50px !important;
    height: 50px !important;
@@ -2104,7 +2205,7 @@ body
    margin: 0;
    padding: 0;
 }
-#Image1
+#AZicon
 {
    width: 50px;
    height: 50px;
@@ -2152,8 +2253,8 @@ body
       "VidTitle VidTitle AnimTitle AnimTitle"
       "Videos Videos Animation Animation"
       "VidText VidText AnimText AnimText"
-      ". . NewGrounds1 NewGrounds2"
-      ". . NewGtext1 NewGtext2";
+      "OtherLinks OtherLinks NewGrounds1 NewGrounds2"
+      "OtherLinks OtherLinks NewGtext1 NewGtext2";
 }
 #FlexGrid1 .header
 {
@@ -2407,9 +2508,27 @@ body
    -webkit-align-content: flex-start;
    align-content: flex-start;
 }
-#FlexGrid1 ..
+#FlexGrid1 .OtherLinks
 {
    display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 ..
+{
+   display: none;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
@@ -2465,9 +2584,63 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_OtherStuff
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OtherStuff
+{
+   margin: 0;
+   padding: 0;
+}
+#LinksTable
+{
+   width: 488px !important;
+   height: 130px !important;
+   visibility: visible !important;
+   display: table !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#LinksTable .cell0
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#LinksTable .cell1
+{
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 20px;
+   text-align: left;
+   line-height: 24px;
+}
+#wb_GoogleDocsLinks
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_GoogleDocsLinks
+{
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
-   top: 1044px !important;
+   top: 1091px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -2489,7 +2662,7 @@ body
 }
 #GALLERY
 {
-   height: 1244px !important;
+   height: 1380px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
@@ -2506,7 +2679,7 @@ body
 #GALLERY
 {
     width: 100%;
-    height: 1244px;
+    height: 1380px;
 }
 #wb_Collaborations
 {
@@ -2684,8 +2857,8 @@ body
 {
    width: 305px !important;
    height: 177px !important;
-   visibility: hidden !important;
-   display: none !important;
+   visibility: visible !important;
+   display: inline !important;
    -webkit-flex-grow: 0;
    flex-grow: 0;
    -webkit-flex-shrink: 0;
@@ -2868,7 +3041,7 @@ body
    font-weight: bold;
    font-size: 16px;
 }
-#wb_Image1
+#wb_AZicon
 {
    width: 50px !important;
    height: 50px !important;
@@ -2877,7 +3050,7 @@ body
    margin: 0;
    padding: 0;
 }
-#Image1
+#AZicon
 {
    width: 50px;
    height: 50px;
@@ -2929,8 +3102,8 @@ body
       "AnimTitle AnimTitle AnimTitle AnimTitle"
       "Animation Animation Animation Animation"
       "AnimText AnimText AnimText AnimText"
-      "NewGrounds1 NewGrounds1 NewGrounds2 NewGrounds2"
-      "NewGtext1 NewGtext1 NewGtext2 NewGtext2";
+      "NewGtext1 NewGtext1 NewGtext2 NewGtext2"
+      "OtherLinks OtherLinks OtherLinks OtherLinks";
 }
 #FlexGrid1 .header
 {
@@ -3094,43 +3267,43 @@ body
    -webkit-align-content: flex-start;
    align-content: flex-start;
 }
-#FlexGrid1 .NewGrounds1
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .NewGrounds2
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
 #FlexGrid1 .NewGtext1
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .NewGtext2
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .OtherLinks
 {
    display: flex;
    background-color: transparent;
@@ -3148,9 +3321,9 @@ body
    -webkit-align-content: center;
    align-content: center;
 }
-#FlexGrid1 .NewGtext2
+#FlexGrid1 ..
 {
-   display: flex;
+   display: none;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
@@ -3187,24 +3360,6 @@ body
 #FlexGrid1 .AnimText
 {
    display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 ..
-{
-   display: none;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
@@ -3260,9 +3415,63 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_OtherStuff
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OtherStuff
+{
+   margin: 0;
+   padding: 0;
+}
+#LinksTable
+{
+   width: 320px !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: table !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-align-self: stretch;
+   align-self: stretch;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#LinksTable .cell0
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#LinksTable .cell1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#wb_GoogleDocsLinks
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_GoogleDocsLinks
+{
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
-   top: 1235px !important;
+   top: 1434px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -3306,9 +3515,11 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:990px;float:left;clear:left;display:block;z-index:36;">
+<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:905px;float:left;clear:left;display:block;z-index:50;">
 <div id="GALLERY-overlay"></div>
 <div id="GALLERY-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:17;">
+<span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA</strong></span></div>
 <div id="FlexGrid1">
 <div class="header">
 </div>
@@ -3319,7 +3530,7 @@ $(document).ready(function()
 </div>
 <div class="Doodles">
 <div id="wb_Doodles">
-<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">ILLUSTRATION &amp; DESIGN<br>[<a href="https://drive.google.com/file/d/1ROla3HKg6ohXtrGkkiuVdVRkQFs7Ahip/view?usp=sharing" title="See more on my DeviantArt page... ">Portfolio PDF</a>] [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">ILLUSTRATION &amp; DESIGN<br></span><span style="color:#FFFFFF;font-family:Tahoma;font-size:15px;">[<a href="https://drive.google.com/file/d/1ROla3HKg6ohXtrGkkiuVdVRkQFs7Ahip/view?usp=sharing" title="See more on my DeviantArt page... ">Portfolio PDF</a>] [<a href="https://drive.google.com/file/d/1ZK_aS2jzk0-siS0n1M8IBPpKZx8d9hbJ/view?usp=sharing">Writing Samples</a>] [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span>
 </div>
 <div id="wb_DoodleGallery" style="display:inline-block;width:236px;height:189px;z-index:2;">
 <div id="DoodleGallery">
@@ -3368,7 +3579,7 @@ $(document).ready(function()
 </div>
 <div class="VidText">
 <div id="wb_VideoLinkText">
-<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:21px;">[<a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg" title="AREA ZONE's YOUTUBE">Area Zone YouTube</a>]<br>[<a href="https://vimeo.com/rickswan" title="AREA ZONE's VIMEO">Area Zone Vimeo</a>]</span>
 </div>
 </div>
 <div class="AnimText">
@@ -3376,13 +3587,29 @@ $(document).ready(function()
 <span style="color:#FFFFFF;font-family:Tahoma;font-size:21px;">NEWGROUNDS FLASH ANIMATIONS (old school)</span>
 </div>
 </div>
+<div class="OtherLinks">
+<table style="display:table;width:620px;height:111px;" id="LinksTable">
+<tr>
+<td class="cell0"><div id="wb_OtherStuff">
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">OTHER LINKS &amp; STUFF</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="cell1"><div id="wb_GoogleDocsLinks">
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:17px;">[<a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing">Guides and notes for various software, hardware, art, etc.</a>]</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="NewGrounds1">
-<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:10;">
+<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:13;">
 <a href="https://mr-a.newgrounds.com/movies" title="Mr-A&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/354000/flash_354072.gif?f1322705103" id="Mr-Anewgrounds" alt="Mr-A&#39;s Animations"></a>
 </div>
 </div>
 <div class="NewGrounds2">
-<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:11;">
+<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:14;">
 <a href="https://mr-bond.newgrounds.com/movies" title="Mr-Bond&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/186000/flash_186719.gif?f1322704392" id="Mr-BondNewgrounds" alt="Mr-Bond&#39;s Animations"></a>
 </div>
 </div>
@@ -3397,18 +3624,16 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:15;">
-<span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA</strong></span></div>
 </div>
 </div>
 <div id="wb_HiddenHeader">
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:16;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:19;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:17;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:20;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -3427,12 +3652,12 @@ $(document).ready(function()
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:50px;height:50px;z-index:18;">
-<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image1" alt=""></a>
+<div id="wb_AZicon" style="display:inline-block;width:50px;height:50px;z-index:21;">
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AZicon" alt=""></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:19;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:22;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -3465,9 +3690,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:978px;width:100%;height:65px;z-index:39;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:955px;width:100%;height:65px;z-index:53;">
 <div id="Footer-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:34;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:44;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3484,7 +3709,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:35;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:45;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

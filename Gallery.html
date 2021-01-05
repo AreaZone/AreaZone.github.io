@@ -1736,6 +1736,13 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
+#wb_OtherStuff
+{
+   color: #FFFFFF;
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 27px;
+}
 #wb_OtherStuff div
 {
    text-align: center;
@@ -1749,7 +1756,7 @@ input:focus, textarea:focus, select:focus
 }
 #LinksTable
 {
-   border: 1px solid transparent;
+   border: 0px solid transparent;
    background-color: transparent;
    background-image: none;
    border-collapse: separate;
@@ -1775,18 +1782,16 @@ input:focus, textarea:focus, select:focus
 {
    background-color: transparent;
    background-image: none;
-   border: 1px #C0C0C0 solid;
    text-align: left;
-   vertical-align: top;
+   vertical-align: bottom;
    font-size: 0;
 }
 #LinksTable .cell1
 {
    background-color: transparent;
    background-image: none;
-   border: 1px #C0C0C0 solid;
    text-align: center;
-   vertical-align: top;
+   vertical-align: middle;
    font-size: 0;
 }
 #wb_GoogleDocsLinks 
@@ -1828,6 +1833,13 @@ body
    visibility: visible !important;
    display: block !important;
    margin: 0;
+   background-color: transparent;
+   background-image: url('https://nasaviz.gsfc.nasa.gov/vis/a010000/a012000/a012086/c-1024.jpg');
+   background-repeat: repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   background-position: 50% 0;
+   background-size: cover;
 }
 #GALLERY
 {
@@ -2591,13 +2603,17 @@ body
 }
 #wb_OtherStuff
 {
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 27px;
    margin: 0;
    padding: 0;
+   text-align: center;
 }
 #LinksTable
 {
-   width: 488px !important;
-   height: 130px !important;
+   width: 492px !important;
+   height: 85px !important;
    visibility: visible !important;
    display: table !important;
    -webkit-flex-grow: 0;
@@ -2662,10 +2678,16 @@ body
 }
 #GALLERY
 {
-   height: 1380px !important;
+   height: 1268px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
+   background-color: transparent;
+   background-image: url('https://nasaviz.gsfc.nasa.gov/vis/a010000/a012000/a012086/c-1024.jpg');
+   background-repeat: repeat;
+   background-position: center top !important;
+   background-attachment: fixed;
+   background-size: cover;
 }
 #GALLERY
 {
@@ -2679,7 +2701,7 @@ body
 #GALLERY
 {
     width: 100%;
-    height: 1380px;
+    height: 1268px;
 }
 #wb_Collaborations
 {
@@ -2745,8 +2767,8 @@ body
 {
    width: 140px !important;
    height: 90px !important;
-   visibility: visible !important;
-   display: inline !important;
+   visibility: hidden !important;
+   display: none !important;
    margin: 0;
    -webkit-flex-grow: 0;
    flex-grow: 0;
@@ -2763,7 +2785,7 @@ body
 }
 #wb_MyAnimations
 {
-   width: 140px !important;
+   width: auto !important;
    height: auto !important;
    visibility: visible !important;
    display: inline !important;
@@ -2857,8 +2879,8 @@ body
 {
    width: 305px !important;
    height: 177px !important;
-   visibility: visible !important;
-   display: inline !important;
+   visibility: hidden !important;
+   display: none !important;
    -webkit-flex-grow: 0;
    flex-grow: 0;
    -webkit-flex-shrink: 0;
@@ -3091,7 +3113,7 @@ body
    grid-column-gap: 0px;
    grid-row-gap: 0px;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto;
+   grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto;
    grid-template-areas:
       "header header header header"
       "SoftwareAndHardware SoftwareAndHardware SoftwareAndHardware SoftwareAndHardware"
@@ -3102,6 +3124,7 @@ body
       "AnimTitle AnimTitle AnimTitle AnimTitle"
       "Animation Animation Animation Animation"
       "AnimText AnimText AnimText AnimText"
+      "NewGrounds1 NewGrounds1 NewGrounds1 NewGrounds1"
       "NewGtext1 NewGtext1 NewGtext2 NewGtext2"
       "OtherLinks OtherLinks OtherLinks OtherLinks";
 }
@@ -3267,9 +3290,9 @@ body
    -webkit-align-content: flex-start;
    align-content: flex-start;
 }
-#FlexGrid1 .NewGtext1
+#FlexGrid1 .NewGrounds1*
 {
-   display: flex;
+   display: none;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
@@ -3303,7 +3326,7 @@ body
    -webkit-align-content: flex-start;
    align-content: flex-start;
 }
-#FlexGrid1 .OtherLinks
+#FlexGrid1 .NewGrounds1
 {
    display: flex;
    background-color: transparent;
@@ -3321,7 +3344,7 @@ body
    -webkit-align-content: center;
    align-content: center;
 }
-#FlexGrid1 ..
+#FlexGrid1 .OtherLinks*
 {
    display: none;
    background-color: transparent;
@@ -3375,6 +3398,78 @@ body
    -webkit-align-content: flex-start;
    align-content: flex-start;
 }
+#FlexGrid1 .OtherLinks
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .NewGtext1
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .NewGrounds2
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 ..
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
 #wb_Title
 {
    left: 0px !important;
@@ -3408,7 +3503,7 @@ body
 }
 #wb_ResponsiveMenu1
 {
-   width: 254px !important;
+   width: 88px !important;
    height: 54px !important;
    visibility: visible !important;
    display: inline-block !important;
@@ -3422,13 +3517,17 @@ body
 }
 #wb_OtherStuff
 {
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 21px;
    margin: 0;
    padding: 0;
+   text-align: center;
 }
 #LinksTable
 {
-   width: 320px !important;
-   height: auto !important;
+   width: auto !important;
+   height: 89px !important;
    visibility: visible !important;
    display: table !important;
    -webkit-flex-grow: 1;
@@ -3471,7 +3570,7 @@ body
 }
 #Footer
 {
-   top: 1434px !important;
+   top: 1257px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -3588,10 +3687,10 @@ $(document).ready(function()
 </div>
 </div>
 <div class="OtherLinks">
-<table style="display:table;width:620px;height:111px;" id="LinksTable">
+<table style="display:table;width:622px;height:79px;" id="LinksTable">
 <tr>
 <td class="cell0"><div id="wb_OtherStuff">
-<span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">OTHER LINKS &amp; STUFF</span>
+<span style="color:#FFFFFF;">OTHER LINKS &amp; STUFF</span>
 </div>
 </td>
 </tr>

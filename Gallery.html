@@ -178,23 +178,6 @@ input:focus, textarea:focus, select:focus
 {
    text-align: center;
 }
-#Subermayne
-{
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   border-width: 0;
-}
-#wb_Subermayne
-{
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
 #wb_Animations 
 {
    background-color: transparent;
@@ -238,6 +221,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
+   display: none;
    -webkit-flex-grow: 1;
    flex-grow: 1;
    -webkit-flex-shrink: 1;
@@ -1413,7 +1397,7 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
-#HiddenYouTube
+#HiddenYouTubeVideosPlaylist
 {
    -webkit-flex-grow: 0;
    flex-grow: 0;
@@ -1814,6 +1798,24 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
+#YouTubeAnimationsPlaylist
+{
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#HiddenYouTubeAnimationsPlaylist
+{
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
 #Footer
 {
    background-color: #000000;
@@ -1829,7 +1831,7 @@ body
 }
 #GALLERY
 {
-   height: 1048px !important;
+   height: 1106px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
@@ -1853,7 +1855,7 @@ body
 #GALLERY
 {
     width: 100%;
-    height: 1048px;
+    height: 1106px;
 }
 #wb_Collaborations
 {
@@ -1956,20 +1958,6 @@ body
    margin: 0;
    padding: 0;
    text-align: center;
-}
-#wb_Subermayne
-{
-   width: 480px !important;
-   height: 270px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
 }
 #wb_Animations
 {
@@ -2574,7 +2562,7 @@ body
    padding: 0;
    text-align: center;
 }
-#HiddenYouTube
+#HiddenYouTubeVideosPlaylist
 {
    width: 305px !important;
    height: 177px !important;
@@ -2654,6 +2642,32 @@ body
    margin: 0;
    padding: 0;
 }
+#YouTubeAnimationsPlaylist
+{
+   width: 480px !important;
+   height: 270px !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#HiddenYouTubeAnimationsPlaylist
+{
+   width: 305px !important;
+   height: 177px !important;
+   visibility: hidden !important;
+   display: none !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
 #Footer
 {
    top: 1091px !important;
@@ -2678,7 +2692,7 @@ body
 }
 #GALLERY
 {
-   height: 1268px !important;
+   height: 1341px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
@@ -2701,7 +2715,7 @@ body
 #GALLERY
 {
     width: 100%;
-    height: 1268px;
+    height: 1341px;
 }
 #wb_Collaborations
 {
@@ -2804,20 +2818,6 @@ body
    margin: 0;
    padding: 0;
    text-align: center;
-}
-#wb_Subermayne
-{
-   width: 318px !important;
-   height: 178px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
 }
 #wb_Animations
 {
@@ -3488,7 +3488,7 @@ body
    padding: 0;
    text-align: center;
 }
-#HiddenYouTube
+#HiddenYouTubeVideosPlaylist
 {
    width: 305px !important;
    height: 177px !important;
@@ -3568,9 +3568,35 @@ body
    margin: 0;
    padding: 0;
 }
+#YouTubeAnimationsPlaylist
+{
+   width: 480px !important;
+   height: 270px !important;
+   visibility: hidden !important;
+   display: none !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#HiddenYouTubeAnimationsPlaylist
+{
+   width: 305px !important;
+   height: 177px !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
 #Footer
 {
-   top: 1257px !important;
+   top: 1330px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -3614,10 +3640,10 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:905px;float:left;clear:left;display:block;z-index:50;">
+<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:992px;float:left;clear:left;display:block;z-index:52;">
 <div id="GALLERY-overlay"></div>
 <div id="GALLERY-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:17;">
+<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:18;">
 <span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA</strong></span></div>
 <div id="FlexGrid1">
 <div class="header">
@@ -3663,18 +3689,20 @@ $(document).ready(function()
 </div>
 </div>
 <div class="Videos">
-<!-- YouTube Playlist -->
+<!-- YouTube Videos Playlist -->
 <div id="YouTubePlaylist" style="display:inline-block;width:480px;height:270px;z-index:5">
 <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<!-- YouTube Playlist -->
-<div id="HiddenYouTube" style="display:none;width:305px;height:177px;z-index:6">
+<!-- YouTube Videos Playlist -->
+<div id="HiddenYouTubeVideosPlaylist" style="display:none;width:305px;height:177px;z-index:6">
 <iframe width="305" height="177" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 <div class="Animation">
-<div id="wb_Subermayne" style="display:inline-block;width:480px;height:270px;z-index:7;">
-<iframe id="Subermayne" src="https://www.youtube.com/embed/pLQRg8XdbHE?rel=1&amp;autohide=0"></iframe>
-
-</div>
+<!-- YouTube Animations Playlist -->
+<div id="YouTubeAnimationsPlaylist" style="display:inline-block;width:480px;height:270px;z-index:7">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLQ5ldSb7mjZu5llMHu3N0JWKqcIGfUrKu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<!-- YouTube Animation Playlist -->
+<div id="HiddenYouTubeAnimationsPlaylist" style="display:none;width:305px;height:177px;z-index:8">
+<iframe width="305" height="177" src="https://www.youtube.com/embed/videoseries?list=PLQ5ldSb7mjZu5llMHu3N0JWKqcIGfUrKu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 <div class="VidText">
 <div id="wb_VideoLinkText">
@@ -3683,11 +3711,11 @@ $(document).ready(function()
 </div>
 <div class="AnimText">
 <div id="wb_Newgrounds">
-<span style="color:#FFFFFF;font-family:Tahoma;font-size:21px;">NEWGROUNDS FLASH ANIMATIONS (old school)</span>
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:21px;">NEWGROUNDS FLASH ANIMATIONS <br>(old school &amp; immature)</span>
 </div>
 </div>
 <div class="OtherLinks">
-<table style="display:table;width:622px;height:79px;" id="LinksTable">
+<table style="display:table;width:622px;height:80px;" id="LinksTable">
 <tr>
 <td class="cell0"><div id="wb_OtherStuff">
 <span style="color:#FFFFFF;">OTHER LINKS &amp; STUFF</span>
@@ -3703,12 +3731,12 @@ $(document).ready(function()
 </table>
 </div>
 <div class="NewGrounds1">
-<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:13;">
+<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:14;">
 <a href="https://mr-a.newgrounds.com/movies" title="Mr-A&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/354000/flash_354072.gif?f1322705103" id="Mr-Anewgrounds" alt="Mr-A&#39;s Animations"></a>
 </div>
 </div>
 <div class="NewGrounds2">
-<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:14;">
+<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:15;">
 <a href="https://mr-bond.newgrounds.com/movies" title="Mr-Bond&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/186000/flash_186719.gif?f1322704392" id="Mr-BondNewgrounds" alt="Mr-Bond&#39;s Animations"></a>
 </div>
 </div>
@@ -3729,10 +3757,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:19;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:20;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:20;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:21;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -3751,12 +3779,12 @@ $(document).ready(function()
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_AZicon" style="display:inline-block;width:50px;height:50px;z-index:21;">
+<div id="wb_AZicon" style="display:inline-block;width:50px;height:50px;z-index:22;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AZicon" alt=""></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:22;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:23;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -3789,9 +3817,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:955px;width:100%;height:65px;z-index:53;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:977px;width:100%;height:65px;z-index:55;">
 <div id="Footer-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:44;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:46;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3808,7 +3836,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:45;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:47;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

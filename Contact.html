@@ -263,6 +263,7 @@ input:focus, textarea:focus, select:focus
 {
    border-radius: 6px;
    margin: 0;
+   vertical-align: top;
 }
 #EmailButton
 {
@@ -982,6 +983,10 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
+#wb_ThemeableMenu1
+{
+   z-index: 1111 !important;
+}
 #wb_AreaZoneEyeIcon
 {
    margin: 0;
@@ -1087,6 +1092,7 @@ input:focus, textarea:focus, select:focus
    font-weight: normal;
    text-align: right;
    width: 100%;
+   z-index: 1111 !important;
 }
 #ResponsiveMenu1
 {
@@ -1409,7 +1415,7 @@ body
    width: 100%;
    margin: 0;
 }
-#CONTACT-container
+#CONTACT_Container
 {
    width: 1000px !important;
 }
@@ -1563,7 +1569,6 @@ body
    visibility: visible !important;
    display: inline !important;
    margin: 0;
-   padding: 0;
 }
 #EmailButton
 {
@@ -1571,7 +1576,8 @@ body
 }
 #wb_EmailButton .ui-button
 {
-   line-height: 50px;
+   line-height: 48px;
+   padding: 0;
 }
 #wb_FooterYear
 {
@@ -1614,27 +1620,6 @@ body
 {
    margin-right: -15px;
    margin-left: -15px;
-}
-#header > .row > .col-1, #header > .row > .col-2
-{
-   padding-right: 15px;
-   padding-left: 15px;
-}
-#header > .row > .col-1
-{
-   display: block;
-   width: 8.33333333%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: left;
-}
-#header > .row > .col-2
-{
-   display: block;
-   width: 91.66666667%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: left;
 }
 #wb_ThemeableMenu1
 {
@@ -1682,25 +1667,6 @@ body
    margin-right: -0px;
    margin-left: -0px;
 }
-#HiddenHeader > .row > .col-1
-{
-   padding-right: 0px;
-   padding-left: 0px;
-}
-#HiddenHeader > .row > .col-1
-{
-   display: flex;
-   grid-column: span 12;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   -webkit-align-content: center;
-   -webkit-align-items: center;
-   align-content: center;
-   align-items: center;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   text-align: left;
-}
 #wb_Image4
 {
    width: 50px !important;
@@ -1734,7 +1700,7 @@ body
 {
    width: 100%;
 }
-#Footer-container
+#Footer_Container
 {
    width: 1000px !important;
 }
@@ -1758,7 +1724,7 @@ body
    width: 100%;
    margin: 0;
 }
-#CONTACT-container
+#CONTACT_Container
 {
    width: 320px !important;
 }
@@ -1912,7 +1878,6 @@ body
    visibility: visible !important;
    display: inline !important;
    margin: 0;
-   padding: 0;
 }
 #EmailButton
 {
@@ -1920,7 +1885,8 @@ body
 }
 #wb_EmailButton .ui-button
 {
-   line-height: 50px;
+   line-height: 48px;
+   padding: 0;
 }
 #wb_FooterYear
 {
@@ -1963,27 +1929,6 @@ body
 {
    margin-right: -15px;
    margin-left: -15px;
-}
-#header > .row > .col-1, #header > .row > .col-2
-{
-   padding-right: 15px;
-   padding-left: 15px;
-}
-#header > .row > .col-1
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: left;
-}
-#header > .row > .col-2
-{
-   display: block;
-   width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   text-align: left;
 }
 #wb_ThemeableMenu1
 {
@@ -2031,26 +1976,6 @@ body
    margin-right: -0px;
    margin-left: -0px;
 }
-#HiddenHeader > .row > .col-1
-{
-   padding-right: 0px;
-   padding-left: 0px;
-}
-#HiddenHeader > .row > .col-1
-{
-   display: flex;
-   width: 100%;
-   grid-column: span 12;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   -webkit-align-content: center;
-   -webkit-align-items: center;
-   align-content: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   text-align: center;
-}
 #wb_Image4
 {
    width: 50px !important;
@@ -2084,7 +2009,7 @@ body
 {
    width: 100%;
 }
-#Footer-container
+#Footer_Container
 {
    width: 320px !important;
 }
@@ -2121,7 +2046,7 @@ $(document).ready(function()
 <body>
 <div id="CONTACT" style="position:relative;text-align:center;width:100%;height:1009px;float:left;clear:left;display:block;z-index:15;">
 <div id="CONTACT-overlay"></div>
-<div id="CONTACT-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="CONTACT_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_DeviantArtSocialLink" style="position:absolute;left:39px;top:272px;width:50px;height:50px;text-align:center;z-index:0;">
 <a href="https://www.deviantart.com/uzersname" title="DeviantArt"><div id="DeviantArtSocialLink"><i class="fa fa-deviantart"></i></div></a></div>
 <div id="wb_FacebookIconSocialLink" style="position:absolute;left:461px;top:272px;width:50px;height:50px;text-align:center;z-index:1;">
@@ -2155,9 +2080,9 @@ $(document).ready(function()
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
 <div id="wb_PatreonSocialLink" style="position:absolute;left:883px;top:277px;width:40px;height:40px;z-index:5;">
-<a href="https://www.patreon.com/areazone" title="Patreon"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="PatreonSocialLink" alt=""></a></div>
+<a href="https://www.patreon.com/areazone" title="Patreon"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="PatreonSocialLink" alt="" width="40" height="40"></a></div>
 <div id="wb_EmailButton" style="position:absolute;left:1085px;top:272px;width:181px;height:50px;z-index:6;">
-<a class="ui-button ui-widget ui-corner-all" id="EmailButton" href="mailto:theareazone@gmail.com" id="EmailButton" style="width:100%;height:100%;">SEND EMAIL</a></div>
+<a class="ui-button ui-widget ui-corner-all" id="EmailButton" href="mailto:theareazone@gmail.com" style="width:100%;height:100%;">SEND EMAIL</a></div>
 <div id="wb_ContactPlace" style="position:absolute;left:0px;top:66px;width:1300px;height:36px;text-align:center;z-index:7;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong>CONTACT PLACE</strong></span></div>
 <div id="wb_ContactPageText" style="position:absolute;left:55px;top:145px;width:1190px;height:69px;text-align:center;z-index:8;">
@@ -2169,7 +2094,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:9;">
-<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt=""></a>
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt="" width="50" height="50"></a>
 </div>
 </div>
 <div class="col-2">
@@ -2185,17 +2110,17 @@ $(document).ready(function()
 </div>
 <div class="ThemeableMenu1-navbar-collapse collapse">
 <ul class="nav navbar-nav">
-<li class="">
-<a href="./Gallery.html"><i class="fa fa-paint-brush"></i>Gallery</a>
+<li class="nav-item">
+<a href="./Gallery.html" class="nav-link"><i class="fa fa-paint-brush"></i>Gallery</a>
 </li>
-<li class="">
-<a href="./StingOps.html"><i class="fa fa-eye"></i>News/current projects</a>
+<li class="nav-item">
+<a href="./News&Projects.html" class="nav-link"><i class="fa fa-eye"></i>News/current projects</a>
 </li>
-<li class="">
-<a href="./About.html"><i class="fa fa-question"></i>About</a>
+<li class="nav-item">
+<a href="./About.html" class="nav-link"><i class="fa fa-question"></i>About</a>
 </li>
-<li class="">
-<a href="./Contact.html"><i class="fa fa-comments"></i>Contact</a>
+<li class="nav-item">
+<a href="./Contact.html" class="nav-link"><i class="fa fa-comments"></i>Contact</a>
 </li>
 </ul>
 </div>
@@ -2211,14 +2136,14 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:11;">
-<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt=""></a>
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
 <div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:12;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
 <li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
-<li><a role="menuitem" href="./StingOps.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
+<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
 <li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
 <li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
 </ul>
@@ -2229,7 +2154,7 @@ $(document).ready(function()
 </div>
 </div>
 <div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:994px;width:100%;height:65px;z-index:18;">
-<div id="Footer-container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:13;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>

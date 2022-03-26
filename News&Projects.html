@@ -857,395 +857,6 @@ input:focus, textarea:focus, select:focus
    height: 50px;
    vertical-align: top;
 }
-#wb_HiddenHeader
-{
-   clear: both;
-   position: fixed;
-   left: 0;
-   top: 0;
-   z-index: 7777;
-   table-layout: fixed;
-   display: none;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#HiddenHeader
-{
-   box-sizing: border-box;
-   width: 100%;
-   padding: 0;
-   margin-right: auto;
-   margin-left: auto;
-}
-#HiddenHeader > .row
-{
-   display: grid;
-   grid-template-columns: repeat(12, 8.333333%);
-   margin-right: 0;
-   margin-left: 0;
-}
-#HiddenHeader > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 0px;
-   padding-left: 0px;
-   position: relative;
-   grid-column: span 12;
-}
-#HiddenHeader > .row > .col-1
-{
-}
-#HiddenHeader > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   grid-column: span 12;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   text-align: left;
-}
-@media (max-width: 320px)
-{
-#HiddenHeader > .row > .col-1
-{
-   width: 100%;
-   grid-column: span 12;
-}
-}
-#wb_Image4
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image4
-{
-   border: 0px solid #000000;
-   padding: 0;
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   vertical-align: top;
-}
-#wb_ResponsiveMenu1
-{
-   background-color: rgba(23,23,23,0.20);
-   display: block;
-   font-family: "Work Sans";
-   font-weight: normal;
-   text-align: right;
-   width: 100%;
-   z-index: 1111 !important;
-}
-#ResponsiveMenu1
-{
-   background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
-   display: inline-block;
-   height: 54px;
-}
-#wb_ResponsiveMenu1 ul
-{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-#wb_ResponsiveMenu1 ul:after
-{
-   clear: both;
-   content: "";
-   display: block;
-}
-#wb_ResponsiveMenu1 ul li
-{
-   display: list-item;
-   float: left;
-   list-style: none;
-   z-index: 9999;
-}
-#wb_ResponsiveMenu1 ul li i
-{
-   font-size: 20px;
-   width: 20px;
-}
-#wb_ResponsiveMenu1 ul li a
-{
-   background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
-   color: #FFFFFF;
-   font-family: "Work Sans";
-   font-weight: normal;
-   font-size: 12px;
-   font-style: normal;
-   padding: 10px 15px 10px 10px;
-   text-align: center;
-   text-decoration: none;
-}
-#wb_ResponsiveMenu1 > ul > li > a 
-{
-   height: 34px;
-}
-.ResponsiveMenu1 a 
-{
-   display: block;
-}
-#wb_ResponsiveMenu1 li a:hover, #wb_ResponsiveMenu1 li .active
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul
-{
-   display: none;
-   position: absolute;
-   top: 54px;
-}
-#wb_ResponsiveMenu1 ul li:hover > ul
-{
-   display: list-item;
-}
-#wb_ResponsiveMenu1 ul ul li 
-{
-   float: none;
-   position: relative;
-   width: 109px;
-}
-#wb_ResponsiveMenu1 ul ul li a
-{
-   background-color: #000000;
-   background-color: rgba(0,0,0,0.39);
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul li a:hover, #wb_ResponsiveMenu1 ul ul li .active
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul li i 
-{
-   margin-right: 6px;
-   vertical-align: middle;
-}
-#wb_ResponsiveMenu1 ul ul li a 
-{
-   color: #FFFFFF;
-   padding-top: 10px;
-   padding-right: 10px;
-   padding-bottom: 10px;
-   text-align: left;
-   vertical-align: middle;
-}
-#wb_ResponsiveMenu1 ul ul ul li 
-{
-   left: 109px;
-   position: relative;
-   top: -54px;
-}
-#wb_ResponsiveMenu1 .arrow-down 
-{
-   display: inline-block;
-   width: 0;
-   height: 0;
-   margin-left: 2px;
-   vertical-align: middle;
-   border-top: 4px solid #FFFFFF;
-   border-right: 4px solid transparent;
-   border-left: 4px solid transparent;
-   border-bottom: 0 dotted;
-}
-#wb_ResponsiveMenu1 .arrow-left 
-{
-   display: inline-block;
-   width: 0;
-   height: 0;
-   margin-left: 4px;
-   vertical-align: middle;
-   border-left: 4px solid #FFFFFF;
-   border-top: 4px solid transparent;
-   border-bottom: 4px solid transparent;
-   border-right: 0 dotted;
-}
-#wb_ResponsiveMenu1 li a:hover .arrow-down
-{ 
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul li a:hover .arrow-left, #wb_ResponsiveMenu1 ul ul li .active .arrow-left
-{ 
-   border-left-color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 .toggle,[id^=ResponsiveMenu1-submenu]
-{
-   display: none;
-}
-@media all and (max-width:1000px) 
-{
-#wb_ResponsiveMenu1
-{
-   margin: 0;
-   text-align: left;
-}
-#wb_ResponsiveMenu1 ul li a, #wb_ResponsiveMenu1 .toggle
-{
-   font-size: 12px;
-   font-weight: normal;
-   font-style: normal;
-   padding: 10px 10px 10px 10px;
-}
-#wb_ResponsiveMenu1 .toggle + a
-{
-   display: none !important;
-}
-.ResponsiveMenu1 
-{
-   display: none;
-   z-index: 9999;
-}
-#ResponsiveMenu1 
-{
-   background-color: transparent;
-   display: none;
-}
-#wb_ResponsiveMenu1 > ul > li > a 
-{
-   height: auto !important;   margin: 0;
-}
-#wb_ResponsiveMenu1 .toggle 
-{
-   display: block;
-   background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
-   color: #FFFFFF;
-   padding: 0px 10px 0px 10px;
-   line-height: 40px;
-   text-decoration: none;
-   border: none;
-   position: relative;
-}
-#wb_ResponsiveMenu1 .toggle:hover 
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-[id^=ResponsiveMenu1-submenu]:checked + ul 
-{
-   display: block !important;
-}
-#ResponsiveMenu1-title
-{
-   height: 54px !important;
-   line-height: 54px !important;
-   text-align: center;
-}
-#wb_ResponsiveMenu1 ul li 
-{
-   display: block;
-   width: 100% !important;
-   text-align: right;
-}
-#wb_ResponsiveMenu1 ul ul .toggle,
-#wb_ResponsiveMenu1 ul ul a 
-{
-   padding: 0 20px;
-}
-#wb_ResponsiveMenu1 a:hover,
-#wb_ResponsiveMenu1 ul ul ul a 
-{
-   background-color: #000000;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle,
-#wb_ResponsiveMenu1 ul ul a 
-{
-   background-color: #000000;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul ul ul a 
-{
-   padding: 10px 10px 10px 30px;
-}
-#wb_ResponsiveMenu1 ul li a 
-{
-   text-align: right;
-}
-#wb_ResponsiveMenu1 ul li a br 
-{
-   display: none;
-}
-#wb_ResponsiveMenu1 ul li i 
-{
-   margin-right: 6px;
-}
-#wb_ResponsiveMenu1 ul ul 
-{
-   float: none;
-   position: static;
-}
-#wb_ResponsiveMenu1 ul ul li:hover > ul,
-#wb_ResponsiveMenu1 ul li:hover > ul 
-{
-   display: none;
-}
-#wb_ResponsiveMenu1 ul ul li 
-{
-   display: block;
-   width: 100%;
-}
-#wb_ResponsiveMenu1 ul ul ul li 
-{
-   position: static;
-}
-#ResponsiveMenu1-icon 
-{
-   display: block;
-   position: absolute;
-   right: 15px;
-   top: 15px;
-}
-#ResponsiveMenu1-icon span 
-{
-   display: block;
-   margin-top: 4px;
-   height: 2px;
-   background-color: #FFFFFF;
-   color: #FFFFFF;
-   width: 24px;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle:hover
-{
-   background-color: #4B0082;
-   color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 .toggle .arrow-down 
-{
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 .toggle:hover .arrow-down, #wb_ResponsiveMenu1 li .active .arrow-down
-{
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle .arrow-down 
-{
-   border-top-color: #FFFFFF;
-}
-#wb_ResponsiveMenu1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveMenu1 ul li ul li .active .arrow-down
-{
-   border-top-color: #FFFFFF;
-}
-}
 #wb_TitleGrid
 {
    clear: both;
@@ -2197,6 +1808,395 @@ input:focus, textarea:focus, select:focus
    height: 47px;
    vertical-align: top;
 }
+#wb_HiddenHeader
+{
+   clear: both;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 7777;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#HiddenHeader
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#HiddenHeader > .row
+{
+   display: grid;
+   grid-template-columns: repeat(12, 8.333333%);
+   margin-right: 0;
+   margin-left: 0;
+}
+#HiddenHeader > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+   grid-column: span 12;
+}
+#HiddenHeader > .row > .col-1
+{
+}
+#HiddenHeader > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   grid-column: span 12;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: center;
+   -webkit-align-self: stretch;
+   -webkit-align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   text-align: center;
+}
+@media (max-width: 320px)
+{
+#HiddenHeader > .row > .col-1
+{
+   width: 100%;
+   grid-column: span 12;
+}
+}
+#wb_Image4
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   vertical-align: top;
+}
+#wb_ResponsiveMenu1
+{
+   background-color: rgba(23,23,23,0.31);
+   display: block;
+   font-family: "Work Sans";
+   font-weight: normal;
+   text-align: right;
+   width: 100%;
+   z-index: 1111 !important;
+}
+#ResponsiveMenu1
+{
+   background-color: #171717;
+   background-color: rgba(23,23,23,0.31);
+   display: inline-block;
+   height: 54px;
+}
+#wb_ResponsiveMenu1 ul
+{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+#wb_ResponsiveMenu1 ul:after
+{
+   clear: both;
+   content: "";
+   display: block;
+}
+#wb_ResponsiveMenu1 ul li
+{
+   display: list-item;
+   float: left;
+   list-style: none;
+   z-index: 9999;
+}
+#wb_ResponsiveMenu1 ul li i
+{
+   font-size: 20px;
+   width: 20px;
+}
+#wb_ResponsiveMenu1 ul li a
+{
+   background-color: #171717;
+   background-color: rgba(23,23,23,0.31);
+   color: #FFFFFF;
+   font-family: "Work Sans";
+   font-weight: normal;
+   font-size: 12px;
+   font-style: normal;
+   padding: 10px 15px 10px 10px;
+   text-align: center;
+   text-decoration: none;
+}
+#wb_ResponsiveMenu1 > ul > li > a 
+{
+   height: 34px;
+}
+.ResponsiveMenu1 a 
+{
+   display: block;
+}
+#wb_ResponsiveMenu1 li a:hover, #wb_ResponsiveMenu1 li .active
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul
+{
+   display: none;
+   position: absolute;
+   top: 54px;
+}
+#wb_ResponsiveMenu1 ul li:hover > ul
+{
+   display: list-item;
+}
+#wb_ResponsiveMenu1 ul ul li 
+{
+   float: none;
+   position: relative;
+   width: 109px;
+}
+#wb_ResponsiveMenu1 ul ul li a
+{
+   background-color: #000000;
+   background-color: rgba(0,0,0,0.39);
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul li a:hover, #wb_ResponsiveMenu1 ul ul li .active
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul li i 
+{
+   margin-right: 6px;
+   vertical-align: middle;
+}
+#wb_ResponsiveMenu1 ul ul li a 
+{
+   color: #FFFFFF;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   text-align: left;
+   vertical-align: middle;
+}
+#wb_ResponsiveMenu1 ul ul ul li 
+{
+   left: 109px;
+   position: relative;
+   top: -54px;
+}
+#wb_ResponsiveMenu1 .arrow-down 
+{
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 2px;
+   vertical-align: middle;
+   border-top: 4px solid #FFFFFF;
+   border-right: 4px solid transparent;
+   border-left: 4px solid transparent;
+   border-bottom: 0 dotted;
+}
+#wb_ResponsiveMenu1 .arrow-left 
+{
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 4px;
+   vertical-align: middle;
+   border-left: 4px solid #FFFFFF;
+   border-top: 4px solid transparent;
+   border-bottom: 4px solid transparent;
+   border-right: 0 dotted;
+}
+#wb_ResponsiveMenu1 li a:hover .arrow-down
+{ 
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul li a:hover .arrow-left, #wb_ResponsiveMenu1 ul ul li .active .arrow-left
+{ 
+   border-left-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle,[id^=ResponsiveMenu1-submenu]
+{
+   display: none;
+}
+@media all and (max-width:1000px) 
+{
+#wb_ResponsiveMenu1
+{
+   margin: 0;
+   text-align: left;
+}
+#wb_ResponsiveMenu1 ul li a, #wb_ResponsiveMenu1 .toggle
+{
+   font-size: 12px;
+   font-weight: normal;
+   font-style: normal;
+   padding: 10px 10px 10px 10px;
+}
+#wb_ResponsiveMenu1 .toggle + a
+{
+   display: none !important;
+}
+.ResponsiveMenu1 
+{
+   display: none;
+   z-index: 9999;
+}
+#ResponsiveMenu1 
+{
+   background-color: transparent;
+   display: none;
+}
+#wb_ResponsiveMenu1 > ul > li > a 
+{
+   height: auto !important;   margin: 0;
+}
+#wb_ResponsiveMenu1 .toggle 
+{
+   display: block;
+   background-color: #171717;
+   background-color: rgba(23,23,23,0.31);
+   color: #FFFFFF;
+   padding: 0px 10px 0px 10px;
+   line-height: 40px;
+   text-decoration: none;
+   border: none;
+   position: relative;
+}
+#wb_ResponsiveMenu1 .toggle:hover 
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+[id^=ResponsiveMenu1-submenu]:checked + ul 
+{
+   display: block !important;
+}
+#ResponsiveMenu1-title
+{
+   height: 54px !important;
+   line-height: 54px !important;
+   text-align: center;
+}
+#wb_ResponsiveMenu1 ul li 
+{
+   display: block;
+   width: 100% !important;
+   text-align: right;
+}
+#wb_ResponsiveMenu1 ul ul .toggle,
+#wb_ResponsiveMenu1 ul ul a 
+{
+   padding: 0 20px;
+}
+#wb_ResponsiveMenu1 a:hover,
+#wb_ResponsiveMenu1 ul ul ul a 
+{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle,
+#wb_ResponsiveMenu1 ul ul a 
+{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul ul ul a 
+{
+   padding: 10px 10px 10px 30px;
+}
+#wb_ResponsiveMenu1 ul li a 
+{
+   text-align: right;
+}
+#wb_ResponsiveMenu1 ul li a br 
+{
+   display: none;
+}
+#wb_ResponsiveMenu1 ul li i 
+{
+   margin-right: 6px;
+}
+#wb_ResponsiveMenu1 ul ul 
+{
+   float: none;
+   position: static;
+}
+#wb_ResponsiveMenu1 ul ul li:hover > ul,
+#wb_ResponsiveMenu1 ul li:hover > ul 
+{
+   display: none;
+}
+#wb_ResponsiveMenu1 ul ul li 
+{
+   display: block;
+   width: 100%;
+}
+#wb_ResponsiveMenu1 ul ul ul li 
+{
+   position: static;
+}
+#ResponsiveMenu1-icon 
+{
+   display: block;
+   position: absolute;
+   right: 15px;
+   top: 15px;
+}
+#ResponsiveMenu1-icon span 
+{
+   display: block;
+   margin-top: 4px;
+   height: 2px;
+   background-color: #FFFFFF;
+   color: #FFFFFF;
+   width: 24px;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle:hover
+{
+   background-color: #4B0082;
+   color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle .arrow-down 
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 .toggle:hover .arrow-down, #wb_ResponsiveMenu1 li .active .arrow-down
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle .arrow-down 
+{
+   border-top-color: #FFFFFF;
+}
+#wb_ResponsiveMenu1 ul li ul li .toggle:hover .arrow-down, #wb_ResponsiveMenu1 ul li ul li .active .arrow-down
+{
+   border-top-color: #FFFFFF;
+}
+}
 #Footer
 {
    background-color: #000000;
@@ -2300,50 +2300,6 @@ body
 {
    width: 50px;
    height: 50px;
-}
-#wb_HiddenHeader
-{
-   visibility: hidden !important;
-   display: none !important;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_HiddenHeader
-{
-   margin-top: 0px;
-   margin-bottom: 0px;
-}
-#HiddenHeader
-{
-   padding: 0;
-}
-#HiddenHeader .row
-{
-   margin-right: -0px;
-   margin-left: -0px;
-}
-#wb_Image4
-{
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   padding: 0;
-}
-#Image4
-{
-   width: 50px;
-   height: 50px;
-}
-#wb_ResponsiveMenu1
-{
-   width: 254px !important;
-   height: 54px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   text-align: right;
 }
 #wb_TitleGrid
 {
@@ -2780,50 +2736,6 @@ body
    width: 50px;
    height: 50px;
 }
-#wb_HiddenHeader
-{
-   visibility: visible !important;
-   display: table !important;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_HiddenHeader
-{
-   margin-top: 0px;
-   margin-bottom: 0px;
-}
-#HiddenHeader
-{
-   padding: 0;
-}
-#HiddenHeader .row
-{
-   margin-right: -0px;
-   margin-left: -0px;
-}
-#wb_Image4
-{
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   padding: 0;
-}
-#Image4
-{
-   width: 50px;
-   height: 50px;
-}
-#wb_ResponsiveMenu1
-{
-   width: 254px !important;
-   height: 54px !important;
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   text-align: right;
-}
 #wb_TitleGrid
 {
    visibility: visible !important;
@@ -3140,6 +3052,48 @@ body
    width: 260px;
    height: 33px;
 }
+#wb_HiddenHeader
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_HiddenHeader
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#HiddenHeader
+{
+   padding: 0;
+}
+#HiddenHeader .row
+{
+   margin-right: -0px;
+   margin-left: -0px;
+}
+#wb_Image4
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Image4
+{
+   width: 50px;
+   height: 50px;
+}
+#wb_ResponsiveMenu1
+{
+   width: 254px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: right;
+}
 #Footer
 {
    top: 1435px !important;
@@ -3238,28 +3192,6 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_HiddenHeader">
-<div id="HiddenHeader">
-<div class="row">
-<div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:2;">
-<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
-</div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:3;">
-<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
-<input type="checkbox" id="ResponsiveMenu1-submenu">
-<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-<li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
-<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
-<li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
-<li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_TitleGrid">
 <div id="TitleGrid">
 <div class="row">
@@ -3275,7 +3207,7 @@ $(document).ready(function()
 <div id="ComicsGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:5;">
+<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:3;">
 <a href="./News&Projects.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
 </div>
 </div>
@@ -3286,7 +3218,7 @@ $(document).ready(function()
 <div id="ComicsGrid2">
 <div class="row">
 <div class="col-1">
-<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:4;">
 <a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
@@ -3295,7 +3227,7 @@ $(document).ready(function()
 <div id="DevicemanGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_DevicemanLogoText" style="display:inline-block;width:383px;height:57px;z-index:7;">
+<div id="wb_DevicemanLogoText" style="display:inline-block;width:383px;height:57px;z-index:5;">
 <a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/DevicemanTextLogo.png" id="DevicemanLogoText" alt="Deviceman" width="383" height="49"></a>
 </div>
 </div>
@@ -3306,12 +3238,12 @@ $(document).ready(function()
 <div id="DevicemanCovers">
 <div class="row">
 <div class="col-1">
-<div id="wb_DMcoverIcon01" style="display:inline-block;width:100%;height:auto;z-index:8;">
+<div id="wb_DMcoverIcon01" style="display:inline-block;width:100%;height:auto;z-index:6;">
 <a href="https://drive.google.com/file/d/1OI9dJLWYxc52tz7YTzmFHa6hM2mRdaZn/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon01', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue01CoverIcon.jpg" id="DMcoverIcon01" alt="" title="Deviceman Issue #1" width="171" height="243"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_DMcoverIcon02" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<div id="wb_DMcoverIcon02" style="display:inline-block;width:100%;height:auto;z-index:7;">
 <a href="https://drive.google.com/file/d/1hn3t6U6_llNbSpLNpxApVCAMO-UNB-31/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon02', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue02CoverIconB.jpg" id="DMcoverIcon02" alt="" title="Deviceman Issue #2" width="171" height="266"></a>
 </div>
 </div>
@@ -3320,7 +3252,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:10;">
 <a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="403" height="202"></a>
 </div>
 </div>
@@ -3331,12 +3263,12 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:11;">
 <a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_DeforminNorman.jpg" id="DeforminNormanIcon" alt="" width="620" height="310"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:14;">
+<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:12;">
 <a href="https://drive.google.com/file/d/1aykt-Df-H2PWnzNtLnt2K6Z3FvtbOaV2/view?usp=sharing" title="idiom.exe" onmouseenter="AnimateCss('wb_Image7', 'transform-shiver', 0, 500);return false;"><img src="images/SpaceActivatingPageIcon.jpg" id="Image7" alt="" width="620" height="641"></a>
 </div>
 </div>
@@ -3358,7 +3290,7 @@ $(document).ready(function()
 <div id="StingOpsGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_StingOpsImage" style="display:inline-block;width:246px;height:76px;z-index:17;">
+<div id="wb_StingOpsImage" style="display:inline-block;width:246px;height:76px;z-index:15;">
 <a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="246" height="54"></a>
 </div>
 </div>
@@ -3380,8 +3312,30 @@ $(document).ready(function()
 <div id="IWHIgrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_IWHIimage" style="display:inline-block;width:226px;height:55px;z-index:19;">
+<div id="wb_IWHIimage" style="display:inline-block;width:226px;height:55px;z-index:17;">
 <a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IwannaHateItPodcast.png" id="IWHIimage" alt="" width="226" height="48"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_HiddenHeader">
+<div id="HiddenHeader">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:20;">
+<a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
+</div>
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:21;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
+<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
+<li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
+<li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
+</ul>
+
 </div>
 </div>
 </div>

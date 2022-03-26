@@ -1327,6 +1327,14 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
    padding: 0;
    margin: 0;
    text-align: center;
@@ -1628,7 +1636,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ResponsiveMenu1
 {
-   background-color: rgba(23,23,23,0.20);
+   background-color: rgba(23,23,23,0.31);
    display: block;
    font-family: "Work Sans";
    font-weight: normal;
@@ -1639,7 +1647,7 @@ input:focus, textarea:focus, select:focus
 #ResponsiveMenu1
 {
    background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
+   background-color: rgba(23,23,23,0.31);
    display: inline-block;
    height: 54px;
 }
@@ -1671,7 +1679,7 @@ input:focus, textarea:focus, select:focus
 #wb_ResponsiveMenu1 ul li a
 {
    background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
+   background-color: rgba(23,23,23,0.31);
    color: #FFFFFF;
    font-family: "Work Sans";
    font-weight: normal;
@@ -1813,7 +1821,7 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    background-color: #171717;
-   background-color: rgba(23,23,23,0.20);
+   background-color: rgba(23,23,23,0.31);
    color: #FFFFFF;
    padding: 0px 10px 0px 10px;
    line-height: 40px;
@@ -2589,12 +2597,18 @@ body
 }
 #wb_Title
 {
-   left: 0px !important;
-   top: 28px !important;
-   width: 1000px !important;
-   height: 44px !important;
+   width: auto !important;
+   height: auto !important;
    visibility: visible !important;
    display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
 }
 #wb_Title
 {
@@ -3469,12 +3483,18 @@ body
 }
 #wb_Title
 {
-   left: 0px !important;
-   top: 39px !important;
-   width: 319px !important;
-   height: 44px !important;
+   width: auto !important;
+   height: auto !important;
    visibility: visible !important;
    display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
 }
 #wb_Title
 {
@@ -3708,16 +3728,17 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:992px;float:left;clear:left;display:block;z-index:57;">
+<div id="GALLERY" style="position:relative;text-align:center;width:100%;height:992px;float:left;clear:left;display:block;z-index:58;">
 <div id="GALLERY-overlay"></div>
 <div id="GALLERY_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Title" style="position:absolute;left:0px;top:27px;width:1300px;height:45px;text-align:center;z-index:20;">
-<span style="color:#FFFFFF;"><strong>GALLERY/PORTFOLIO AREA (Old!)</strong></span></div>
 <div id="FlexGrid1">
 <div class="header">
+<div id="wb_Title">
+<span style="color:#FFFFFF;"><strong><br><br>GALLERY/PORTFOLIO AREA (Old!)</strong></span>
+</div>
 </div>
 <div class="SoftwareAndHardware">
-<div id="wb_Software_Hardware" style="display:inline-block;width:616px;z-index:0;">
+<div id="wb_Software_Hardware" style="display:inline-block;width:616px;z-index:1;">
 <img src="https://i.imgur.com/PAnZwGV.jpg" id="Software_Hardware" alt="" width="616" height="254">
 </div>
 </div>
@@ -3725,7 +3746,7 @@ $(document).ready(function()
 <div id="wb_Doodles">
 <span style="color:#FFFFFF;font-family:Tahoma;font-size:27px;">ILLUSTRATION &amp; DESIGN<br></span><span style="color:#FFFFFF;font-family:Tahoma;font-size:15px;">[<a href="https://drive.google.com/file/d/1ROla3HKg6ohXtrGkkiuVdVRkQFs7Ahip/view?usp=sharing" title="See more on my DeviantArt page... ">Portfolio PDF</a>] [<a href="https://drive.google.com/file/d/1ZK_aS2jzk0-siS0n1M8IBPpKZx8d9hbJ/view?usp=sharing">Writing Samples</a>] [<a href="https://www.deviantart.com/uzersname/gallery/" title="See more on my DeviantArt page... ">DeviantArt</a>]</span>
 </div>
-<div id="wb_DoodleGallery" style="display:inline-block;width:236px;height:189px;z-index:3;">
+<div id="wb_DoodleGallery" style="display:inline-block;width:236px;height:189px;z-index:4;">
 <div id="DoodleGallery">
    <div class="thumbnails">
       <div class="thumbnail">
@@ -3749,7 +3770,7 @@ $(document).ready(function()
 <div id="ComicsGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:1;">
+<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:2;">
 <a href="./News&Projects.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
 </div>
 </div>
@@ -3769,18 +3790,18 @@ $(document).ready(function()
 </div>
 <div class="Videos">
 <!-- YouTube Videos Playlist -->
-<div id="YouTubePlaylist" style="display:inline-block;width:480px;height:270px;z-index:7">
+<div id="YouTubePlaylist" style="display:inline-block;width:480px;height:270px;z-index:8">
 <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <!-- YouTube Videos Playlist -->
-<div id="HiddenYouTubeVideosPlaylist" style="display:none;width:305px;height:177px;z-index:8">
+<div id="HiddenYouTubeVideosPlaylist" style="display:none;width:305px;height:177px;z-index:9">
 <iframe width="305" height="177" src="https://www.youtube.com/embed/videoseries?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 <div class="Animation">
 <!-- YouTube Animations Playlist -->
-<div id="YouTubeAnimationsPlaylist" style="display:inline-block;width:480px;height:270px;z-index:9">
+<div id="YouTubeAnimationsPlaylist" style="display:inline-block;width:480px;height:270px;z-index:10">
 <iframe width="480" height="270" src="https://www.youtube.com/embed/videoseries?list=PLQ5ldSb7mjZu5llMHu3N0JWKqcIGfUrKu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <!-- YouTube Animation Playlist -->
-<div id="HiddenYouTubeAnimationsPlaylist" style="display:none;width:305px;height:177px;z-index:10">
+<div id="HiddenYouTubeAnimationsPlaylist" style="display:none;width:305px;height:177px;z-index:11">
 <iframe width="305" height="177" src="https://www.youtube.com/embed/videoseries?list=PLQ5ldSb7mjZu5llMHu3N0JWKqcIGfUrKu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 <div class="VidText">
@@ -3810,12 +3831,12 @@ $(document).ready(function()
 </table>
 </div>
 <div class="NewGrounds1">
-<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:16;">
+<div id="wb_Mr-Anewgrounds" style="display:inline-block;width:140px;z-index:17;">
 <a href="https://mr-a.newgrounds.com/movies" title="Mr-A&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/354000/flash_354072.gif?f1322705103" id="Mr-Anewgrounds" alt="Mr-A&#39;s Animations"></a>
 </div>
 </div>
 <div class="NewGrounds2">
-<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:17;">
+<div id="wb_Mr-BondNewgrounds" style="display:inline-block;width:140px;z-index:18;">
 <a href="https://mr-bond.newgrounds.com/movies" title="Mr-Bond&#39;s Gallery of Animations"><img src="placeholder.gif" data-src="https://picon.ngfiles.com/186000/flash_186719.gif?f1322704392" id="Mr-BondNewgrounds" alt="Mr-Bond&#39;s Animations"></a>
 </div>
 </div>
@@ -3878,10 +3899,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:49;">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:50;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:50;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:51;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -3896,9 +3917,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1035px;width:100%;height:65px;z-index:60;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1035px;width:100%;height:65px;z-index:61;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:51;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:52;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3915,7 +3936,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:52;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:53;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

@@ -46,6 +46,51 @@ input:focus, textarea:focus, select:focus
 </style>
 <link href="font-awesome.min.css" rel="stylesheet">
 <style>
+@-webkit-keyframes heartbeat-1
+{
+   0% { -webkit-transform: rotate(0deg) ;  }
+   15% { -webkit-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { -webkit-transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { -webkit-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { -webkit-transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@-moz-keyframes heartbeat-1
+{
+   0% { -moz-transform: rotate(0deg) ;  }
+   15% { -moz-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { -moz-transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { -moz-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { -moz-transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@keyframes heartbeat-1
+{
+   0% { transform: rotate(0deg) ;  }
+   15% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@-webkit-keyframes transform-shiver
+{
+   0% { -webkit-transform: rotate(0deg) ;  }
+   25% { -webkit-transform: translate(-5px,0px) rotate(0deg) ;  }
+   75% { -webkit-transform: translate(5px,0px) rotate(0deg) ;  }
+   100% { -webkit-transform: translate(0px,0px) rotate(0deg) ;  }
+}
+@-moz-keyframes transform-shiver
+{
+   0% { -moz-transform: rotate(0deg) ;  }
+   25% { -moz-transform: translate(-5px,0px) rotate(0deg) ;  }
+   75% { -moz-transform: translate(5px,0px) rotate(0deg) ;  }
+   100% { -moz-transform: translate(0px,0px) rotate(0deg) ;  }
+}
+@keyframes transform-shiver
+{
+   0% { transform: rotate(0deg) ;  }
+   25% { transform: translate(-5px,0px) rotate(0deg) ;  }
+   75% { transform: translate(5px,0px) rotate(0deg) ;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ;  }
+}
 @-webkit-keyframes transform-wobble-center
 {
    0% { -webkit-transform: rotate(0deg) ;  }
@@ -169,6 +214,74 @@ input:focus, textarea:focus, select:focus
 @media (max-width: 320px)
 {
 #header > .row > .col-1, #header > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_BlankSpacerGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#BlankSpacerGrid
+{
+   box-sizing: border-box;
+   padding: 0px 15px 50px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#BlankSpacerGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#BlankSpacerGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#BlankSpacerGrid > .row > .col-1
+{
+   float: left;
+}
+#BlankSpacerGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#BlankSpacerGrid:before,
+#BlankSpacerGrid:after,
+#BlankSpacerGrid .row:before,
+#BlankSpacerGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#BlankSpacerGrid:after,
+#BlankSpacerGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#BlankSpacerGrid > .row > .col-1
 {
    float: none;
    width: 100% !important;
@@ -1133,33 +1246,697 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
-#wb_DevicemanImage
+#wb_TitleGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#TitleGrid
+{
+   box-sizing: border-box;
+   padding: 0px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#TitleGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#TitleGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#TitleGrid > .row > .col-1
+{
+   float: left;
+}
+#TitleGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#TitleGrid:before,
+#TitleGrid:after,
+#TitleGrid .row:before,
+#TitleGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#TitleGrid:after,
+#TitleGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#TitleGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_SplashTitle 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_SplashTitle div
+{
+   text-align: center;
+}
+#wb_SplashTitle:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_SplashTitle
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_ComicsGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#ComicsGrid1
+{
+   box-sizing: border-box;
+   padding: 0px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#ComicsGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#ComicsGrid1 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#ComicsGrid1 > .row > .col-1
+{
+   float: left;
+}
+#ComicsGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#ComicsGrid1:before,
+#ComicsGrid1:after,
+#ComicsGrid1 .row:before,
+#ComicsGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#ComicsGrid1:after,
+#ComicsGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#ComicsGrid1 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_ComicsGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#ComicsGrid2
+{
+   box-sizing: border-box;
+   padding: 10px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#ComicsGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#ComicsGrid2 > .row > .col-1, #ComicsGrid2 > .row > .col-2, #ComicsGrid2 > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#ComicsGrid2 > .row > .col-1, #ComicsGrid2 > .row > .col-2, #ComicsGrid2 > .row > .col-3
+{
+   float: left;
+}
+#ComicsGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#ComicsGrid2 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#ComicsGrid2 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#ComicsGrid2:before,
+#ComicsGrid2:after,
+#ComicsGrid2 .row:before,
+#ComicsGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#ComicsGrid2:after,
+#ComicsGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#ComicsGrid2 > .row > .col-1, #ComicsGrid2 > .row > .col-2, #ComicsGrid2 > .row > .col-3
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_LayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 10px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 50%;
+   text-align: center;
+}
+#LayoutGrid1 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 50%;
+   text-align: left;
+}
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_ComicsImage
 {
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    vertical-align: top;
 }
-#DevicemanImage
+#ComicsImage
 {
    border-width: 0;
    display: inline-block;
    width: 216px;
-   height: auto;
+   height: 57px;
+   vertical-align: top;
+}
+#wb_DevicemanGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#DevicemanGrid
+{
+   box-sizing: border-box;
+   padding: 0px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#DevicemanGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#DevicemanGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#DevicemanGrid > .row > .col-1
+{
+   float: left;
+}
+#DevicemanGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#DevicemanGrid:before,
+#DevicemanGrid:after,
+#DevicemanGrid .row:before,
+#DevicemanGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#DevicemanGrid:after,
+#DevicemanGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#DevicemanGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_VideoGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#VideoGrid
+{
+   box-sizing: border-box;
+   padding: 25px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#VideoGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#VideoGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#VideoGrid > .row > .col-1
+{
+   float: left;
+}
+#VideoGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#VideoGrid:before,
+#VideoGrid:after,
+#VideoGrid .row:before,
+#VideoGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#VideoGrid:after,
+#VideoGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#VideoGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_StingOpsGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#StingOpsGrid
+{
+   box-sizing: border-box;
+   padding: 0px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#StingOpsGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#StingOpsGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#StingOpsGrid > .row > .col-1
+{
+   float: left;
+}
+#StingOpsGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#StingOpsGrid:before,
+#StingOpsGrid:after,
+#StingOpsGrid .row:before,
+#StingOpsGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#StingOpsGrid:after,
+#StingOpsGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#StingOpsGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_OtherStuffGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#OtherStuffGrid
+{
+   box-sizing: border-box;
+   padding: 25px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#OtherStuffGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#OtherStuffGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#OtherStuffGrid > .row > .col-1
+{
+   float: left;
+}
+#OtherStuffGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#OtherStuffGrid:before,
+#OtherStuffGrid:after,
+#OtherStuffGrid .row:before,
+#OtherStuffGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#OtherStuffGrid:after,
+#OtherStuffGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#OtherStuffGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_IWHIgrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#IWHIgrid
+{
+   box-sizing: border-box;
+   padding: 5px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#IWHIgrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#IWHIgrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#IWHIgrid > .row > .col-1
+{
+   float: left;
+}
+#IWHIgrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#IWHIgrid:before,
+#IWHIgrid:after,
+#IWHIgrid .row:before,
+#IWHIgrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#IWHIgrid:after,
+#IWHIgrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#IWHIgrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_IWHIimage
+{
+   margin: 0;
+   vertical-align: top;
+}
+#IWHIimage
+{
+   border-width: 0;
+   display: inline-block;
+   width: 216px;
+   height: 45px;
+   vertical-align: top;
 }
 #wb_StingOpsImage
 {
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    vertical-align: top;
 }
 #StingOpsImage
@@ -1167,121 +1944,258 @@ input:focus, textarea:focus, select:focus
    border-width: 0;
    display: inline-block;
    width: 216px;
+   height: 46px;
+   vertical-align: top;
+}
+#wb_CinematographyComic
+{
+   margin: 0;
+   vertical-align: top;
+}
+#CinematographyComic
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
    height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
 }
-#wb_Text1 
+#wb_MassLockedIcon
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
    margin: 0;
-   text-align: left;
+   vertical-align: top;
 }
-#wb_Text1 div
+#MassLockedIcon
 {
-   text-align: left;
-}
-#wb_AZpresents 
-{
-   background-color: transparent;
-   background-image: none;
    border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
+   box-sizing: border-box;
    padding: 0;
-   margin: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_DevicemanCovers
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
    text-align: center;
-}
-#wb_AZpresents div
-{
-   text-align: center;
-}
-#wb_AZpresents:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#FlexGrid1
-{
-   display: grid;
+   width: 100%;
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
-   padding: 0;
+}
+#DevicemanCovers
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#DevicemanCovers > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2
+{
+   box-sizing: border-box;
    font-size: 0px;
-   grid-template-columns: 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header"
-      "project1"
-      "project2";
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
 }
-#FlexGrid1 .header
+#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2
 {
-   display: flex;
-   grid-area: header;
+   float: left;
+}
+#DevicemanCovers > .row > .col-1
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
+   width: 50%;
+   text-align: center;
 }
-#FlexGrid1 .project1
+#DevicemanCovers > .row > .col-2
 {
-   display: flex;
-   grid-area: project1;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
+   width: 50%;
+   text-align: center;
 }
-#FlexGrid1 .project2
+#DevicemanCovers:before,
+#DevicemanCovers:after,
+#DevicemanCovers .row:before,
+#DevicemanCovers .row:after
 {
-   display: flex;
-   grid-area: project2;
+   display: table;
+   content: " ";
+}
+#DevicemanCovers:after,
+#DevicemanCovers .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_DMcoverIcon01
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DMcoverIcon01
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0px 0px 5px 0px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 83px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_DMcoverIcon02
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DMcoverIcon02
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0px 0px 5px 0px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 76px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Video! 
+{
    background-color: transparent;
    background-image: none;
-   border: 0px solid #FFFFFF;
+   border: 0px solid #000000;
    padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
+   margin: 0;
+   text-align: center;
+}
+#wb_Video! div
+{
+   text-align: center;
+}
+#wb_Video!:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_Video!
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_OtherStuff! 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 1px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_OtherStuff! div
+{
+   text-align: center;
+}
+#wb_OtherStuff!:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_OtherStuff!
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Image7
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image7
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 5px 0px 0px 0px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 145px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_DeforminNormanIcon
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DeforminNormanIcon
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_DevicemanLogoText
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DevicemanLogoText
+{
+   border-width: 0;
+   display: inline-block;
+   width: 373px;
+   height: 47px;
+   vertical-align: top;
 }
 #Footer
 {
@@ -1337,6 +2251,25 @@ body
    padding: 0px 15px 0px 15px;
 }
 #header .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_BlankSpacerGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_BlankSpacerGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#BlankSpacerGrid
+{
+   padding: 0px 15px 50px 15px;
+}
+#BlankSpacerGrid .row
 {
    margin-right: -15px;
    margin-left: -15px;
@@ -1412,35 +2345,216 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_DevicemanImage
+#wb_TitleGrid
 {
    visibility: visible !important;
-   display: inline !important;
+   display: table !important;
+}
+#wb_TitleGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#TitleGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#TitleGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_SplashTitle
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_SplashTitle
+{
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
 }
-#DevicemanImage
+#wb_ComicsGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid1
+{
+   padding: 0px 15px 10px 15px;
+}
+#ComicsGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsGrid2
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid2
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid2
+{
+   padding: 10px 15px 5px 15px;
+}
+#ComicsGrid2 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_LayoutGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   padding: 10px 15px 5px 15px;
+}
+#LayoutGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsImage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#ComicsImage
 {
    width: 216px;
-   height: 27px;
+   height: 57px;
+}
+#wb_DevicemanGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_DevicemanGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#DevicemanGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#DevicemanGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_VideoGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoGrid
+{
+   padding: 25px 15px 5px 15px;
+}
+#VideoGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_StingOpsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_StingOpsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#StingOpsGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#StingOpsGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OtherStuffGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffGrid
+{
+   padding: 25px 15px 5px 15px;
+}
+#OtherStuffGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIgrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_IWHIgrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#IWHIgrid
+{
+   padding: 5px 15px 5px 15px;
+}
+#IWHIgrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIimage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#IWHIimage
+{
+   width: 216px;
+   height: 45px;
 }
 #wb_StingOpsImage
 {
    visibility: visible !important;
-   display: inline !important;
+   display: inline-block !important;
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
 }
 #StingOpsImage
@@ -1448,150 +2562,108 @@ body
    width: 216px;
    height: 46px;
 }
-#wb_Text1
+#wb_CinematographyComic
 {
-   left: 354px !important;
-   top: 240px !important;
-   width: 246px !important;
-   height: 15px !important;
+   width: 100% !important;
    visibility: visible !important;
-   display: inline !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
 }
-#wb_Text1
+#wb_MassLockedIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanCovers
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_DevicemanCovers
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#DevicemanCovers
+{
+   padding: 0px 15px 0px 15px;
+}
+#DevicemanCovers .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_DMcoverIcon01
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_DMcoverIcon02
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Video!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Video!
 {
    margin: 0;
    padding: 0;
 }
-#wb_AZpresents
+#wb_OtherStuff!
 {
-   width: auto !important;
-   height: auto !important;
    visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
+   display: block !important;
 }
-#wb_AZpresents
+#wb_OtherStuff!
 {
    margin: 0;
    padding: 0;
 }
-#FlexGrid1
+#wb_Image7
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 5px 0px 0px 0px;
+}
+#wb_DeforminNormanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanLogoText
 {
    visibility: visible !important;
-   display: grid !important;
-}
-#FlexGrid1
-{
+   display: inline-block !important;
    margin: 0;
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   grid-template-columns: 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header"
-      "project1"
-      "project2";
-}
-#FlexGrid1 .header
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
    padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
 }
-#FlexGrid1 .project1
+#DevicemanLogoText
 {
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .main
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .project2
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
+   width: 260px;
+   height: 33px;
 }
 #Footer
 {
-   top: 703px !important;
+   top: 735px !important;
    height: 65px !important;
    visibility: visible !important;
    font-size: 8px;
@@ -1662,6 +2734,25 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
+#wb_BlankSpacerGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_BlankSpacerGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#BlankSpacerGrid
+{
+   padding: 0px 15px 50px 15px;
+}
+#BlankSpacerGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
 #wb_ThemeableMenu1
 {
    width: 100% !important;
@@ -1733,35 +2824,216 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_DevicemanImage
+#wb_TitleGrid
 {
    visibility: visible !important;
-   display: inline !important;
+   display: table !important;
+}
+#wb_TitleGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#TitleGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#TitleGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_SplashTitle
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_SplashTitle
+{
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
 }
-#DevicemanImage
+#wb_ComicsGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid1
+{
+   padding: 0px 15px 10px 15px;
+}
+#ComicsGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsGrid2
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid2
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid2
+{
+   padding: 10px 15px 5px 15px;
+}
+#ComicsGrid2 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_LayoutGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   padding: 10px 15px 5px 15px;
+}
+#LayoutGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsImage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#ComicsImage
 {
    width: 216px;
-   height: 27px;
+   height: 57px;
+}
+#wb_DevicemanGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_DevicemanGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#DevicemanGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#DevicemanGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_VideoGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoGrid
+{
+   padding: 25px 15px 5px 15px;
+}
+#VideoGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_StingOpsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_StingOpsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#StingOpsGrid
+{
+   padding: 0px 15px 5px 15px;
+}
+#StingOpsGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OtherStuffGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffGrid
+{
+   padding: 25px 15px 5px 15px;
+}
+#OtherStuffGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIgrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_IWHIgrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#IWHIgrid
+{
+   padding: 5px 15px 5px 15px;
+}
+#IWHIgrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIimage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#IWHIimage
+{
+   width: 216px;
+   height: 45px;
 }
 #wb_StingOpsImage
 {
    visibility: visible !important;
-   display: inline !important;
+   display: inline-block !important;
    margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
 }
 #StingOpsImage
@@ -1769,150 +3041,108 @@ body
    width: 216px;
    height: 46px;
 }
-#wb_Text1
+#wb_CinematographyComic
 {
-   left: 354px !important;
-   top: 240px !important;
-   width: 246px !important;
-   height: 15px !important;
+   width: 100% !important;
    visibility: visible !important;
-   display: inline !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
 }
-#wb_Text1
+#wb_MassLockedIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanCovers
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_DevicemanCovers
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#DevicemanCovers
+{
+   padding: 0px 15px 5px 15px;
+}
+#DevicemanCovers .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_DMcoverIcon01
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0px 0px 5px 0px;
+}
+#wb_DMcoverIcon02
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Video!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Video!
 {
    margin: 0;
    padding: 0;
 }
-#wb_AZpresents
+#wb_OtherStuff!
 {
-   width: auto !important;
-   height: auto !important;
    visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
+   display: block !important;
 }
-#wb_AZpresents
+#wb_OtherStuff!
 {
    margin: 0;
    padding: 0;
 }
-#FlexGrid1
+#wb_Image7
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 5px 0px 0px 0px;
+}
+#wb_DeforminNormanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanLogoText
 {
    visibility: visible !important;
-   display: grid !important;
-}
-#FlexGrid1
-{
+   display: inline-block !important;
    margin: 0;
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   grid-template-columns: 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header"
-      "project1"
-      "project2";
-}
-#FlexGrid1 .header
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
    padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
 }
-#FlexGrid1 .project1
+#DevicemanLogoText
 {
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .main
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .project2
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
+   width: 260px;
+   height: 33px;
 }
 #Footer
 {
-   top: 413px !important;
+   top: 1285px !important;
    height: 65px !important;
    visibility: visible !important;
    font-size: 13px;
@@ -2000,6 +3230,14 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="wb_BlankSpacerGrid">
+<div id="BlankSpacerGrid">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
 <div id="wb_HiddenHeader">
 <div id="HiddenHeader">
 <div class="row">
@@ -2022,28 +3260,136 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text1" style="position:absolute;left:354px;top:240px;width:246px;height:15px;z-index:11;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Double click to edit</span></div>
-<div id="FlexGrid1">
-<div class="header">
-<div id="wb_AZpresents">
-<span style="color:#FFFFFF;font-family:Arial;font-size:21px;">THE AREA ZONE PRESENTS:</span>
-</div>
-</div>
-<div class="project1">
-<div id="wb_DevicemanImage" style="display:inline-block;width:226px;z-index:5;">
-<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_DevicemanImage', '', 0, 500);return false;"><img src="images/DevicemanTextLogo.png" id="DevicemanImage" alt="" width="226" height="29"></a>
-</div>
-</div>
-<div class="project2">
-<div id="wb_StingOpsImage" style="display:inline-block;width:246px;z-index:6;">
-<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/XRe4nKm[1].png" id="StingOpsImage" alt="Sting Ops" width="246" height="54"></a>
+<div id="wb_TitleGrid">
+<div id="TitleGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_SplashTitle">
+<span style="color:#FFFFFF;font-family:Arial;font-size:21px;">AREA ZONE NEWS AND CURRENT PROJECTS</span>
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:900px;width:100%;height:65px;z-index:13;">
+</div>
+</div>
+<div id="wb_ComicsGrid1">
+<div id="ComicsGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:5;">
+<a href="./News&Projects.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_ComicsGrid2">
+<div id="ComicsGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_DevicemanGrid">
+<div id="DevicemanGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_DevicemanLogoText" style="display:inline-block;width:383px;height:57px;z-index:7;">
+<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/DevicemanTextLogo.png" id="DevicemanLogoText" alt="Deviceman" width="383" height="49"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_DevicemanCovers">
+<div id="DevicemanCovers">
+<div class="row">
+<div class="col-1">
+<div id="wb_DMcoverIcon01" style="display:inline-block;width:100%;height:auto;z-index:8;">
+<a href="https://drive.google.com/file/d/1OI9dJLWYxc52tz7YTzmFHa6hM2mRdaZn/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon01', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue01CoverIcon.jpg" id="DMcoverIcon01" alt="" title="Deviceman Issue #1" width="171" height="243"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_DMcoverIcon02" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<a href="https://drive.google.com/file/d/1hn3t6U6_llNbSpLNpxApVCAMO-UNB-31/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon02', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue02CoverIconB.jpg" id="DMcoverIcon02" alt="" title="Deviceman Issue #2" width="171" height="266"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="403" height="202"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_DeforminNorman.jpg" id="DeforminNormanIcon" alt="" width="620" height="310"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:14;">
+<a href="https://drive.google.com/file/d/1aykt-Df-H2PWnzNtLnt2K6Z3FvtbOaV2/view?usp=sharing" title="idiom.exe" onmouseenter="AnimateCss('wb_Image7', 'transform-shiver', 0, 500);return false;"><img src="images/SpaceActivatingPageIcon.jpg" id="Image7" alt="" width="620" height="641"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_VideoGrid">
+<div id="VideoGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_Video!">
+<span style="background-color:#171717;color:#BA55D3;font-family:Arial;font-size:21px;">VIDEO!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_StingOpsGrid">
+<div id="StingOpsGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_StingOpsImage" style="display:inline-block;width:246px;height:76px;z-index:17;">
+<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="246" height="54"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_OtherStuffGrid">
+<div id="OtherStuffGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_OtherStuff!">
+<span style="background-color:#171717;color:#BA55D3;font-family:Arial;font-size:21px;">OTHER STUFF!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_IWHIgrid">
+<div id="IWHIgrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_IWHIimage" style="display:inline-block;width:226px;height:55px;z-index:19;">
+<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IwannaHateItPodcast.png" id="IWHIimage" alt="" width="226" height="48"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:835px;width:100%;height:65px;z-index:35;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:7;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:22;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2060,7 +3406,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:8;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:23;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

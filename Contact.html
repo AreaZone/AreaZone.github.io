@@ -43,6 +43,21 @@ input:focus, textarea:focus, select:focus
 <link href="cupertino/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <style>
+@-webkit-keyframes filter-invert
+{
+   0% { filter: invert(1);  }
+   100% { filter: invert(0);  }
+}
+@-moz-keyframes filter-invert
+{
+   0% { filter: invert(1);  }
+   100% { filter: invert(0);  }
+}
+@keyframes filter-invert
+{
+   0% { filter: invert(1);  }
+   100% { filter: invert(0);  }
+}
 @media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
 }
@@ -115,7 +130,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_DeviantArtSocialLink:hover i
 {
-   color: #05CC47;
+   color: #00BFFF;
 }
 #wb_FacebookIconSocialLink
 {
@@ -149,7 +164,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_FacebookIconSocialLink:hover i
 {
-   color: #4267B2;
+   color: #00BFFF;
 }
 #wb_YouTubeSocialLink
 {
@@ -183,7 +198,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_YouTubeSocialLink:hover i
 {
-   color: #FF0000;
+   color: #00BFFF;
 }
 #wb_TwitterSocialLink
 {
@@ -217,7 +232,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_TwitterSocialLink:hover i
 {
-   color: #1DA1F2;
+   color: #BA55D3;
 }
 #wb_ContactPlace 
 {
@@ -1390,6 +1405,54 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_IconFont1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #05CC47;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_IconFont1:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#IconFont1
+{
+   height: 50px;
+   width: 50px;
+}
+#IconFont1 i
+{
+   color: #BA55D3;
+   display: inline-block;
+   font-size: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   width: 42px;
+}
+#wb_IconFont1:hover i
+{
+   color: #1DA1F2;
+}
 #Footer
 {
    background-color: #000000;
@@ -1426,8 +1489,8 @@ body
 }
 #wb_ContactPageText
 {
-   left: 55px !important;
-   top: 145px !important;
+   left: 28px !important;
+   top: 134px !important;
    width: 945px !important;
    height: 113px !important;
    visibility: visible !important;
@@ -1440,7 +1503,7 @@ body
 }
 #wb_DeviantArtSocialLink
 {
-   left: 39px !important;
+   left: 28px !important;
    top: 272px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1462,7 +1525,7 @@ body
 }
 #wb_FacebookIconSocialLink
 {
-   left: 461px !important;
+   left: 550px !important;
    top: 272px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1484,7 +1547,7 @@ body
 }
 #wb_YouTubeSocialLink
 {
-   left: 672px !important;
+   left: 727px !important;
    top: 272px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1492,6 +1555,7 @@ body
    display: inline !important;
    margin: 0;
    padding: 0;
+   color: #FF0000;
 }
 #YouTubeSocialLink
 {
@@ -1503,10 +1567,15 @@ body
    line-height: 50px;
    font-size: 50px;
    width: 49px;
+   color: #FF0000;
+}
+#wb_YouTubeSocialLink:hover i
+{
+   color: #FF0000;
 }
 #wb_TwitterSocialLink
 {
-   left: 250px !important;
+   left: 213px !important;
    top: 272px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1542,7 +1611,7 @@ body
 }
 #wb_PatreonSocialLink
 {
-   left: 883px !important;
+   left: 914px !important;
    top: 277px !important;
    width: 40px !important;
    height: 40px !important;
@@ -1690,9 +1759,42 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_Image1
+{
+   left: 349px !important;
+   top: 21px !important;
+   width: 303px !important;
+   height: 31px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_IconFont1
+{
+   left: 388px !important;
+   top: 272px !important;
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 50px;
+   height: 50px;
+}
+#IconFont1 i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
 #Footer
 {
-   top: 962px !important;
+   top: 994px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -1749,7 +1851,7 @@ body
 }
 #wb_DeviantArtSocialLink
 {
-   left: 13px !important;
+   left: 0px !important;
    top: 338px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1771,7 +1873,7 @@ body
 }
 #wb_FacebookIconSocialLink
 {
-   left: 135px !important;
+   left: 153px !important;
    top: 338px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1793,7 +1895,7 @@ body
 }
 #wb_YouTubeSocialLink
 {
-   left: 195px !important;
+   left: 210px !important;
    top: 338px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1801,6 +1903,7 @@ body
    display: inline !important;
    margin: 0;
    padding: 0;
+   color: #FF0000;
 }
 #YouTubeSocialLink
 {
@@ -1812,10 +1915,15 @@ body
    line-height: 50px;
    font-size: 50px;
    width: 49px;
+   color: #FF0000;
+}
+#wb_YouTubeSocialLink:hover i
+{
+   color: #FF0000;
 }
 #wb_TwitterSocialLink
 {
-   left: 71px !important;
+   left: 50px !important;
    top: 338px !important;
    width: 50px !important;
    height: 50px !important;
@@ -1851,7 +1959,7 @@ body
 }
 #wb_PatreonSocialLink
 {
-   left: 260px !important;
+   left: 272px !important;
    top: 343px !important;
    width: 40px !important;
    height: 40px !important;
@@ -1863,7 +1971,7 @@ body
 #Disqus
 {
    left: 0px !important;
-   top: 467px !important;
+   top: 471px !important;
    width: 320px !important;
    height: 759px !important;
    visibility: visible !important;
@@ -1999,6 +2107,39 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_Image1
+{
+   left: 9px !important;
+   top: 21px !important;
+   width: 303px !important;
+   height: 31px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_IconFont1
+{
+   left: 100px !important;
+   top: 338px !important;
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 50px;
+   height: 50px;
+}
+#IconFont1 i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
 #Footer
 {
    top: 1284px !important;
@@ -2022,6 +2163,7 @@ body
 <script src="util.min.js"></script>
 <script src="collapse.min.js"></script>
 <script src="dropdown.min.js"></script>
+<script src="wwb16.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -2044,16 +2186,16 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="CONTACT" style="position:relative;text-align:center;width:100%;height:1009px;float:left;clear:left;display:block;z-index:15;">
+<div id="CONTACT" style="position:relative;text-align:center;width:100%;height:1009px;float:left;clear:left;display:block;z-index:17;">
 <div id="CONTACT-overlay"></div>
 <div id="CONTACT_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_DeviantArtSocialLink" style="position:absolute;left:39px;top:272px;width:50px;height:50px;text-align:center;z-index:0;">
 <a href="https://www.deviantart.com/uzersname" title="DeviantArt"><div id="DeviantArtSocialLink"><i class="fa fa-deviantart"></i></div></a></div>
-<div id="wb_FacebookIconSocialLink" style="position:absolute;left:461px;top:272px;width:50px;height:50px;text-align:center;z-index:1;">
+<div id="wb_FacebookIconSocialLink" style="position:absolute;left:569px;top:272px;width:50px;height:50px;text-align:center;z-index:1;">
 <a href="https://www.facebook.com/The-Area-Zone-372052026208332/" title="Facebook"><div id="FacebookIconSocialLink"><i class="fa fa-facebook-official"></i></div></a></div>
-<div id="wb_YouTubeSocialLink" style="position:absolute;left:672px;top:272px;width:50px;height:50px;text-align:center;z-index:2;">
+<div id="wb_YouTubeSocialLink" style="position:absolute;left:752px;top:272px;width:50px;height:50px;text-align:center;z-index:2;">
 <a href="https://www.youtube.com/user/theAreaZone" title="YouTube"><div id="YouTubeSocialLink"><i class="fa fa-youtube-play"></i></div></a></div>
-<div id="wb_TwitterSocialLink" style="position:absolute;left:250px;top:272px;width:50px;height:50px;text-align:center;z-index:3;">
+<div id="wb_TwitterSocialLink" style="position:absolute;left:210px;top:272px;width:50px;height:50px;text-align:center;z-index:3;">
 <a href="https://twitter.com/TheAreaZone" title="Twitter"><div id="TwitterSocialLink"><i class="fa fa-twitter-square"></i></div></a></div>
 <!-- Disqus -->
 <div id="Disqus" style="position:absolute;left:34px;top:343px;width:1232px;height:540px;z-index:4">
@@ -2079,26 +2221,30 @@ $(document).ready(function()
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
-<div id="wb_PatreonSocialLink" style="position:absolute;left:883px;top:277px;width:40px;height:40px;z-index:5;">
-<a href="https://www.patreon.com/areazone" title="Patreon"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="PatreonSocialLink" alt="" width="40" height="40"></a></div>
+<div id="wb_PatreonSocialLink" style="position:absolute;left:923px;top:277px;width:40px;height:40px;z-index:5;">
+<a href="https://www.patreon.com/areazone" title="Patreon" onmouseenter="AnimateCss('wb_PatreonSocialLink', 'filter-invert', 0, 500);return false;" onmouseover="AnimateCss('wb_PatreonSocialLink', 'filter-invert', 0, 500);return false;"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="PatreonSocialLink" alt="" width="40" height="40"></a></div>
 <div id="wb_EmailButton" style="position:absolute;left:1085px;top:272px;width:181px;height:50px;z-index:6;">
 <a class="ui-button ui-widget ui-corner-all" id="EmailButton" href="mailto:theareazone@gmail.com" style="width:100%;height:100%;">SEND EMAIL</a></div>
-<div id="wb_ContactPlace" style="position:absolute;left:0px;top:66px;width:1300px;height:36px;text-align:center;z-index:7;">
+<div id="wb_ContactPlace" style="position:absolute;left:0px;top:101px;width:1300px;height:36px;text-align:center;z-index:7;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong>CONTACT PLACE</strong></span></div>
 <div id="wb_ContactPageText" style="position:absolute;left:55px;top:145px;width:1190px;height:69px;text-align:center;z-index:8;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">WHEN YOU GAZE LONG INTO THE ABYSS, THE ABYSS ALSO GAZES BACK INTO YOU... AND MAYBE REPLIES. </span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;"><br><br>Leave us a message, like, comment, subscribe, send us death threats - it's the internet, do whatever! </span></div>
+<div id="wb_Image1" style="position:absolute;left:499px;top:49px;width:303px;height:31px;z-index:9;">
+<img src="images/AZSocialMedia.png" id="Image1" alt="" width="303" height="31"></div>
+<div id="wb_IconFont1" style="position:absolute;left:390px;top:272px;width:50px;height:50px;text-align:center;z-index:10;">
+<a href="https://www.instagram.com/theareazone" title="Instagram"><div id="IconFont1"><i class="fa fa-instagram"></i></div></a></div>
 </div>
 </div>
 <div id="wb_header">
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:9;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:11;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt="" width="50" height="50"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:10;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:12;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -2135,10 +2281,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:11;">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:13;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:12;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:14;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -2153,9 +2299,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:958px;width:100%;height:65px;z-index:18;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:994px;width:100%;height:65px;z-index:20;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:13;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:15;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2172,7 +2318,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:14;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:16;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

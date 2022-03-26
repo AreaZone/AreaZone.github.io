@@ -1816,7 +1816,7 @@ input:focus, textarea:focus, select:focus
    top: 0;
    z-index: 7777;
    table-layout: fixed;
-   display: table;
+   display: none;
    text-align: center;
    width: 100%;
    background-color: transparent;
@@ -1867,7 +1867,7 @@ input:focus, textarea:focus, select:focus
    align-content: center;
    align-self: stretch;
    align-items: center;
-   text-align: center;
+   text-align: left;
 }
 @media (max-width: 320px)
 {
@@ -2617,6 +2617,48 @@ body
    width: 260px;
    height: 33px;
 }
+#wb_HiddenHeader
+{
+   visibility: hidden !important;
+   display: none !important;
+}
+#wb_HiddenHeader
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#HiddenHeader
+{
+   padding: 0;
+}
+#HiddenHeader .row
+{
+   margin-right: -0px;
+   margin-left: -0px;
+}
+#wb_Image4
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Image4
+{
+   width: 50px;
+   height: 50px;
+}
+#wb_ResponsiveMenu1
+{
+   width: 254px !important;
+   height: 54px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   text-align: right;
+}
 #Footer
 {
    top: 735px !important;
@@ -3167,7 +3209,7 @@ $(document).ready(function()
 <a href="./Gallery.html" class="nav-link"><i class="fa fa-paint-brush"></i>Gallery</a>
 </li>
 <li class="nav-item">
-<a href="./News&Projects.html" class="nav-link"><i class="fa fa-eye"></i>News/current projects</a>
+<a href="./News&Projects.html" class="nav-link"><i class="fa fa-eye"></i>Current Projects</a>
 </li>
 <li class="nav-item">
 <a href="./About.html" class="nav-link"><i class="fa fa-question"></i>About</a>
@@ -3331,7 +3373,7 @@ $(document).ready(function()
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
 <li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
-<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>NEWS/CURRENT&nbsp;PROJECTS</a></li>
+<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>CURRENT&nbsp;PROJECTS</a></li>
 <li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
 <li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
 </ul>

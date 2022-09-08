@@ -1268,6 +1268,12 @@ input:focus, textarea:focus, select:focus
    width: 33.33333333%;
    text-align: center;
 }
+#LayoutGrid2 > .row > .col-2 > .col-2-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 5px 0px 5px 0px;
+}
 #LayoutGrid2 > .row > .col-3
 {
    background-color: transparent;
@@ -1304,10 +1310,15 @@ input:focus, textarea:focus, select:focus
 }
 #IWHIimage
 {
-   border-width: 0;
-   display: inline-block;
-   width: 216px;
-   height: 45px;
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 80px;
+   margin-left: auto;
+   margin-right: auto;
    vertical-align: top;
 }
 #wb_SocialMediaImage
@@ -1335,9 +1346,7 @@ input:focus, textarea:focus, select:focus
 }
 #NewsArtStuff
 {
-   border: 0px solid #000000;
-   box-sizing: border-box;
-   padding: 0;
+   border-width: 0;
    display: block;
    width: 100%;
    height: auto;
@@ -1973,15 +1982,11 @@ body
 }
 #wb_IWHIimage
 {
+   width: 100% !important;
    visibility: visible !important;
-   display: inline-block !important;
+   display: block !important;
    margin: 0;
    padding: 0;
-}
-#IWHIimage
-{
-   width: 216px;
-   height: 45px;
 }
 #wb_SocialMediaImage
 {
@@ -2279,15 +2284,11 @@ body
 }
 #wb_IWHIimage
 {
+   width: 100% !important;
    visibility: visible !important;
-   display: inline-block !important;
+   display: block !important;
    margin: 0;
-   padding: 5px 0px 0px 0px;
-}
-#IWHIimage
-{
-   width: 216px;
-   height: 45px;
+   padding: 0;
 }
 #wb_SocialMediaImage
 {
@@ -2410,9 +2411,9 @@ $(document).ready(function()
 <ul id="SplashButtons" role="menubar" class="nav">
 <li class="nav-item firstmain"><a role="menuitem" class="nav-link" href="./Gallery.html" target="_self">GALLERY</a>
 </li>
-<li class="nav-item"><a role="menuitem" class="nav-link" href="./News&Projects.html" target="_self">CURRENT&nbsp;PROJECTS</a>
-</li>
 <li class="nav-item"><a role="menuitem" class="nav-link" href="./About.html" target="_self">ABOUT</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./Contact.html" target="_self">SOCIAL</a>
 </li>
 </ul>
 
@@ -2468,13 +2469,10 @@ $(document).ready(function()
 <a href="./Gallery.html" class="nav-link"><i class="fa fa-paint-brush"></i>Gallery</a>
 </li>
 <li class="nav-item">
-<a href="./News&Projects.html" class="nav-link"><i class="fa fa-eye"></i>Current Projects</a>
-</li>
-<li class="nav-item">
 <a href="./About.html" class="nav-link"><i class="fa fa-question"></i>About</a>
 </li>
 <li class="nav-item">
-<a href="./Contact.html" class="nav-link"><i class="fa fa-comments"></i>Contact</a>
+<a href="./Contact.html" class="nav-link"><i class="fa fa-comments"></i>Social</a>
 </li>
 </ul>
 </div>
@@ -2496,13 +2494,15 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
+<div class="col-2-padding">
 <div id="wb_NewsArtStuff" style="display:inline-block;width:100%;height:auto;z-index:8;">
-<a href="./News&Projects.html" onmouseenter="AnimateCss('wb_NewsArtStuff', 'transform-wobble-top', 0, 500);return false;" onmouseleave="AnimateCss('wb_NewsArtStuff', 'transform-wobble-bottom', 0, 500);return false;"><img src="images/News%26Art%26Stuff%21A.png" id="NewsArtStuff" alt="" width="403" height="37"></a>
+<a href="./Gallery.html" onmouseenter="AnimateCss('wb_NewsArtStuff', 'transform-wobble-top', 0, 500);return false;" onmouseleave="AnimateCss('wb_NewsArtStuff', 'transform-wobble-bottom', 0, 500);return false;"><img src="images/Gallery&News.png" id="NewsArtStuff" alt="" width="433" height="43"></a>
+</div>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_IWHIimage" style="display:inline-block;width:226px;height:55px;z-index:9;">
-<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IwannaHateItPodcast.png" id="IWHIimage" alt="" width="226" height="48"></a>
+<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHItextLogo.png" id="IWHIimage" alt="" width="403" height="205"></a>
 </div>
 </div>
 </div>
@@ -2519,10 +2519,9 @@ $(document).ready(function()
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-<li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY/PORTFOLIO</a></li>
-<li><a role="menuitem" href="./News&Projects.html"><i class="fa fa-eye fa-2x">&nbsp;</i><br>CURRENT&nbsp;PROJECTS</a></li>
+<li><a role="menuitem" href="./Gallery.html"><i class="fa fa-paint-brush fa-2x">&nbsp;</i><br>GALLERY</a></li>
 <li><a role="menuitem" href="./About.html"><i class="fa fa-question fa-2x">&nbsp;</i><br>ABOUT</a></li>
-<li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>CONTACT</a></li>
+<li><a role="menuitem" href="./Contact.html"><i class="fa fa-comments fa-2x">&nbsp;</i><br>SOCIAL</a></li>
 </ul>
 
 </div>

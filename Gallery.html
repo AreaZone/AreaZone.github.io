@@ -121,6 +121,28 @@ input:focus, textarea:focus, select:focus
    75% { transform: rotate(0deg) skewX(-2deg) ;  }
    100% { transform: rotate(0deg) skewX(0deg) ;  }
 }
+a.SecretLink
+{
+   color: #000000;
+   text-decoration: none;
+   -webkit-transition: all 300ms linear;
+   transition: all 300ms linear;
+}
+a.SecretLink:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.SecretLink:active
+{
+   color: #191970;
+   text-decoration: none;
+}
+a.SecretLink:hover
+{
+   color: #4B0082;
+   text-decoration: none;
+}
 @media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
 }
@@ -951,7 +973,7 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
-#wb_ComicsGrid1
+#wb_ComicsTitle
 {
    clear: both;
    position: relative;
@@ -965,19 +987,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#ComicsGrid1
+#ComicsTitle
 {
    box-sizing: border-box;
    padding: 0px 15px 10px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#ComicsGrid1 > .row
+#ComicsTitle > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#ComicsGrid1 > .row > .col-1
+#ComicsTitle > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -986,11 +1008,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#ComicsGrid1 > .row > .col-1
+#ComicsTitle > .row > .col-1
 {
    float: left;
 }
-#ComicsGrid1 > .row > .col-1
+#ComicsTitle > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -998,22 +1020,22 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#ComicsGrid1:before,
-#ComicsGrid1:after,
-#ComicsGrid1 .row:before,
-#ComicsGrid1 .row:after
+#ComicsTitle:before,
+#ComicsTitle:after,
+#ComicsTitle .row:before,
+#ComicsTitle .row:after
 {
    display: table;
    content: " ";
 }
-#ComicsGrid1:after,
-#ComicsGrid1 .row:after
+#ComicsTitle:after,
+#ComicsTitle .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#ComicsGrid1 > .row > .col-1
+#ComicsTitle > .row > .col-1
 {
    float: none;
    width: 100% !important;
@@ -1036,16 +1058,17 @@ input:focus, textarea:focus, select:focus
 #ComicsGrid
 {
    box-sizing: border-box;
-   padding: 10px 15px 5px 15px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding: 10px 0px 5px 0px;
    margin-right: auto;
    margin-left: auto;
 }
-#ComicsGrid > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#ComicsGrid > .row > .col-1, #ComicsGrid > .row > .col-2, #ComicsGrid > .row > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1054,53 +1077,81 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#ComicsGrid > .row > .col-1, #ComicsGrid > .row > .col-2, #ComicsGrid > .row > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
 {
-   float: left;
+   -webkit-flex: 0 0 auto;
+   flex: 0 0 auto;
 }
-#ComicsGrid > .row > .col-1
+#ComicsGrid > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 33.33333333%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
    text-align: center;
 }
-#ComicsGrid > .row > .col-2
+#ComicsGrid > .col-2
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 33.33333333%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
    text-align: center;
 }
-#ComicsGrid > .row > .col-3
+#ComicsGrid > .col-3
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 33.33333333%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
    text-align: center;
-}
-#ComicsGrid:before,
-#ComicsGrid:after,
-#ComicsGrid .row:before,
-#ComicsGrid .row:after
-{
-   display: table;
-   content: " ";
-}
-#ComicsGrid:after,
-#ComicsGrid .row:after
-{
-   clear: both;
 }
 @media (max-width: 480px)
 {
-#ComicsGrid > .row > .col-1, #ComicsGrid > .row > .col-2, #ComicsGrid > .row > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
 {
-   float: none;
-   width: 100% !important;
+   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
 }
 }
 #wb_ComicsImage
@@ -1116,7 +1167,7 @@ input:focus, textarea:focus, select:focus
    height: 57px;
    vertical-align: top;
 }
-#wb_VideoGrid
+#wb_VideoTitle
 {
    clear: both;
    position: relative;
@@ -1130,19 +1181,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#VideoGrid
+#VideoTitle
 {
    box-sizing: border-box;
    padding: 25px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#VideoGrid > .row
+#VideoTitle > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#VideoGrid > .row > .col-1
+#VideoTitle > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1151,11 +1202,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#VideoGrid > .row > .col-1
+#VideoTitle > .row > .col-1
 {
    float: left;
 }
-#VideoGrid > .row > .col-1
+#VideoTitle > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -1163,28 +1214,28 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#VideoGrid:before,
-#VideoGrid:after,
-#VideoGrid .row:before,
-#VideoGrid .row:after
+#VideoTitle:before,
+#VideoTitle:after,
+#VideoTitle .row:before,
+#VideoTitle .row:after
 {
    display: table;
    content: " ";
 }
-#VideoGrid:after,
-#VideoGrid .row:after
+#VideoTitle:after,
+#VideoTitle .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#VideoGrid > .row > .col-1
+#VideoTitle > .row > .col-1
 {
    float: none;
    width: 100% !important;
 }
 }
-#wb_VideoGrid
+#wb_VideoArea
 {
    clear: both;
    position: relative;
@@ -1198,19 +1249,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#VideoGrid
+#VideoArea
 {
    box-sizing: border-box;
    padding: 0px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#VideoGrid > .row
+#VideoArea > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#VideoGrid > .row > .col-1
+#VideoArea > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1219,11 +1270,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#VideoGrid > .row > .col-1
+#VideoArea > .row > .col-1
 {
    float: left;
 }
-#VideoGrid > .row > .col-1
+#VideoArea > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -1231,22 +1282,22 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#VideoGrid:before,
-#VideoGrid:after,
-#VideoGrid .row:before,
-#VideoGrid .row:after
+#VideoArea:before,
+#VideoArea:after,
+#VideoArea .row:before,
+#VideoArea .row:after
 {
    display: table;
    content: " ";
 }
-#VideoGrid:after,
-#VideoGrid .row:after
+#VideoArea:after,
+#VideoArea .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#VideoGrid > .row > .col-1
+#VideoArea > .row > .col-1
 {
    float: none;
    width: 100% !important;
@@ -1260,10 +1311,14 @@ input:focus, textarea:focus, select:focus
 #IWHIimage
 {
    border: 0px solid #000000;
+   box-sizing: border-box;
    padding: 0;
-   display: inline-block;
-   width: 150px;
-   height: 165px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 150px;
+   margin-left: auto;
+   margin-right: auto;
    vertical-align: top;
 }
 #wb_StingOpsImage
@@ -1275,8 +1330,8 @@ input:focus, textarea:focus, select:focus
 {
    border-width: 0;
    display: inline-block;
-   width: 216px;
-   height: 46px;
+   width: 200px;
+   height: 43px;
    vertical-align: top;
 }
 #wb_CinematographyComic
@@ -1357,19 +1412,6 @@ input:focus, textarea:focus, select:focus
    max-width: 300px;
    margin-left: auto;
    margin-right: auto;
-   vertical-align: top;
-}
-#wb_DevicemanLogoText
-{
-   margin: 0;
-   vertical-align: top;
-}
-#DevicemanLogoText
-{
-   border-width: 0;
-   display: inline-block;
-   width: 295px;
-   height: 147px;
    vertical-align: top;
 }
 #wb_HiddenHeader
@@ -1761,7 +1803,7 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
-#wb_OtherStuff
+#wb_OtherStuffTitle
 {
    clear: both;
    position: relative;
@@ -1775,19 +1817,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#OtherStuff
+#OtherStuffTitle
 {
    box-sizing: border-box;
    padding: 25px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#OtherStuff > .row
+#OtherStuffTitle > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#OtherStuff > .row > .col-1
+#OtherStuffTitle > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1796,11 +1838,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#OtherStuff > .row > .col-1
+#OtherStuffTitle > .row > .col-1
 {
    float: left;
 }
-#OtherStuff > .row > .col-1
+#OtherStuffTitle > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -1808,28 +1850,28 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#OtherStuff:before,
-#OtherStuff:after,
-#OtherStuff .row:before,
-#OtherStuff .row:after
+#OtherStuffTitle:before,
+#OtherStuffTitle:after,
+#OtherStuffTitle .row:before,
+#OtherStuffTitle .row:after
 {
    display: table;
    content: " ";
 }
-#OtherStuff:after,
-#OtherStuff .row:after
+#OtherStuffTitle:after,
+#OtherStuffTitle .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#OtherStuff > .row > .col-1
+#OtherStuffTitle > .row > .col-1
 {
    float: none;
    width: 100% !important;
 }
 }
-#wb_OtherStuff!
+#wb_OtherStuffArea
 {
    clear: both;
    position: relative;
@@ -1843,19 +1885,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#OtherStuff!
+#OtherStuffArea
 {
    box-sizing: border-box;
    padding: 5px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#OtherStuff! > .row
+#OtherStuffArea > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#OtherStuff! > .row > .col-1
+#OtherStuffArea > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1864,11 +1906,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#OtherStuff! > .row > .col-1
+#OtherStuffArea > .row > .col-1
 {
    float: left;
 }
-#OtherStuff! > .row > .col-1
+#OtherStuffArea > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -1876,22 +1918,22 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#OtherStuff!:before,
-#OtherStuff!:after,
-#OtherStuff! .row:before,
-#OtherStuff! .row:after
+#OtherStuffArea:before,
+#OtherStuffArea:after,
+#OtherStuffArea .row:before,
+#OtherStuffArea .row:after
 {
    display: table;
    content: " ";
 }
-#OtherStuff!:after,
-#OtherStuff! .row:after
+#OtherStuffArea:after,
+#OtherStuffArea .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#OtherStuff! > .row > .col-1
+#OtherStuffArea > .row > .col-1
 {
    float: none;
    width: 100% !important;
@@ -1924,7 +1966,7 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
-#wb_OtherStuff 
+#wb_OtherStuff! 
 {
    background-color: transparent;
    background-image: none;
@@ -1934,17 +1976,17 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
-#wb_OtherStuff div
+#wb_OtherStuff! div
 {
    text-align: center;
 }
-#wb_OtherStuff:hover
+#wb_OtherStuff!:hover
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
-#wb_OtherStuff
+#wb_OtherStuff!
 {
    display: block;
    margin: 0;
@@ -1977,7 +2019,7 @@ input:focus, textarea:focus, select:focus
    margin-right: -15px;
    margin-left: -15px;
 }
-#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -1986,7 +2028,7 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
 {
    float: left;
 }
@@ -1995,7 +2037,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 50%;
+   width: 33.33333333%;
    text-align: center;
 }
 #OtherStuffGrid > .row > .col-2
@@ -2003,7 +2045,15 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 50%;
+   width: 33.33333333%;
+   text-align: center;
+}
+#OtherStuffGrid > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
    text-align: center;
 }
 #OtherStuffGrid:before,
@@ -2021,13 +2071,13 @@ input:focus, textarea:focus, select:focus
 }
 @media (max-width: 480px)
 {
-#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
 {
    float: none;
    width: 100% !important;
 }
 }
-#wb_IconFont1
+#wb_InstagramLinkIcon
 {
    background-color: transparent;
    background-image: none;
@@ -2039,18 +2089,18 @@ input:focus, textarea:focus, select:focus
    display:inline-block;
    position:relative;
 }
-#wb_IconFont1:hover
+#wb_InstagramLinkIcon:hover
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #245580;
 }
-#IconFont1
+#InstagramLinkIcon
 {
    height: 50px;
    width: 50px;
 }
-#IconFont1 i
+#InstagramLinkIcon i
 {
    color: #BA55D3;
    display: inline-block;
@@ -2059,9 +2109,40 @@ input:focus, textarea:focus, select:focus
    vertical-align: middle;
    width: 42px;
 }
-#wb_IconFont1:hover i
+#wb_InstagramLinkIcon:hover i
 {
    color: #1DA1F2;
+}
+#wb_Guides_Stuff
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Guides_Stuff
+{
+   border-width: 0;
+   display: inline-block;
+   width: 166px;
+   height: 150px;
+   vertical-align: top;
+}
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
 }
 #Footer
 {
@@ -2196,21 +2277,21 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_ComicsGrid1
+#wb_ComicsTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_ComicsGrid1
+#wb_ComicsTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#ComicsGrid1
+#ComicsTitle
 {
    padding: 0px 15px 10px 15px;
 }
-#ComicsGrid1 .row
+#ComicsTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
@@ -2227,12 +2308,7 @@ body
 }
 #ComicsGrid
 {
-   padding: 10px 15px 5px 15px;
-}
-#ComicsGrid .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
+   padding: 10px 0px 5px 0px;
 }
 #wb_ComicsImage
 {
@@ -2246,57 +2322,51 @@ body
    width: 216px;
    height: 57px;
 }
-#wb_VideoGrid
+#wb_VideoTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_VideoGrid
+#wb_VideoTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#VideoGrid
+#VideoTitle
 {
    padding: 25px 15px 5px 15px;
 }
-#VideoGrid .row
+#VideoTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_VideoGrid
+#wb_VideoArea
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_VideoGrid
+#wb_VideoArea
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#VideoGrid
+#VideoArea
 {
    padding: 0px 15px 5px 15px;
 }
-#VideoGrid .row
+#VideoArea .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
 #wb_IWHIimage
 {
-   width: 150px !important;
-   height: 165px !important;
+   width: 100% !important;
    visibility: visible !important;
-   display: inline-block !important;
+   display: block !important;
    margin: 0;
    padding: 0;
-}
-#IWHIimage
-{
-   width: 150px;
-   height: 165px;
 }
 #wb_StingOpsImage
 {
@@ -2307,8 +2377,8 @@ body
 }
 #StingOpsImage
 {
-   width: 216px;
-   height: 46px;
+   width: 200px;
+   height: 43px;
 }
 #wb_CinematographyComic
 {
@@ -2343,18 +2413,6 @@ body
    display: block !important;
    margin: 0;
    padding: 0;
-}
-#wb_DevicemanLogoText
-{
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   padding: 0;
-}
-#DevicemanLogoText
-{
-   width: 300px;
-   height: 150px;
 }
 #wb_HiddenHeader
 {
@@ -2398,40 +2456,40 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_OtherStuff
+#wb_OtherStuffTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_OtherStuff
+#wb_OtherStuffTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#OtherStuff
+#OtherStuffTitle
 {
    padding: 25px 15px 5px 15px;
 }
-#OtherStuff .row
+#OtherStuffTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_OtherStuff!
+#wb_OtherStuffArea
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_OtherStuff!
+#wb_OtherStuffArea
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#OtherStuff!
+#OtherStuffArea
 {
    padding: 5px 15px 5px 15px;
 }
-#OtherStuff! .row
+#OtherStuffArea .row
 {
    margin-right: -15px;
    margin-left: -15px;
@@ -2446,12 +2504,12 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_OtherStuff
+#wb_OtherStuff!
 {
    visibility: visible !important;
    display: block !important;
 }
-#wb_OtherStuff
+#wb_OtherStuff!
 {
    margin: 0;
    padding: 0;
@@ -2475,7 +2533,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_IconFont1
+#wb_InstagramLinkIcon
 {
    width: 50px !important;
    height: 50px !important;
@@ -2484,16 +2542,28 @@ body
    margin: 0;
    padding: 0;
 }
-#IconFont1
+#InstagramLinkIcon
 {
    width: 50px;
    height: 50px;
 }
-#IconFont1 i
+#InstagramLinkIcon i
 {
    line-height: 50px;
    font-size: 50px;
    width: 42px;
+}
+#wb_Guides_Stuff
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Guides_Stuff
+{
+   width: 166px;
+   height: 150px;
 }
 #Footer
 {
@@ -2643,21 +2713,21 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_ComicsGrid1
+#wb_ComicsTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_ComicsGrid1
+#wb_ComicsTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#ComicsGrid1
+#ComicsTitle
 {
    padding: 0px 15px 10px 15px;
 }
-#ComicsGrid1 .row
+#ComicsTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
@@ -2674,12 +2744,7 @@ body
 }
 #ComicsGrid
 {
-   padding: 10px 15px 5px 15px;
-}
-#ComicsGrid .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
+   padding: 10px 0px 5px 0px;
 }
 #wb_ComicsImage
 {
@@ -2693,57 +2758,51 @@ body
    width: 216px;
    height: 57px;
 }
-#wb_VideoGrid
+#wb_VideoTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_VideoGrid
+#wb_VideoTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#VideoGrid
+#VideoTitle
 {
    padding: 25px 15px 5px 15px;
 }
-#VideoGrid .row
+#VideoTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_VideoGrid
+#wb_VideoArea
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_VideoGrid
+#wb_VideoArea
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#VideoGrid
+#VideoArea
 {
    padding: 0px 15px 5px 15px;
 }
-#VideoGrid .row
+#VideoArea .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
 #wb_IWHIimage
 {
-   width: 150px !important;
-   height: 165px !important;
+   width: 100% !important;
    visibility: visible !important;
-   display: inline-block !important;
+   display: block !important;
    margin: 0;
    padding: 5px 5px 5px 5px;
-}
-#IWHIimage
-{
-   width: 150px;
-   height: 165px;
 }
 #wb_StingOpsImage
 {
@@ -2754,8 +2813,8 @@ body
 }
 #StingOpsImage
 {
-   width: 216px;
-   height: 46px;
+   width: 200px;
+   height: 43px;
 }
 #wb_CinematographyComic
 {
@@ -2790,18 +2849,6 @@ body
    display: block !important;
    margin: 0;
    padding: 0;
-}
-#wb_DevicemanLogoText
-{
-   visibility: visible !important;
-   display: inline-block !important;
-   margin: 0;
-   padding: 0;
-}
-#DevicemanLogoText
-{
-   width: 290px;
-   height: 145px;
 }
 #wb_HiddenHeader
 {
@@ -2845,40 +2892,40 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_OtherStuff
+#wb_OtherStuffTitle
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_OtherStuff
+#wb_OtherStuffTitle
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#OtherStuff
+#OtherStuffTitle
 {
    padding: 25px 15px 5px 15px;
 }
-#OtherStuff .row
+#OtherStuffTitle .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_OtherStuff!
+#wb_OtherStuffArea
 {
    visibility: visible !important;
    display: table !important;
 }
-#wb_OtherStuff!
+#wb_OtherStuffArea
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#OtherStuff!
+#OtherStuffArea
 {
    padding: 5px 15px 5px 15px;
 }
-#OtherStuff! .row
+#OtherStuffArea .row
 {
    margin-right: -15px;
    margin-left: -15px;
@@ -2893,12 +2940,12 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_OtherStuff
+#wb_OtherStuff!
 {
    visibility: visible !important;
    display: block !important;
 }
-#wb_OtherStuff
+#wb_OtherStuff!
 {
    margin: 0;
    padding: 0;
@@ -2922,7 +2969,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_IconFont1
+#wb_InstagramLinkIcon
 {
    width: 50px !important;
    height: 50px !important;
@@ -2931,16 +2978,36 @@ body
    margin: 0;
    padding: 0;
 }
-#IconFont1
+#InstagramLinkIcon
 {
    width: 50px;
    height: 50px;
 }
-#IconFont1 i
+#InstagramLinkIcon i
 {
    line-height: 50px;
    font-size: 50px;
    width: 42px;
+}
+#wb_Guides_Stuff
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Guides_Stuff
+{
+   width: 166px;
+   height: 150px;
+}
+#wb_Image1
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
 }
 #Footer
 {
@@ -3044,15 +3111,15 @@ $(document).ready(function()
 <div id="wb_SplashTitle">
 <span style="color:#FFFFFF;font-family:Arial;font-size:21px;">AREA ZONE NEWS AND CURRENT PROJECTS</span>
 </div>
-<div id="wb_IconFont1" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:3;">
-<a href="https://www.instagram.com/theareazone" title="Instagram"><div id="IconFont1"><i class="fa fa-instagram"></i></div></a>
+<div id="wb_InstagramLinkIcon" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:3;">
+<a href="https://www.instagram.com/theareazone" title="Instagram"><div id="InstagramLinkIcon"><i class="fa fa-instagram"></i></div></a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_ComicsGrid1">
-<div id="ComicsGrid1">
+<div id="wb_ComicsTitle">
+<div id="ComicsTitle">
 <div class="row">
 <div class="col-1">
 <div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:4;">
@@ -3064,15 +3131,14 @@ $(document).ready(function()
 </div>
 <div id="wb_ComicsGrid">
 <div id="ComicsGrid">
-<div class="row">
 <div class="col-1">
 <div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:5;">
 <a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_DevicemanLogoText" style="display:inline-block;width:305px;height:157px;z-index:6;">
-<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/AZIcon_Deviceman.png" id="DevicemanLogoText" alt="Deviceman" width="305" height="153"></a>
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_Image1', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_Image1', '', 0, 500);return false;"><img src="images/AZIcon_Deviceman.jpg" id="Image1" alt="" width="403" height="202"></a>
 </div>
 </div>
 <div class="col-3">
@@ -3082,9 +3148,8 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-</div>
-<div id="wb_VideoGrid">
-<div id="VideoGrid">
+<div id="wb_VideoTitle">
+<div id="VideoTitle">
 <div class="row">
 <div class="col-1">
 <div id="wb_Video!">
@@ -3094,12 +3159,12 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_VideoGrid">
-<div id="VideoGrid">
+<div id="wb_VideoArea">
+<div id="VideoArea">
 <div class="row">
 <div class="col-1">
-<div id="wb_StingOpsImage" style="display:inline-block;width:246px;height:76px;z-index:9;">
-<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="246" height="54"></a>
+<div id="wb_StingOpsImage" style="display:inline-block;width:230px;height:73px;z-index:9;">
+<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="230" height="50"></a>
 </div>
 </div>
 </div>
@@ -3126,19 +3191,19 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_OtherStuff">
-<div id="OtherStuff">
+<div id="wb_OtherStuffTitle">
+<div id="OtherStuffTitle">
 <div class="row">
 <div class="col-1">
-<div id="wb_OtherStuff">
+<div id="wb_OtherStuff!">
 <span style="background-color:#171717;color:#BA55D3;font-family:Arial;font-size:21px;">OTHER STUFF!</span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_OtherStuff!">
-<div id="OtherStuff!">
+<div id="wb_OtherStuffArea">
+<div id="OtherStuffArea">
 <div class="row">
 <div class="col-1">
 <div id="wb_OtherStuffGrid">
@@ -3146,27 +3211,32 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:13;">
-<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="605" height="303"></a>
+<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="393" height="197"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_IWHIimage" style="display:inline-block;width:150px;height:165px;z-index:14;">
-<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHIpodcastLogo.png" id="IWHIimage" alt="" width="150" height="166"></a>
+<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:14;">
+<a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing" title="Guides&amp;Stuff" onmouseenter="AnimateCss('wb_Guides_Stuff', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_Guides_Stuff', '', 0, 500);return false;"><img src="images/Guides&Stuff.png" id="Guides_Stuff" alt="" width="176" height="159"></a>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:15;">
+<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHIpodcastLogo.png" id="IWHIimage" alt="" width="393" height="435"></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div id="wb_OldCringe">
-<span style="color:#BA55D3;font-family:Arial;font-size:9.3px;"><a href="./OldGallery.html">Old &amp; Cringe</a></span>
+<span style="color:#4F4F4F;font-family:Arial;font-size:8px;"><sup><a href="./OldGallery.html" class="SecretLink">Old &amp; Cringe</a></sup></span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:971px;width:100%;height:65px;z-index:31;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1060px;width:100%;height:65px;z-index:33;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:19;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:21;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3183,7 +3253,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:20;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:22;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

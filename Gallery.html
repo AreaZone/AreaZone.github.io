@@ -2122,6 +2122,32 @@ a.SecretLink:hover
    margin-right: auto;
    vertical-align: top;
 }
+#wb_Resume 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 10px 0px 0px 0px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Resume div
+{
+   text-align: center;
+}
+#wb_Resume:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_Resume
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
 #Footer
 {
    background-color: #000000;
@@ -2552,6 +2578,16 @@ body
    display: block !important;
    margin: 0;
    padding: 0;
+}
+#wb_Resume
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Resume
+{
+   margin: 0;
+   padding: 10px 0px 10px 0px;
 }
 #Footer
 {
@@ -2998,6 +3034,16 @@ body
    margin: 0;
    padding: 0;
 }
+#wb_Resume
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Resume
+{
+   margin: 0;
+   padding: 10px 0px 10px 0px;
+}
 #Footer
 {
    top: 1635px !important;
@@ -3101,6 +3147,9 @@ $(document).ready(function()
 <div id="wb_PortfolioPDF" style="display:inline-block;width:100%;height:auto;z-index:5;">
 <a href="https://drive.google.com/file/d/1lTPj-ogBgBkjEr92j31bkd-WZ3CkDvzl/view?usp=sharing" title="Portfolio PDF" onmouseenter="AnimateCss('wb_PortfolioPDF', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_PortfolioPDF', '', 0, 500);return false;"><img src="images/PortfolioPDF.png" id="PortfolioPDF" alt="" width="1270" height="126"></a>
 </div>
+<div id="wb_Resume">
+<span style="background-color:#000000;color:#BA55D3;font-family:'Courier New';font-size:16px;"><strong><a href="https://drive.google.com/file/d/1J8xJvmppNKm_M9kQ-uByXzXz_FN-ODB8/view?usp=sharing">RÉSUMÉ</a></strong></span>
+</div>
 </div>
 </div>
 </div>
@@ -3109,7 +3158,7 @@ $(document).ready(function()
 <div id="ComicsTitle">
 <div class="row">
 <div class="col-1">
-<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:6;">
+<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:7;">
 <a href="./Gallery.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
 </div>
 </div>
@@ -3119,17 +3168,17 @@ $(document).ready(function()
 <div id="wb_ComicsGrid">
 <div id="ComicsGrid">
 <div class="col-1">
-<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:8;">
 <a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_DevicemanIcon" style="display:inline-block;width:100%;height:auto;z-index:8;">
+<div id="wb_DevicemanIcon" style="display:inline-block;width:100%;height:auto;z-index:9;">
 <a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanIcon', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanIcon', '', 0, 500);return false;"><img src="images/AZIcon_Deviceman.jpg" id="DevicemanIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:10;">
 <a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_DeforminNorman.jpg" id="DeforminNormanIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
@@ -3150,7 +3199,7 @@ $(document).ready(function()
 <div id="VideoArea">
 <div class="row">
 <div class="col-1">
-<div id="wb_StingOpsImage" style="display:inline-block;width:200px;height:43px;z-index:11;">
+<div id="wb_StingOpsImage" style="display:inline-block;width:200px;height:43px;z-index:12;">
 <a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="200" height="44"></a>
 </div>
 </div>
@@ -3161,10 +3210,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:12;">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:13;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:13;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:14;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -3197,17 +3246,17 @@ $(document).ready(function()
 <div id="OtherStuffGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:15;">
+<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:16;">
 <a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="393" height="197"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:16;">
+<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:17;">
 <a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing" title="Guides&amp;Stuff" onmouseenter="AnimateCss('wb_Guides_Stuff', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_Guides_Stuff', '', 0, 500);return false;"><img src="images/Guides&Stuff.png" id="Guides_Stuff" alt="" width="176" height="159"></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:17;">
+<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:18;">
 <a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHIpodcastLogo.png" id="IWHIimage" alt="" width="393" height="435"></a>
 </div>
 </div>
@@ -3221,9 +3270,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1015px;width:100%;height:65px;z-index:34;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1015px;width:100%;height:65px;z-index:35;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:23;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:24;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3240,7 +3289,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:24;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:25;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

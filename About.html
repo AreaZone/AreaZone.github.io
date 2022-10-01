@@ -57,14 +57,6 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
    padding: 0;
    margin: 0;
    text-align: center;
@@ -79,207 +71,12 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
-#wb_A1 
+#wb_AboutTitle
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 5px 5px 5px 5px;
+   display: block;
    margin: 0;
-   text-align: left;
-}
-#wb_A1 div
-{
-   text-align: left;
-}
-#wb_A1:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_SelfPortrait
-{
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   vertical-align: top;
-}
-#SelfPortrait
-{
-   border: 0px solid #000000;
-   padding: 5px 5px 5px 5px;
-   display: inline-block;
-   width: 288px;
-   height: auto;
-}
-#wb_WhoIsThisGuy 
-{
-   background-color: rgba(23,23,23,0.69);
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 5px 5px 5px 5px;
-   margin: 0;
-   text-align: left;
-}
-#wb_WhoIsThisGuy div
-{
-   text-align: left;
-}
-#wb_WhoIsThisGuy:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#FlexGridAbout
-{
-   display: grid;
-   background-color: rgba(0,0,0,0.20);
-   background-image: none;
-   border: 0px solid #CCCCCC;
    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size: 0px;
-   grid-column-gap: 5px;
-   grid-row-gap: 5px;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header header header header"
-      "main main main main"
-      "Q1 A1 A1 A1";
-}
-#FlexGridAbout .header
-{
-   display: flex;
-   grid-area: header;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 20px 0px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .main
-{
-   display: flex;
-   grid-area: main;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1
-{
-   display: flex;
-   grid-area: Q1;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .A1
-{
-   display: flex;
-   grid-area: A1;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#wb_Q1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Q1
-{
-   color: #00BFFF;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 24px;
-}
-#wb_Q1 div
-{
-   text-align: center;
-}
-#wb_Q1:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
+   width: 100%;
 }
 #wb_FooterText 
 {
@@ -1332,6 +1129,194 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 0px 15px 30px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_LayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: center;
+}
+#LayoutGrid1 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 75%;
+   text-align: center;
+}
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_SelfPortrait
+{
+   margin: 0;
+   vertical-align: top;
+}
+#SelfPortrait
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 5px 5px 5px 5px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 240px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_WhoIsThisGuy 
+{
+   background-color: rgba(23,23,23,0.69);
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 5px 5px 5px 5px;
+   margin: 0;
+   text-align: left;
+}
+#wb_WhoIsThisGuy div
+{
+   text-align: left;
+}
+#wb_WhoIsThisGuy:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_WhoIsThisGuy
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
 #Footer
 {
    background-color: #000000;
@@ -1350,358 +1335,13 @@ body
 }
 #wb_AboutTitle
 {
-   width: auto !important;
-   height: auto !important;
    visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
+   display: block !important;
 }
 #wb_AboutTitle
 {
    margin: 0;
    padding: 0;
-}
-#wb_A1
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_A1
-{
-   margin: 0;
-   padding: 5px 5px 5px 5px;
-}
-#wb_SelfPortrait
-{
-   width: 247px !important;
-   height: 310px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 5px 5px 5px 5px;
-}
-#SelfPortrait
-{
-   width: 247px;
-   height: 310px;
-}
-#wb_WhoIsThisGuy
-{
-   width: 615px !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_WhoIsThisGuy
-{
-   margin: 0;
-   padding: 5px 5px 5px 5px;
-}
-#FlexGridAbout
-{
-   visibility: visible !important;
-   display: grid !important;
-}
-#FlexGridAbout
-{
-   margin: 0;
-   grid-column-gap: 5px;
-   grid-row-gap: 5px;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header header header header"
-      "main main main main"
-      "Q1 A1 A1 A1";
-}
-#FlexGridAbout .header
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 20px 0px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .nav
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-start;
-   align-items: flex-start;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .main
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-start;
-   align-items: flex-start;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-#FlexGridAbout .A1
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1answer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1question
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Blank2
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q2question
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q2answer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Image
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: stretch;
-   align-items: stretch;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Pic
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0px 20px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#wb_Q1
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_Q1
-{
-   font-family: Calibri;
-   font-weight: normal;
-   font-size: 27px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
 }
 #wb_FooterText
 {
@@ -1814,9 +1454,70 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_LayoutGrid2
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_LayoutGrid2
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   padding: 0px 15px 30px 15px;
+}
+#LayoutGrid2 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_LayoutGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   padding: 0px 15px 0px 15px;
+}
+#LayoutGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_SelfPortrait
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 5px 5px 5px 5px;
+}
+#wb_WhoIsThisGuy
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_WhoIsThisGuy
+{
+   margin: 0;
+   padding: 5px 5px 5px 5px;
+}
 #Footer
 {
-   top: 1001px !important;
+   top: 875px !important;
    height: 65px !important;
    visibility: visible !important;
    font-size: 8px;
@@ -1847,358 +1548,13 @@ body
 }
 #wb_AboutTitle
 {
-   width: auto !important;
-   height: auto !important;
    visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
+   display: block !important;
 }
 #wb_AboutTitle
 {
    margin: 0;
    padding: 0;
-}
-#wb_A1
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_A1
-{
-   margin: 0;
-   padding: 5px 5px 5px 5px;
-}
-#wb_SelfPortrait
-{
-   width: 97px !important;
-   height: 121px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 5px 5px 5px 5px;
-}
-#SelfPortrait
-{
-   width: 97px;
-   height: 121px;
-}
-#wb_WhoIsThisGuy
-{
-   width: 310px !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_WhoIsThisGuy
-{
-   margin: 0;
-   padding: 5px 5px 5px 5px;
-}
-#FlexGridAbout
-{
-   visibility: visible !important;
-   display: grid !important;
-}
-#FlexGridAbout
-{
-   margin: 0;
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 100px auto 100px;
-   grid-template-areas:
-      "header header header header"
-      "main main main main"
-      "Q1 A1 A1 A1";
-}
-#FlexGridAbout .header
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 20px 0px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .nav
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-start;
-   align-items: flex-start;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .main
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-#FlexGridAbout .A1
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 100px 0px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1answer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1question
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Blank2
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q2question
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q2answer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Q1
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 100px 0px 0px 0px;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Image
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: stretch;
-   align-items: stretch;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGridAbout .Pic
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#wb_Q1
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_Q1
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   margin: 0;
-   padding: 5px 5px 5px 5px;
-   text-align: center;
 }
 #wb_FooterText
 {
@@ -2311,9 +1667,70 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_LayoutGrid2
+{
+   visibility: visible !important;
+   display: table !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_LayoutGrid2
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   padding: 0px 15px 30px 15px;
+}
+#LayoutGrid2 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_LayoutGrid1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   padding: 0px 15px 0px 15px;
+}
+#LayoutGrid1 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_SelfPortrait
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 5px 5px 5px 5px;
+}
+#wb_WhoIsThisGuy
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_WhoIsThisGuy
+{
+   margin: 0;
+   padding: 5px 5px 5px 5px;
+}
 #Footer
 {
-   top: 1388px !important;
+   top: 1235px !important;
    height: 65px !important;
    visibility: visible !important;
    font-size: 13px;
@@ -2333,12 +1750,12 @@ body
 }
 </style>
 <script src="jquery-1.12.4.min.js"></script>
-<script src="wb.lazyload.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="util.min.js"></script>
 <script src="collapse.min.js"></script>
 <script src="dropdown.min.js"></script>
+<script src="wb.lazyload.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -2360,41 +1777,16 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="FlexGridAbout">
-<div class="header">
-<div id="wb_AboutTitle">
-<span style="color:#FFFFFF;font-family:Arial;font-size:29px;"><strong><br>THE ABOUT ZONE</strong></span>
-</div>
-</div>
-<div class="main">
-<div id="wb_SelfPortrait" style="display:inline-block;width:288px;z-index:1;">
-<img src="images/placeholder.gif" data-src="https://i.imgur.com/0va8FMU.png" id="SelfPortrait" alt="" width="288" height="418">
-</div>
-<div id="wb_WhoIsThisGuy">
-<span style="color:#00BFFF;font-family:Arial;font-size:21px;">WHO IS THIS GUY? </span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><br>Alex Pomorski, Michigan resident, terrestrial human avatar of the Area Zone. Likes creating things with a narrative. Wound up in the Marine Corps in Japan for a few years but now back to school, pursuing the dream of becoming a starving artist in the capitalist hellscape of Earth. <br>I guess this website sort of functions as his portfolio or whatever. <br><br>WORK HISTORY <br>• United States Marine Corps, Micro-Miniature Avionics Technician, 2015 - 2020&nbsp; <br>• Other work stuff that doesn't matter because it can't top being in the Marine Corps (everything before 2015) <br><br>EDUCATION HISTORY <br>• <u>Savannah College of Art &amp; Design</u>, Sequential Art MFA, 2021 to Present. <br>• <u>Columbus State Community College</u>, 24 credits. Certificates in Digital Painting, Digital Design and Graphics, Advanced InDesign and Illustrator 2019 to 2020 <br>• <u>United States Marine Corps</u>, IASSC Certified Lean Six Sigma Yellow Belt certification 2016. First-degree black belt martial arts instructor in the Marine Corps Martial Arts program 2019 <br>• <u>Eastern Michigan University</u>, 100 credit hours, Bachelor’s in Criminology with a concentration in Law Enforcement, 2009 to 2011. Additional Information Technology courses until 2013 with a CompTIA A+ (2009 edition) Essentials Certification in 2012 <br>• <u>Saginaw Valley State University</u>, 16 credits with 6 transfer credit hours toward a degree in Criminology, 2008 to 2009 <br>• <u>Huron Valley Ambulance</u>, Certified EMT and National Registry of Emergency Medical Technicians (NREMT) license and MI State certification 2013 <br>• <u>The Inn at St. John’s</u>, Service Etiquette Training, 2012&nbsp; <br>• <u>Washtenaw Community College</u>, 69 credit hours, 24 credits toward film, 45 toward criminology and other courses, Certified Nurse Assistant, 2006 to 2014&nbsp; <br>• <u>RCTC </u>(Regional Career Technical Center at Ypsilanti High School), Certificates for Advanced Adobe Photoshop, Desktop Publishing, Adobe Photoshop, and Desktop Publishing using Adobe InDesign, 2005-2006 <br><br>Likes: shows, movies, sci-fi, animation, electronic/synthwave/darkwave/breakbeat/industrial/metal/mashup music, 3D printing, computers, digital art, truth, justice, anarchism - all the good stuff. </span>
-</div>
-</div>
-<div class="Q1">
-<div id="wb_Q1">
-<span style="color:#00BFFF;">WHAT IS THIS SITE FOR? WHAT IS THE POINT?</span>
-</div>
-</div>
-<div class="A1">
-<div id="wb_A1">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">The Area Zone was originally created as a website on some ancient 90's website maker. <br>It is basically my central online hub that exists outside of social media. </span>
-</div>
-</div>
-</div>
 <div id="wb_header">
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:5;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:0;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt="" width="50" height="50"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:6;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -2428,10 +1820,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:7;">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:2;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:8;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:3;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -2445,9 +1837,36 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:935px;width:100%;height:65px;z-index:14;">
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_AboutTitle">
+<span style="color:#FFFFFF;font-family:Arial;font-size:29px;"><strong><br>THE ABOUT ZONE</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_SelfPortrait" style="display:inline-block;width:100%;height:auto;z-index:5;">
+<img src="images/placeholder.gif" data-src="https://i.imgur.com/0va8FMU.png" id="SelfPortrait" alt="" width="295" height="428">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_WhoIsThisGuy">
+<span style="color:#00BFFF;font-family:Arial;font-size:21px;">WHO IS THIS GUY? </span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><br>Alex Charles Pomorski, terrestrial human avatar of the Area Zone. Likes creating things with a narrative. Wound up in the Marine Corps in Japan for a few years, but is now back to school, pursuing a dream. <br><br>NOTEWORTHY HISTORY <br>• <u>SCAD</u>: 2021 - present<br>• <u>United States Marine Corps</u>: 2015 - 2020&nbsp; <br><br>EDUCATION HISTORY <br>• <u>Savannah College of Art &amp; Design</u>, Sequential Art MFA, 2021 to Present. <br>• <u>Columbus State Community College</u>, 24 credits. Certificates in Digital Painting, Digital Design and Graphics, Advanced InDesign and Illustrator 2019 to 2020 <br>• <u>Eastern Michigan University</u>, 100 credit hours, Bachelor’s in Criminology with a concentration in Law Enforcement, 2009 to 2011. Additional Information Technology courses until 2013 with a CompTIA A+ (2009 edition) Essentials Certification in 2012 <br>• <u>RCTC </u>(Regional Career Technical Center at Ypsilanti High School), Certificates for Advanced Adobe Photoshop, Desktop Publishing, Adobe Photoshop, and Desktop Publishing using Adobe InDesign, 2005-2006 <br><br>LIKES: sequential art, movies, shows, animation, computer software, digital art, electronic/synthwave/metal/mashup music, anarchism, etc. <br><br>WHAT IS THE AREA ZONE?: The Area Zone was originally created as a website on some ancient 90's website maker with an intentionally vague and redundant name. It is basically my central online hub. Also, it is an unknowable eldritch entity beyond the comprehension of mere mortals. </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:875px;width:100%;height:65px;z-index:13;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:9;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:7;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2464,7 +1883,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:10;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:8;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

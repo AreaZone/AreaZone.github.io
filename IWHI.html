@@ -40,23 +40,31 @@ input:focus, textarea:focus, select:focus
    outline: none;
 }
 </style>
-<link href="cupertino/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <style>
-@-webkit-keyframes filter-invert
+@-webkit-keyframes heartbeat-1
 {
-   0% { filter: invert(1);  }
-   100% { filter: invert(0);  }
+   0% { -webkit-transform: rotate(0deg) ;  }
+   15% { -webkit-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { -webkit-transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { -webkit-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { -webkit-transform: rotate(0deg) scale(1.0,1.0) ;  }
 }
-@-moz-keyframes filter-invert
+@-moz-keyframes heartbeat-1
 {
-   0% { filter: invert(1);  }
-   100% { filter: invert(0);  }
+   0% { -moz-transform: rotate(0deg) ;  }
+   15% { -moz-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { -moz-transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { -moz-transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { -moz-transform: rotate(0deg) scale(1.0,1.0) ;  }
 }
-@keyframes filter-invert
+@keyframes heartbeat-1
 {
-   0% { filter: invert(1);  }
-   100% { filter: invert(0);  }
+   0% { transform: rotate(0deg) ;  }
+   15% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   25% { transform: rotate(0deg) scale(1.1,1.1) ;  }
+   35% { transform: rotate(0deg) scale(1.2,1.2) ;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
@@ -64,10 +72,10 @@ input:focus, textarea:focus, select:focus
 @media only screen and (max-width: 999px)
 {
 }
-#CONTACT
+#SPLASH
 {
    background-color: transparent;
-   background-image: url('https://www.nasa.gov/images/content/627359main1_potw1209a-670.jpg');
+   background-image: url('https://i.imgur.com/VTV34JO.jpg');
    background-repeat: repeat;
    background-position: center top;
    background-attachment: fixed;
@@ -75,7 +83,7 @@ input:focus, textarea:focus, select:focus
    background-size: cover;
    margin: 0;
 }
-#CONTACT-overlay
+#SPLASH-overlay
 {
    position: absolute;
    top: 0;
@@ -84,288 +92,6 @@ input:focus, textarea:focus, select:focus
    left: 0;
    background-color: #191970;
    opacity: 0.2;
-}
-#wb_ContactPageText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_ContactPageText div
-{
-   text-align: center;
-}
-#wb_DeviantArtSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_DeviantArtSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#DeviantArtSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#DeviantArtSocialLink i
-{
-   color: #05CC47;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 28px;
-}
-#wb_DeviantArtSocialLink:hover i
-{
-   color: #00BFFF;
-}
-#wb_FacebookIconSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_FacebookIconSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#FacebookIconSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#FacebookIconSocialLink i
-{
-   color: #4267B2;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 42px;
-}
-#wb_FacebookIconSocialLink:hover i
-{
-   color: #00BFFF;
-}
-#wb_YouTubeSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_YouTubeSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#YouTubeSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#YouTubeSocialLink i
-{
-   color: #FF0000;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 49px;
-}
-#wb_YouTubeSocialLink:hover i
-{
-   color: #00BFFF;
-}
-#wb_TwitterSocialLink
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_TwitterSocialLink:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-}
-#TwitterSocialLink
-{
-   height: 50px;
-   width: 50px;
-}
-#TwitterSocialLink i
-{
-   color: #1DA1F2;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 42px;
-}
-#wb_TwitterSocialLink:hover i
-{
-   color: #BA55D3;
-}
-#wb_ContactPlace 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_ContactPlace div
-{
-   text-align: center;
-}
-#wb_ContactPlace:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_Discord
-{
-   vertical-align: top;
-}
-#Discord
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#EmailButton
-{
-   font-family: Tahoma;
-   font-weight: bold;
-   font-size: 13px;
-   font-style: normal;
-}
-#wb_EmailButton
-{
-   border-radius: 6px;
-   margin: 0;
-   vertical-align: top;
-}
-#EmailButton
-{
-   box-sizing: border-box;
-   padding: 0;
-   text-align: center;
-}
-#wb_EmailButton .ui-button
-{
-   margin: 0;
-   line-height: 48px;
-}
-#EmailButton
-{
-   color: #2779AA;
-   text-decoration: none;
-}
-#EmailButton :hover
-{
-   color: #0070A3;
-}
-#EmailButton :active
-{
-   color: #FFFFFF;
-}
-#wb_EmailButton .ui-corner-all, #wb_EmailButton .ui-corner-left
-{
-   border-bottom-left-radius: 6px;
-   border-top-left-radius: 6px;
-}
-#wb_EmailButton .ui-corner-all, #wb_EmailButton .ui-corner-right
-{
-   border-bottom-right-radius: 6px;
-   border-top-right-radius: 6px;
-}
-#wb_EmailButton .ui-button
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #9370DB;
-   color: #4B0082;
-}
-#wb_EmailButton .ui-state-hover, #wb_EmailButton .ui-button:hover
-{
-   border-color: #9370DB;
-   background-color: #87CEEB;
-   background-image: none;
-   color: #4B0082;
-}
-#wb_EmailButton .ui-state-active, #wb_EmailButton .ui-button:active
-{
-   border-color: #9370DB;
-   background-color: #4B0082;
-   background-image: none;
-   color: #FFA500;
-}
-#wb_EmailButton .ui-button .ui-icon
-{
-   background-image: url('images/Contact-EmailButton-default.png');
-   background-position: 0 0;
-}
-#wb_EmailButton .ui-button:hover .ui-icon
-{
-   background-image: url('images/Contact-EmailButton-hover.png');
-   background-position: 0 0;
-}
-#wb_EmailButton .ui-button:active .ui-icon
-{
-   background-image: url('images/Contact-EmailButton-active.png');
-   background-position: 0 0;
-}
-#wb_EmailButton .ui-visual-focus
-{
-   box-shadow: none;
-}
-#wb_FooterText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_FooterText div
-{
-   text-align: center;
 }
 #wb_header
 {
@@ -1016,19 +742,91 @@ input:focus, textarea:focus, select:focus
    height: 50px;
    vertical-align: top;
 }
-#wb_Image1
+#wb_FooterText 
 {
-   vertical-align: top;
-}
-#Image1
-{
+   background-color: transparent;
+   background-image: none;
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: center;
+}
+#wb_FooterText div
+{
+   text-align: center;
+}
+#FlexGrid1
+{
+   display: grid;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: 0px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px auto;
+   grid-template-areas:
+      "Blank Blank"
+      "L R";
+}
+#FlexGrid1 .Blank
+{
+   display: flex;
+   grid-area: Blank;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .L
+{
+   display: flex;
+   grid-area: L;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .R
+{
+   display: flex;
+   grid-area: R;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   -webkit-align-content: stretch;
+   align-content: stretch;
 }
 #wb_HiddenHeader
 {
@@ -1419,53 +1217,125 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
-#wb_Instagram
+#wb_IWHIlogo
 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #05CC47;
-   text-align: center;
    margin: 0;
-   padding: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
    vertical-align: top;
 }
-#wb_Instagram:hover
+#IWHIlogo
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: inline-block;
+   width: 400px;
+   height: auto;
+}
+#wb_AZpresents 
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #245580;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
+   margin: 0;
+   text-align: center;
 }
-#Instagram
+#wb_AZpresents div
 {
-   height: 50px;
-   width: 50px;
+   text-align: center;
 }
-#Instagram i
+#wb_AZpresents:hover
 {
-   color: #BA55D3;
-   display: inline-block;
-   font-size: 50px;
-   line-height: 50px;
-   vertical-align: middle;
-   width: 42px;
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
 }
-#wb_Instagram:hover i
+#wb_InfoText 
 {
-   color: #1DA1F2;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
+   margin: 0;
+   text-align: center;
 }
-#wb_Patreon
+#wb_InfoText div
 {
+   text-align: center;
+}
+#wb_InfoText:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_DevicemanLogoText
+{
+   margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
    vertical-align: top;
 }
-#Patreon
+#DevicemanLogoText
 {
    border: 0px solid #000000;
    padding: 0;
+   display: inline-block;
+   width: 400px;
+   height: auto;
+}
+#wb_IWHIdescription 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: center;
+}
+#wb_IWHIdescription div
+{
+   text-align: center;
+}
+#wb_IWHIdescription:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
 }
 #Footer
 {
@@ -1480,210 +1350,26 @@ body
    background-color: #000000;
    background-image: none;
 }
-#CONTACT
+#SPLASH
 {
-   height: 1009px !important;
+   height: 906px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
 }
-#CONTACT
+#SPLASH
 {
    width: 100%;
    margin: 0;
 }
-#CONTACT_Container
+#SPLASH_Container
 {
    width: 1000px !important;
 }
-#CONTACT
+#SPLASH
 {
     width: 100%;
-    height: 1009px;
-}
-#wb_ContactPageText
-{
-   left: 28px !important;
-   top: 134px !important;
-   width: 945px !important;
-   height: 113px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_ContactPageText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_DeviantArtSocialLink
-{
-   left: 735px !important;
-   top: 262px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#DeviantArtSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#DeviantArtSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 28px;
-}
-#wb_FacebookIconSocialLink
-{
-   left: 597px !important;
-   top: 262px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#FacebookIconSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#FacebookIconSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_YouTubeSocialLink
-{
-   left: 321px !important;
-   top: 262px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-   color: #FF0000;
-}
-#YouTubeSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#YouTubeSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 49px;
-   color: #FF0000;
-}
-#wb_YouTubeSocialLink:hover i
-{
-   color: #FF0000;
-}
-#wb_TwitterSocialLink
-{
-   left: 459px !important;
-   top: 262px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#TwitterSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#TwitterSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_ContactPlace
-{
-   left: 0px !important;
-   top: 66px !important;
-   width: 1000px !important;
-   height: 36px !important;
-   visibility: hidden !important;
-   display: none !important;
-}
-#wb_ContactPlace
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Discord
-{
-   left: 180px !important;
-   top: 268px !important;
-   width: 53px !important;
-   height: 38px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#Disqus
-{
-   left: 42px !important;
-   top: 422px !important;
-   width: 872px !important;
-   height: 459px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_EmailButton
-{
-   left: 388px !important;
-   top: 343px !important;
-   width: 181px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-}
-#EmailButton
-{
-   font-size: 13px;
-}
-#wb_EmailButton .ui-button
-{
-   line-height: 48px;
-   padding: 0;
-}
-#wb_FooterYear
-{
-   left: 0px !important;
-   top: 0px !important;
-   width: 1000px !important;
-   height: 23px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_FooterText
-{
-   left: 0px !important;
-   top: 23px !important;
-   width: 1000px !important;
-   height: 13px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_FooterText
-{
-   margin: 0;
-   padding: 0;
+    height: 906px;
 }
 #wb_header
 {
@@ -1731,16 +1417,139 @@ body
    width: 50px;
    height: 50px;
 }
-#wb_Image1
+#wb_FooterYear
 {
-   left: 349px !important;
-   top: 75px !important;
-   width: 303px !important;
-   height: 31px !important;
+   left: 0px !important;
+   top: 0px !important;
+   width: 1000px !important;
+   height: 23px !important;
    visibility: visible !important;
    display: inline !important;
+}
+#wb_FooterText
+{
+   left: 0px !important;
+   top: 23px !important;
+   width: 1000px !important;
+   height: 13px !important;
+   visibility: visible !important;
+   display: inline !important;
+}
+#wb_FooterText
+{
    margin: 0;
    padding: 0;
+}
+#FlexGrid1
+{
+   visibility: visible !important;
+   display: grid !important;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#FlexGrid1
+{
+   margin: 0;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px auto;
+   grid-template-areas:
+      "Blank Blank"
+      "L R";
+}
+#FlexGrid1 .Blank
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .L
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .R
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+#FlexGrid1 .sidebar
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+#FlexGrid1 .footer
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
 }
 #wb_HiddenHeader
 {
@@ -1784,42 +1593,104 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_Instagram
+#wb_IWHIlogo
 {
-   left: 42px !important;
-   top: 262px !important;
-   width: 50px !important;
-   height: 50px !important;
+   width: 400px !important;
+   height: 397px !important;
    visibility: visible !important;
    display: inline !important;
    margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
    padding: 0;
 }
-#Instagram
+#wb_AZpresents
 {
-   width: 50px;
-   height: 50px;
-}
-#Instagram i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_Patreon
-{
-   left: 874px !important;
-   top: 267px !important;
-   width: 40px !important;
-   height: 40px !important;
+   width: auto !important;
+   height: auto !important;
    visibility: visible !important;
    display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_AZpresents
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_InfoText
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_InfoText
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanLogoText
+{
+   width: 300px !important;
+   height: 152px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
+}
+#DevicemanLogoText
+{
+   width: 300px;
+   height: 152px;
+}
+#wb_IWHIdescription
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_IWHIdescription
+{
    margin: 0;
    padding: 0;
 }
 #Footer
 {
-   top: 994px !important;
+   top: 955px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -1839,210 +1710,26 @@ body
    background-color: #000000;
    background-image: none;
 }
-#CONTACT
+#SPLASH
 {
-   height: 1254px !important;
+   height: 678px !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
 }
-#CONTACT
+#SPLASH
 {
    width: 100%;
    margin: 0;
 }
-#CONTACT_Container
+#SPLASH_Container
 {
    width: 320px !important;
 }
-#CONTACT
+#SPLASH
 {
     width: 100%;
-    height: 1254px;
-}
-#wb_ContactPageText
-{
-   left: 0px !important;
-   top: 103px !important;
-   width: 300px !important;
-   height: 155px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_ContactPageText
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_DeviantArtSocialLink
-{
-   left: 0px !important;
-   top: 405px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#DeviantArtSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#DeviantArtSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 28px;
-}
-#wb_FacebookIconSocialLink
-{
-   left: 270px !important;
-   top: 298px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#FacebookIconSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#FacebookIconSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_YouTubeSocialLink
-{
-   left: 137px !important;
-   top: 298px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-   color: #FF0000;
-}
-#YouTubeSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#YouTubeSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 49px;
-   color: #FF0000;
-}
-#wb_YouTubeSocialLink:hover i
-{
-   color: #FF0000;
-}
-#wb_TwitterSocialLink
-{
-   left: 204px !important;
-   top: 298px !important;
-   width: 50px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#TwitterSocialLink
-{
-   width: 50px;
-   height: 50px;
-}
-#TwitterSocialLink i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_ContactPlace
-{
-   left: 0px !important;
-   top: 67px !important;
-   width: 320px !important;
-   height: 36px !important;
-   visibility: hidden !important;
-   display: none !important;
-}
-#wb_ContactPlace
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Discord
-{
-   left: 67px !important;
-   top: 303px !important;
-   width: 53px !important;
-   height: 40px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   padding: 0;
-}
-#Disqus
-{
-   left: 0px !important;
-   top: 471px !important;
-   width: 320px !important;
-   height: 759px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_EmailButton
-{
-   left: 70px !important;
-   top: 405px !important;
-   width: 181px !important;
-   height: 50px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-}
-#EmailButton
-{
-   font-size: 13px;
-}
-#wb_EmailButton .ui-button
-{
-   line-height: 48px;
-   padding: 0;
-}
-#wb_FooterYear
-{
-   left: 0px !important;
-   top: 0px !important;
-   width: 320px !important;
-   height: 23px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_FooterText
-{
-   left: 0px !important;
-   top: 23px !important;
-   width: 320px !important;
-   height: 13px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_FooterText
-{
-   margin: 0;
-   padding: 0;
+    height: 678px;
 }
 #wb_header
 {
@@ -2090,16 +1777,175 @@ body
    width: 50px;
    height: 50px;
 }
-#wb_Image1
+#wb_FooterYear
 {
-   left: 9px !important;
-   top: 68px !important;
-   width: 303px !important;
-   height: 31px !important;
+   left: 0px !important;
+   top: 0px !important;
+   width: 320px !important;
+   height: 23px !important;
    visibility: visible !important;
    display: inline !important;
+}
+#wb_FooterText
+{
+   left: 0px !important;
+   top: 23px !important;
+   width: 320px !important;
+   height: 13px !important;
+   visibility: visible !important;
+   display: inline !important;
+}
+#wb_FooterText
+{
    margin: 0;
    padding: 0;
+}
+#FlexGrid1
+{
+   visibility: visible !important;
+   display: grid !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#FlexGrid1
+{
+   margin: 0;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px auto;
+   grid-template-areas:
+      "Blank Blank"
+      "L L";
+}
+#FlexGrid1 .Blank
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .nav
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .main
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .sidebar
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+#FlexGrid1 .footer
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .L
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
+}
+#FlexGrid1 .R
+{
+   display: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   padding: 0;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-align-content: center;
+   align-content: center;
 }
 #wb_HiddenHeader
 {
@@ -2143,42 +1989,104 @@ body
    margin: 0;
    text-align: right;
 }
-#wb_Instagram
+#wb_IWHIlogo
 {
-   left: 0px !important;
-   top: 298px !important;
-   width: 50px !important;
-   height: 50px !important;
+   width: 400px !important;
+   height: 397px !important;
    visibility: visible !important;
    display: inline !important;
    margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
    padding: 0;
 }
-#Instagram
+#wb_AZpresents
 {
-   width: 50px;
-   height: 50px;
-}
-#Instagram i
-{
-   line-height: 50px;
-   font-size: 50px;
-   width: 42px;
-}
-#wb_Patreon
-{
-   left: 272px !important;
-   top: 410px !important;
-   width: 40px !important;
-   height: 40px !important;
+   width: auto !important;
+   height: auto !important;
    visibility: visible !important;
    display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_AZpresents
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_InfoText
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_InfoText
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_DevicemanLogoText
+{
+   width: 280px !important;
+   height: 142px !important;
+   visibility: visible !important;
+   display: inline !important;
+   margin: 0;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
+}
+#DevicemanLogoText
+{
+   width: 280px;
+   height: 142px;
+}
+#wb_IWHIdescription
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_IWHIdescription
+{
    margin: 0;
    padding: 0;
 }
 #Footer
 {
-   top: 1284px !important;
+   top: 731px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -2203,8 +2111,7 @@ body
 <script>
 $(document).ready(function()
 {
-   $('#CONTACT').parallax();
-   $("#EmailButton").button();
+   $('#SPLASH').parallax();
    $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
@@ -2222,67 +2129,46 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<div id="CONTACT" style="position:relative;text-align:center;width:100%;height:1009px;float:left;clear:left;display:block;z-index:18;">
-<div id="CONTACT-overlay"></div>
-<div id="CONTACT_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FacebookIconSocialLink" style="position:absolute;left:673px;top:271px;width:50px;height:50px;text-align:center;z-index:0;">
-<a href="https://www.facebook.com/areazonefacebook" title="Facebook"><div id="FacebookIconSocialLink"><i class="fa fa-facebook-official"></i></div></a></div>
-<div id="wb_YouTubeSocialLink" style="position:absolute;left:355px;top:271px;width:50px;height:50px;text-align:center;z-index:1;">
-<a href="https://www.youtube.com/user/theAreaZone" title="YouTube"><div id="YouTubeSocialLink"><i class="fa fa-youtube-play"></i></div></a></div>
-<div id="wb_TwitterSocialLink" style="position:absolute;left:514px;top:271px;width:50px;height:50px;text-align:center;z-index:2;">
-<a href="https://twitter.com/TheAreaZone" title="Twitter"><div id="TwitterSocialLink"><i class="fa fa-twitter-square"></i></div></a></div>
-<!-- Disqus -->
-<div id="Disqus" style="position:absolute;left:34px;top:343px;width:1232px;height:540px;z-index:3">
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = 'https://areazone.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
-<div id="wb_EmailButton" style="position:absolute;left:1085px;top:272px;width:181px;height:50px;z-index:4;">
-<a class="ui-button ui-widget ui-corner-all" id="EmailButton" href="mailto:theareazone@gmail.com" style="width:100%;height:100%;">SEND EMAIL</a></div>
-<div id="wb_ContactPlace" style="position:absolute;left:0px;top:101px;width:1300px;height:36px;text-align:center;z-index:5;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong>CONTACT PLACE</strong></span></div>
-<div id="wb_ContactPageText" style="position:absolute;left:55px;top:145px;width:1190px;height:69px;text-align:center;z-index:6;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:17px;">WHEN YOU GAZE LONG INTO THE ABYSS, THE ABYSS ALSO GAZES BACK INTO YOU... AND MAYBE REPLIES. <br><br>Leave us a message, like, comment, subscribe, send us death threats - it's the internet, do whatever! </span></div>
-<div id="wb_Image1" style="position:absolute;left:499px;top:49px;width:303px;height:31px;z-index:7;">
-<img src="images/AZSocialMedia.png" id="Image1" alt="" width="303" height="31"></div>
-<div id="wb_Discord" style="position:absolute;left:193px;top:277px;width:53px;height:38px;z-index:8;">
-<a href="https://discord.gg/JNds6kDDSe" title="Discord" onmouseover="AnimateCss('wb_Discord', 'filter-invert', 0, 500);return false;"><img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg" id="Discord" alt="" width="53" height="39"></a></div>
-<div id="wb_Instagram" style="position:absolute;left:34px;top:272px;width:50px;height:50px;text-align:center;z-index:9;">
-<a href="https://www.instagram.com/theareazone" title="Instagram"><div id="Instagram"><i class="fa fa-instagram"></i></div></a></div>
-<div id="wb_DeviantArtSocialLink" style="position:absolute;left:832px;top:271px;width:50px;height:50px;text-align:center;z-index:10;">
-<a href="https://www.deviantart.com/uzersname" title="DeviantArt"><div id="DeviantArtSocialLink"><i class="fa fa-deviantart"></i></div></a></div>
-<div id="wb_Patreon" style="position:absolute;left:993px;top:276px;width:40px;height:40px;z-index:11;">
-<a href="https://www.patreon.com/areazone" title="Patreon" onmouseover="AnimateCss('wb_Patreon', 'filter-invert', 0, 500);return false;"><img src="https://cdn.worldvectorlogo.com/logos/patreon.svg" id="Patreon" alt="" width="40" height="40"></a></div>
+<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:19;">
+<div id="SPLASH-overlay"></div>
+<div id="SPLASH_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="FlexGrid1">
+<div class="Blank">
+</div>
+<div class="L">
+<div id="wb_AZpresents">
+<span style="color:#FFFFFF;font-family:Arial;font-size:21px;">THE AREA ZONE PRESENTS</span>
+</div>
+<div id="wb_DevicemanLogoText" style="display:inline-block;width:400px;z-index:1;">
+<a href="./IWHI.html" title="I Wanna Hate It" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/IWHItextLogo.png" id="DevicemanLogoText" alt="IWHItextLogo" width="400" height="204"></a>
+</div>
+<div id="wb_InfoText">
+<span style="color:#FFFFFF;font-family:Arial;font-size:21px;">I WANNA HATE IT!<br><br>RSS: </span><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">https://anchor.fm/s/754f86b4/podcast/rss</span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;"><br>[<a href="https://anchor.fm/iwhi">Listen on Anchor</a>]<br>[<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ">Listen on Spotify</a>]<br><br>SOCIAL MEDIA<br>[<a href="https://www.facebook.com/IWannaHateIt">IWHI Facebook</a>]<br>[<a href="https://discord.gg/uzurTfUKVS">IWHI DIscord</a>]<br>[<a href="https://twitter.com/IWannaHateIt">IWHI Twitter</a>]<br><br></span>
+</div>
+<!-- IWHI RSS Feed -->
+<iframe src="https://anchor.fm/iwhi/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="R">
+<div id="wb_IWHIlogo" style="display:inline-block;width:400px;z-index:4;">
+<img src="images/IwannaHateItLogo%2dNoBG.png" id="IWHIlogo" alt="" width="400" height="398">
+</div>
+<div id="wb_IWHIdescription">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">I Wanna Hate It (IWHI) is a podcast where a pair of idiots break down movies and shows. Before watching, we view a trailer and declare whether we want to hate it, love it, or think it'll be cheesy; off-air, we watch it and take studious notes; lastly, we record a post-watch section recapping what we just saw so that we can definitively tell you, the audience, whether we hated it or not! We also have fun segments such as a death battle against previous episode characters, trivia, goofs, and educational content for the whole family! (NOTE: IWHI contains content not suitable for the whole family)</span>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="wb_header">
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:12;">
+<div id="wb_AreaZoneEyeIcon" style="display:inline-block;width:50px;height:50px;z-index:7;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="AreaZoneEyeIcon" alt="" width="50" height="50"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:13;">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:8;">
 <div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
 <div class="container">
 <div class="navbar-header">
@@ -2316,10 +2202,10 @@ $(document).ready(function()
 <div id="HiddenHeader">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:14;">
+<div id="wb_Image4" style="display:inline-block;width:50px;height:50px;z-index:15;">
 <a href="./index.html" title="THE EYE IS ALWAYS WATCHING... "><img src="images/HelixNebulaAlphaLayerSmall.png" id="Image4" alt="" width="50" height="50"></a>
 </div>
-<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:15;">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:254px;height:54px;z-index:16;">
 <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">AREA ZONE<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
 <input type="checkbox" id="ResponsiveMenu1-submenu">
 <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
@@ -2333,9 +2219,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:994px;width:100%;height:65px;z-index:21;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1004px;width:100%;height:65px;z-index:22;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:16;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:17;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2352,7 +2238,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:17;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:13px;text-align:center;z-index:18;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:11px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

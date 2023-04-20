@@ -9,6 +9,11 @@
 body
 {
    background-color: #000000;
+   background-image: url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA17005.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -86,6 +91,58 @@ input:focus, textarea:focus, select:focus
    25% { transform: translate(-5px,0px) rotate(0deg) ;  }
    75% { transform: translate(5px,0px) rotate(0deg) ;  }
    100% { transform: translate(0px,0px) rotate(0deg) ;  }
+}
+@-webkit-keyframes transform-wobble-center
+{
+   0% { -webkit-transform: rotate(0deg) ;  }
+   15% { -webkit-transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { -webkit-transform: rotate(0deg) skewX(10deg) ;  }
+   45% { -webkit-transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { -webkit-transform: rotate(0deg) skewX(4deg) ;  }
+   75% { -webkit-transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { -webkit-transform: rotate(0deg) skewX(0deg) ;  }
+}
+@-moz-keyframes transform-wobble-center
+{
+   0% { -moz-transform: rotate(0deg) ;  }
+   15% { -moz-transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { -moz-transform: rotate(0deg) skewX(10deg) ;  }
+   45% { -moz-transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { -moz-transform: rotate(0deg) skewX(4deg) ;  }
+   75% { -moz-transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { -moz-transform: rotate(0deg) skewX(0deg) ;  }
+}
+@keyframes transform-wobble-center
+{
+   0% { transform: rotate(0deg) ;  }
+   15% { transform: rotate(0deg) skewX(-12deg) ;  }
+   30% { transform: rotate(0deg) skewX(10deg) ;  }
+   45% { transform: rotate(0deg) skewX(-6deg) ;  }
+   60% { transform: rotate(0deg) skewX(4deg) ;  }
+   75% { transform: rotate(0deg) skewX(-2deg) ;  }
+   100% { transform: rotate(0deg) skewX(0deg) ;  }
+}
+a.SecretLink
+{
+   color: #000000;
+   text-decoration: none;
+   -webkit-transition: all 300ms linear;
+   transition: all 300ms linear;
+}
+a.SecretLink:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.SecretLink:active
+{
+   color: #191970;
+   text-decoration: none;
+}
+a.SecretLink:hover
+{
+   color: #4B0082;
+   text-decoration: none;
 }
 @media only screen and (min-width: 1000px) and (max-width: 1299px)
 {
@@ -241,134 +298,6 @@ input:focus, textarea:focus, select:focus
    grid-column: span 12;
 }
 }
-#SPLASH
-{
-   background-color: transparent;
-   background-image: url('https://i.imgur.com/VTV34JO.jpg');
-   background-repeat: repeat;
-   background-position: center top;
-   background-attachment: fixed;
-   background-position: 50% 0;
-   background-size: cover;
-   margin: 0;
-}
-#SPLASH-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #191970;
-   opacity: 0.2;
-}
-#wb_AZpresents 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_AZpresents div
-{
-   text-align: center;
-}
-#wb_AZpresents:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_DevicemanLogoText
-{
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   vertical-align: top;
-}
-#DevicemanLogoText
-{
-   border: 0px solid #000000;
-   padding: 0;
-   display: inline-block;
-   width: 565px;
-   height: auto;
-}
-#wb_DMsubtitle 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_DMsubtitle div
-{
-   text-align: center;
-}
-#wb_DMsubtitle:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
-#wb_Links 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Links
-{
-   color: #00BFFF;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 16px;
-}
-#wb_Links div
-{
-   text-align: center;
-}
-#wb_Links:hover
-{
-   z-index: 50;
-   -webkit-transition: z-index 500ms linear 0ms;
-   transition: z-index 500ms linear 0ms;
-}
 #wb_FooterText 
 {
    background-color: transparent;
@@ -382,98 +311,7 @@ input:focus, textarea:focus, select:focus
 {
    text-align: center;
 }
-#FlexGrid1
-{
-   display: grid;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-size: 0px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px auto;
-   grid-template-areas:
-      "Blank Blank"
-      "L R";
-}
-#FlexGrid1 .Blank
-{
-   display: flex;
-   grid-area: Blank;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .L
-{
-   display: flex;
-   grid-area: L;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .R
-{
-   display: flex;
-   grid-area: R;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: stretch;
-   align-content: stretch;
-}
-#wb_DevicemanIssue1
-{
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   vertical-align: top;
-}
-#DevicemanIssue1
-{
-   border-width: 0;
-   display: inline-block;
-   width: 244px;
-   height: auto;
-}
-#wb_DevicemanCovers
+#wb_TitleGrid
 {
    clear: both;
    position: relative;
@@ -487,19 +325,19 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#DevicemanCovers
+#TitleGrid
 {
    box-sizing: border-box;
-   padding: 10px 15px 5px 15px;
+   padding: 50px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
-#DevicemanCovers > .row
+#TitleGrid > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2, #DevicemanCovers > .row > .col-3, #DevicemanCovers > .row > .col-4
+#TitleGrid > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -508,98 +346,927 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2, #DevicemanCovers > .row > .col-3, #DevicemanCovers > .row > .col-4
+#TitleGrid > .row > .col-1
 {
    float: left;
 }
-#DevicemanCovers > .row > .col-1
+#TitleGrid > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 25%;
+   width: 100%;
    text-align: center;
 }
-#DevicemanCovers > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: left;
-}
-#DevicemanCovers > .row > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: left;
-}
-#DevicemanCovers > .row > .col-4
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: left;
-}
-#DevicemanCovers:before,
-#DevicemanCovers:after,
-#DevicemanCovers .row:before,
-#DevicemanCovers .row:after
+#TitleGrid:before,
+#TitleGrid:after,
+#TitleGrid .row:before,
+#TitleGrid .row:after
 {
    display: table;
    content: " ";
 }
-#DevicemanCovers:after,
-#DevicemanCovers .row:after
+#TitleGrid:after,
+#TitleGrid .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#DevicemanCovers > .row > .col-1, #DevicemanCovers > .row > .col-2, #DevicemanCovers > .row > .col-3, #DevicemanCovers > .row > .col-4
+#TitleGrid > .row > .col-1
 {
    float: none;
    width: 100% !important;
 }
 }
-#wb_DMcoverIcon01
+#wb_SplashTitle 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0px 0px 20px 0px;
+   margin: 0;
+   text-align: center;
+}
+#wb_SplashTitle div
+{
+   text-align: center;
+}
+#wb_SplashTitle:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_SplashTitle
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_ComicsTitle
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#ComicsTitle
+{
+   box-sizing: border-box;
+   padding: 40px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#ComicsTitle > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#ComicsTitle > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#ComicsTitle > .row > .col-1
+{
+   float: left;
+}
+#ComicsTitle > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#ComicsTitle:before,
+#ComicsTitle:after,
+#ComicsTitle .row:before,
+#ComicsTitle .row:after
+{
+   display: table;
+   content: " ";
+}
+#ComicsTitle:after,
+#ComicsTitle .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#ComicsTitle > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_ComicsGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#ComicsGrid
+{
+   box-sizing: border-box;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding: 10px 0px 5px 0px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+{
+   -webkit-flex: 0 0 auto;
+   flex: 0 0 auto;
+}
+#ComicsGrid > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+#ComicsGrid > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+#ComicsGrid > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+{
+   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_ComicsImage
 {
    margin: 0;
    vertical-align: top;
 }
-#DMcoverIcon01
+#ComicsImage
 {
-   border: 0px solid #000000;
-   box-sizing: border-box;
-   padding: 0px 0px 5px 0px;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 83px;
-   margin-left: auto;
-   margin-right: auto;
+   border-width: 0;
+   display: inline-block;
+   width: 216px;
+   height: 57px;
    vertical-align: top;
 }
-#wb_DMcoverIcon02
+#wb_VideoTitle
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#VideoTitle
+{
+   box-sizing: border-box;
+   padding: 40px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#VideoTitle > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#VideoTitle > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#VideoTitle > .row > .col-1
+{
+   float: left;
+}
+#VideoTitle > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#VideoTitle:before,
+#VideoTitle:after,
+#VideoTitle .row:before,
+#VideoTitle .row:after
+{
+   display: table;
+   content: " ";
+}
+#VideoTitle:after,
+#VideoTitle .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#VideoTitle > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_VideoArea
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#VideoArea
+{
+   box-sizing: border-box;
+   padding: 0px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#VideoArea > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#VideoArea > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#VideoArea > .row > .col-1
+{
+   float: left;
+}
+#VideoArea > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#VideoArea:before,
+#VideoArea:after,
+#VideoArea .row:before,
+#VideoArea .row:after
+{
+   display: table;
+   content: " ";
+}
+#VideoArea:after,
+#VideoArea .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#VideoArea > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_IWHIimage
 {
    margin: 0;
    vertical-align: top;
 }
-#DMcoverIcon02
+#IWHIimage
 {
    border: 0px solid #000000;
    box-sizing: border-box;
-   padding: 0px 0px 5px 0px;
+   padding: 0;
    display: block;
    width: 100%;
    height: auto;
-   max-width: 76px;
+   max-width: 150px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
+}
+#wb_StingOpsImage
+{
+   margin: 0;
+   vertical-align: top;
+}
+#StingOpsImage
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 200px;
+   height: 43px;
+   vertical-align: top;
+}
+#wb_CinematographyComic
+{
+   margin: 0;
+   vertical-align: top;
+}
+#CinematographyComic
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_MassLockedIcon
+{
+   margin: 0;
+   vertical-align: top;
+}
+#MassLockedIcon
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Video! 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Video! div
+{
+   text-align: center;
+}
+#wb_Video!:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_Video!
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_DeforminNormanIcon
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DeforminNormanIcon
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_OtherStuffTitle
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#OtherStuffTitle
+{
+   box-sizing: border-box;
+   padding: 40px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#OtherStuffTitle > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#OtherStuffTitle > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#OtherStuffTitle > .row > .col-1
+{
+   float: left;
+}
+#OtherStuffTitle > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#OtherStuffTitle:before,
+#OtherStuffTitle:after,
+#OtherStuffTitle .row:before,
+#OtherStuffTitle .row:after
+{
+   display: table;
+   content: " ";
+}
+#OtherStuffTitle:after,
+#OtherStuffTitle .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#OtherStuffTitle > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_OtherStuffArea
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#OtherStuffArea
+{
+   box-sizing: border-box;
+   padding: 5px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#OtherStuffArea > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#OtherStuffArea > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#OtherStuffArea > .row > .col-1
+{
+   float: left;
+}
+#OtherStuffArea > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#OtherStuffArea:before,
+#OtherStuffArea:after,
+#OtherStuffArea .row:before,
+#OtherStuffArea .row:after
+{
+   display: table;
+   content: " ";
+}
+#OtherStuffArea:after,
+#OtherStuffArea .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#OtherStuffArea > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_OldCringe 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 1px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_OldCringe div
+{
+   text-align: center;
+}
+#wb_OldCringe:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_OldCringe
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_OtherStuff! 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 1px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_OtherStuff! div
+{
+   text-align: center;
+}
+#wb_OtherStuff!:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_OtherStuff!
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_OtherStuffGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#OtherStuffGrid
+{
+   box-sizing: border-box;
+   padding: 10px 15px 5px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#OtherStuffGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
+{
+   float: left;
+}
+#OtherStuffGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#OtherStuffGrid > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#OtherStuffGrid > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#OtherStuffGrid:before,
+#OtherStuffGrid:after,
+#OtherStuffGrid .row:before,
+#OtherStuffGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#OtherStuffGrid:after,
+#OtherStuffGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#OtherStuffGrid > .row > .col-1, #OtherStuffGrid > .row > .col-2, #OtherStuffGrid > .row > .col-3
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_InstagramLinkIcon
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #05CC47;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_InstagramLinkIcon:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#InstagramLinkIcon
+{
+   height: 50px;
+   width: 50px;
+}
+#InstagramLinkIcon i
+{
+   color: #7D38FF;
+   display: inline-block;
+   font-size: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   width: 42px;
+}
+#wb_InstagramLinkIcon:hover i
+{
+   color: #1DA1F2;
+}
+#wb_Guides_Stuff
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Guides_Stuff
+{
+   border-width: 0;
+   display: inline-block;
+   width: 166px;
+   height: 150px;
+   vertical-align: top;
+}
+#wb_DevicemanIcon
+{
+   margin: 0;
+   vertical-align: top;
+}
+#DevicemanIcon
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_PortfolioPDF
+{
+   margin: 0;
+   vertical-align: top;
+}
+#PortfolioPDF
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 383px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Resume 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 10px 0px 0px 0px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Resume div
+{
+   text-align: center;
+}
+#wb_Resume:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
+#wb_Resume
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_TwitterSocialLink
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #05CC47;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_TwitterSocialLink:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#TwitterSocialLink
+{
+   height: 50px;
+   width: 50px;
+}
+#TwitterSocialLink i
+{
+   color: #7D38FF;
+   display: inline-block;
+   font-size: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   width: 42px;
+}
+#wb_TwitterSocialLink:hover i
+{
+   color: #BA55D3;
 }
 .TopMenu .hide 
 {
@@ -1502,7 +2169,11 @@ input:focus, textarea:focus, select:focus
 body
 {
    background-color: #000000;
-   background-image: none;
+   background-image: url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA17005.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 #wb_MasterHeader
 {
@@ -1541,120 +2212,6 @@ body
 {
    margin-right: -0px;
    margin-left: -0px;
-}
-#SPLASH
-{
-   height: 906px !important;
-   visibility: visible !important;
-   display: block !important;
-   margin: 0;
-}
-#SPLASH
-{
-   width: 100%;
-   margin: 0;
-}
-#SPLASH_Container
-{
-   width: 1000px !important;
-}
-#SPLASH
-{
-    width: 100%;
-    height: 906px;
-}
-#wb_AZpresents
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_AZpresents
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_DevicemanLogoText
-{
-   width: 450px !important;
-   height: 57px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-}
-#DevicemanLogoText
-{
-   width: 450px;
-   height: 57px;
-}
-#wb_DMsubtitle
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_DMsubtitle
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Links
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_Links
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 21px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#wb_FooterYear
-{
-   left: 0px !important;
-   top: 0px !important;
-   width: 1000px !important;
-   height: 23px !important;
-   visibility: visible !important;
-   display: inline !important;
 }
 #wb_FooterText
 {
@@ -1670,170 +2227,337 @@ body
    margin: 0;
    padding: 0;
 }
-#FlexGrid1
+#wb_FooterYear
 {
-   visibility: visible !important;
-   display: grid !important;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
-}
-#FlexGrid1
-{
-   margin: 0;
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px auto;
-   grid-template-areas:
-      "Blank Blank"
-      "L R";
-}
-#FlexGrid1 .Blank
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .L
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .R
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-#FlexGrid1 .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-#FlexGrid1 .footer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#wb_DevicemanIssue1
-{
+   left: 0px !important;
+   top: 0px !important;
+   width: 1000px !important;
+   height: 23px !important;
    visibility: visible !important;
    display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
 }
-#wb_DevicemanCovers
+#wb_TitleGrid
 {
    visibility: visible !important;
    display: table !important;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
 }
-#wb_DevicemanCovers
+#wb_TitleGrid
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#DevicemanCovers
+#TitleGrid
 {
-   padding: 10px 15px 5px 15px;
+   padding: 50px 15px 5px 15px;
 }
-#DevicemanCovers .row
+#TitleGrid .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_DMcoverIcon01
+#wb_SplashTitle
 {
-   width: 100% !important;
    visibility: visible !important;
    display: block !important;
-   margin: 0;
-   padding: 0px 0px 5px 0px;
 }
-#wb_DMcoverIcon02
+#wb_SplashTitle
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_ComicsTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsTitle
+{
+   padding: 40px 15px 10px 15px;
+}
+#ComicsTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid
+{
+   padding: 10px 0px 5px 0px;
+}
+#wb_ComicsImage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#ComicsImage
+{
+   width: 216px;
+   height: 57px;
+}
+#wb_VideoTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoTitle
+{
+   padding: 40px 15px 5px 15px;
+}
+#VideoTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_VideoArea
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoArea
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoArea
+{
+   padding: 0px 15px 5px 15px;
+}
+#VideoArea .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIimage
 {
    width: 100% !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
-   padding: 0px 0px 5px 0px;
+   padding: 0;
+}
+#wb_StingOpsImage
+{
+   width: 200px !important;
+   height: 43px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#StingOpsImage
+{
+   width: 200px;
+   height: 43px;
+}
+#wb_CinematographyComic
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_MassLockedIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Video!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Video!
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_DeforminNormanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuffTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffTitle
+{
+   padding: 40px 15px 5px 15px;
+}
+#OtherStuffTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OtherStuffArea
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffArea
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffArea
+{
+   padding: 5px 15px 5px 15px;
+}
+#OtherStuffArea .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OldCringe
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OldCringe
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuff!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OtherStuff!
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuffGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffGrid
+{
+   padding: 10px 15px 5px 15px;
+}
+#OtherStuffGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_InstagramLinkIcon
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#InstagramLinkIcon
+{
+   width: 50px;
+   height: 50px;
+}
+#InstagramLinkIcon i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
+#wb_Guides_Stuff
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Guides_Stuff
+{
+   width: 166px;
+   height: 150px;
+}
+#wb_DevicemanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_PortfolioPDF
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Resume
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Resume
+{
+   margin: 0;
+   padding: 10px 0px 10px 0px;
+}
+#wb_TwitterSocialLink
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#TwitterSocialLink
+{
+   width: 50px;
+   height: 50px;
+}
+#TwitterSocialLink i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
 }
 #wb_TopMenu
 {
@@ -1887,9 +2611,14 @@ body
 }
 #Footer
 {
-   top: 955px !important;
+   top: 1005px !important;
    height: 65px !important;
    visibility: visible !important;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
 }
 #Footer
 {
@@ -1905,7 +2634,11 @@ body
 body
 {
    background-color: #000000;
-   background-image: none;
+   background-image: url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA17005.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 #wb_MasterHeader
 {
@@ -1945,110 +2678,19 @@ body
    margin-right: -0px;
    margin-left: -0px;
 }
-#SPLASH
+#wb_FooterText
 {
-   height: 678px !important;
-   visibility: visible !important;
-   display: block !important;
-   margin: 0;
-}
-#SPLASH
-{
-   width: 100%;
-   margin: 0;
-}
-#SPLASH_Container
-{
+   left: 0px !important;
+   top: 23px !important;
    width: 320px !important;
-}
-#SPLASH
-{
-    width: 100%;
-    height: 678px;
-}
-#wb_AZpresents
-{
-   width: auto !important;
-   height: auto !important;
+   height: 13px !important;
    visibility: visible !important;
    display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
 }
-#wb_AZpresents
+#wb_FooterText
 {
    margin: 0;
    padding: 0;
-}
-#wb_DevicemanLogoText
-{
-   width: 300px !important;
-   height: 38px !important;
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-}
-#DevicemanLogoText
-{
-   width: 300px;
-   height: 38px;
-}
-#wb_DMsubtitle
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_DMsubtitle
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_Links
-{
-   width: auto !important;
-   height: auto !important;
-   visibility: visible !important;
-   display: inline !important;
-   -webkit-flex-grow: 1;
-   flex-grow: 1;
-   -webkit-flex-shrink: 1;
-   flex-shrink: 1;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   -webkit-align-self: auto;
-   align-self: auto;
-}
-#wb_Links
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
 }
 #wb_FooterYear
 {
@@ -2059,220 +2701,328 @@ body
    visibility: visible !important;
    display: inline !important;
 }
-#wb_FooterText
-{
-   left: 0px !important;
-   top: 23px !important;
-   width: 320px !important;
-   height: 8px !important;
-   visibility: visible !important;
-   display: inline !important;
-}
-#wb_FooterText
-{
-   margin: 0;
-   padding: 0;
-}
-#FlexGrid1
-{
-   visibility: visible !important;
-   display: grid !important;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: 0;
-   font-style: normal;
-   text-decoration: none;
-}
-#FlexGrid1
-{
-   margin: 0;
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px auto;
-   grid-template-areas:
-      "Blank Blank"
-      "L L";
-}
-#FlexGrid1 .Blank
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .nav
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-start;
-   align-items: flex-start;
-   -webkit-align-content: flex-start;
-   align-content: flex-start;
-}
-#FlexGrid1 .main
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .sidebar
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
-}
-#FlexGrid1 .footer
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .L
-{
-   display: flex;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#FlexGrid1 .R
-{
-   display: none;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   padding: 0;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-align-content: center;
-   align-content: center;
-}
-#wb_DevicemanIssue1
-{
-   visibility: visible !important;
-   display: inline !important;
-   margin: 0;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
-   padding: 0;
-}
-#wb_DevicemanCovers
+#wb_TitleGrid
 {
    visibility: visible !important;
    display: table !important;
-   -webkit-flex-grow: 0;
-   flex-grow: 0;
-   -webkit-flex-shrink: 0;
-   flex-shrink: 0;
-   -webkit-align-self: auto;
-   align-self: auto;
 }
-#wb_DevicemanCovers
+#wb_TitleGrid
 {
    margin-top: 0px;
    margin-bottom: 0px;
 }
-#DevicemanCovers
+#TitleGrid
 {
-   padding: 10px 15px 5px 15px;
+   padding: 50px 15px 5px 15px;
 }
-#DevicemanCovers .row
+#TitleGrid .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#wb_DMcoverIcon01
+#wb_SplashTitle
 {
-   width: 100% !important;
    visibility: visible !important;
    display: block !important;
-   margin: 0;
-   padding: 0px 0px 5px 0px;
 }
-#wb_DMcoverIcon02
+#wb_SplashTitle
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_ComicsTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsTitle
+{
+   padding: 40px 15px 10px 15px;
+}
+#ComicsTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_ComicsGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_ComicsGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#ComicsGrid
+{
+   padding: 10px 0px 5px 0px;
+}
+#wb_ComicsImage
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#ComicsImage
+{
+   width: 216px;
+   height: 57px;
+}
+#wb_VideoTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoTitle
+{
+   padding: 40px 15px 5px 15px;
+}
+#VideoTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_VideoArea
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_VideoArea
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#VideoArea
+{
+   padding: 0px 15px 5px 15px;
+}
+#VideoArea .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_IWHIimage
 {
    width: 100% !important;
    visibility: visible !important;
    display: block !important;
    margin: 0;
-   padding: 0px 0px 5px 0px;
+   padding: 5px 5px 5px 5px;
+}
+#wb_StingOpsImage
+{
+   width: 200px !important;
+   height: 43px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#StingOpsImage
+{
+   width: 200px;
+   height: 43px;
+}
+#wb_CinematographyComic
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_MassLockedIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Video!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Video!
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_DeforminNormanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuffTitle
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffTitle
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffTitle
+{
+   padding: 40px 15px 5px 15px;
+}
+#OtherStuffTitle .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OtherStuffArea
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffArea
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffArea
+{
+   padding: 5px 15px 5px 15px;
+}
+#OtherStuffArea .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_OldCringe
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OldCringe
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuff!
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_OtherStuff!
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_OtherStuffGrid
+{
+   visibility: visible !important;
+   display: table !important;
+}
+#wb_OtherStuffGrid
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#OtherStuffGrid
+{
+   padding: 10px 15px 5px 15px;
+}
+#OtherStuffGrid .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_InstagramLinkIcon
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#InstagramLinkIcon
+{
+   width: 50px;
+   height: 50px;
+}
+#InstagramLinkIcon i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
+#wb_Guides_Stuff
+{
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#Guides_Stuff
+{
+   width: 166px;
+   height: 150px;
+}
+#wb_DevicemanIcon
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_PortfolioPDF
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_Resume
+{
+   visibility: visible !important;
+   display: block !important;
+}
+#wb_Resume
+{
+   margin: 0;
+   padding: 10px 0px 10px 0px;
+}
+#wb_TwitterSocialLink
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#TwitterSocialLink
+{
+   width: 50px;
+   height: 50px;
+}
+#TwitterSocialLink i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
 }
 #wb_TopMenu
 {
@@ -2326,9 +3076,14 @@ body
 }
 #Footer
 {
-   top: 895px !important;
+   top: 1635px !important;
    height: 65px !important;
    visibility: visible !important;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
 }
 #Footer
 {
@@ -2342,7 +3097,6 @@ body
 </style>
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="wb.parallax.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="util.min.js"></script>
 <script src="collapse.min.js"></script>
@@ -2356,7 +3110,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_MasterHeader').offset().top }, 600, 'easeOutCirc');
    });
-   $('#SPLASH').parallax();
    $('#TopMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
    $(document).on('click','.TopMenu-navbar-collapse.show',function(e)
    {
@@ -2429,57 +3182,127 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:27;">
-<div id="SPLASH-overlay"></div>
-<div id="SPLASH_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="FlexGrid1">
-<div class="Blank">
-</div>
-<div class="L">
-<div id="wb_AZpresents">
-<span style="color:#FFFFFF;font-family:Arial;font-size:43px;">THE AREA ZONE PRESENTS:</span>
-</div>
-<div id="wb_DevicemanLogoText" style="display:inline-block;width:565px;z-index:7;">
-<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/DevicemanTextLogo.png" id="DevicemanLogoText" alt="Deviceman" width="565" height="72"></a>
-</div>
-<div id="wb_DMsubtitle">
-<span style="color:#FFFFFF;font-family:Arial;font-size:19px;">A MAN WHO FIGHTS CRIME… WITH DEVICES!</span><span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><br></span>
-</div>
-<div id="wb_Links">
-<span style="color:#00BFFF;"><br><strong>LINKS </strong></span><span style="color:#FFFFFF;"><br>[<a href="https://www.amazon.com/dp/B0973PN2B2/ref=sr_1_1?dchild=1&keywords=Deviceman&qid=1623467725&sr=8-1" title="Amazon">Deviceman Issue #1 on Amazon Kindle</a>]<br>[<a href="https://www.amazon.com/Deviceman-No-2-Alex-Pomorski-ebook/dp/B09F98WGVF/ref=sr_1_1?crid=1AZ1ZAEH0VHGC&keywords=Deviceman+No.2&qid=1648336868&s=digital-text&sprefix=deviceman+no.2%2Cdigital-text%2C104&sr=1-1">Deviceman Issue #2 on Amazon Kindle</a>]<br>[<a href="https://www.patreon.com/posts/deviceman-no-1-52401879" title="Patreon">Deviceman Issue #1 on Patreon (free)</a>]<br>[<a href="https://www.webtoons.com/en/challenge/deviceman/list?title_no=653845" title="Webtoons">Deviceman on WebToons (free)</a>]<br>[<a href="https://www.facebook.com/thedeviceman" title="Facebook">Deviceman Facebook</a>]<br>More to come when I have the time! For now, check my <a href="https://www.instagram.com/theareazone/">Instagram</a> for updates!<br>Issues #1 &amp; #2 (free!):</span>
-</div>
-<div id="wb_DevicemanCovers">
-<div id="DevicemanCovers">
+<div id="wb_TitleGrid">
+<div id="TitleGrid">
 <div class="row">
 <div class="col-1">
+<div id="wb_SplashTitle">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;">GALLERY ZONE</span>
+</div>
+<div id="wb_InstagramLinkIcon" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:5;">
+<a href="https://www.instagram.com/theareazone" title="Instagram"><div id="InstagramLinkIcon"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_TwitterSocialLink" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:6;">
+<a href="https://twitter.com/TheAreaZone" title="Twitter"><div id="TwitterSocialLink"><i class="fa fa-twitter-square"></i></div></a>
+</div>
+<div id="wb_PortfolioPDF" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<a href="https://drive.google.com/file/d/1lTPj-ogBgBkjEr92j31bkd-WZ3CkDvzl/view?usp=sharing" title="Portfolio PDF" onmouseenter="AnimateCss('wb_PortfolioPDF', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_PortfolioPDF', '', 0, 500);return false;"><img src="images/PortfolioPDF.png" id="PortfolioPDF" alt="" width="1270" height="126"></a>
+</div>
+<div id="wb_Resume">
+<span style="background-color:#000000;color:#BA55D3;font-family:'Courier New';font-size:32px;"><strong><a href="https://drive.google.com/file/d/1J8xJvmppNKm_M9kQ-uByXzXz_FN-ODB8/view?usp=sharing">RÉSUMÉ</a></strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_ComicsTitle">
+<div id="ComicsTitle">
+<div class="row">
+<div class="col-1">
+<div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:9;">
+<a href="./GalleryZone.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_ComicsGrid">
+<div id="ComicsGrid">
+<div class="col-1">
+<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:10;">
+<a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
+</div>
 </div>
 <div class="col-2">
-<div id="wb_DMcoverIcon01" style="display:inline-block;width:100%;height:auto;z-index:4;">
-<a href="https://drive.google.com/file/d/1OI9dJLWYxc52tz7YTzmFHa6hM2mRdaZn/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon01', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue01CoverIcon.jpg" id="DMcoverIcon01" alt="" title="Deviceman Issue #1" width="132" height="188"></a>
+<div id="wb_DevicemanIcon" style="display:inline-block;width:100%;height:auto;z-index:11;">
+<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanIcon', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanIcon', '', 0, 500);return false;"><img src="images/AZIcon_Deviceman.jpg" id="DevicemanIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_DMcoverIcon02" style="display:inline-block;width:100%;height:auto;z-index:5;">
-<a href="https://drive.google.com/file/d/1hn3t6U6_llNbSpLNpxApVCAMO-UNB-31/view?usp=sharing" onmouseenter="AnimateCss('wb_DMcoverIcon02', 'transform-shiver', 0, 500);return false;"><img src="images/DevicemanIssue02CoverIconB.jpg" id="DMcoverIcon02" alt="" title="Deviceman Issue #2" width="132" height="205"></a>
-</div>
-</div>
-<div class="col-4">
+<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_DeforminNorman.jpg" id="DeforminNormanIcon" alt="" width="403" height="202"></a>
 </div>
 </div>
 </div>
 </div>
+<div id="wb_VideoTitle">
+<div id="VideoTitle">
+<div class="row">
+<div class="col-1">
+<div id="wb_Video!">
+<span style="background-color:#171717;color:#BA55D3;font-family:Arial;font-size:43px;">VIDEO!</span>
 </div>
-<div class="R">
-<div id="wb_DevicemanIssue1" style="display:inline-block;width:256px;z-index:11;">
-<img src="images/Deviceman1stDrawing.png" id="DevicemanIssue1" alt="" width="256" height="506">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_VideoArea">
+<div id="VideoArea">
+<div class="row">
+<div class="col-1">
+<div id="wb_StingOpsImage" style="display:inline-block;width:200px;height:43px;z-index:14;">
+<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="200" height="44"></a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:956px;width:100%;height:65px;z-index:28;">
+<div id="wb_OtherStuffTitle">
+<div id="OtherStuffTitle">
+<div class="row">
+<div class="col-1">
+<div id="wb_OtherStuff!">
+<span style="background-color:#171717;color:#BA55D3;font-family:Arial;font-size:43px;">OTHER STUFF!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_OtherStuffArea">
+<div id="OtherStuffArea">
+<div class="row">
+<div class="col-1">
+<div id="wb_OtherStuffGrid">
+<div id="OtherStuffGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:16;">
+<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="393" height="197"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:17;">
+<a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing" title="Guides&amp;Stuff" onmouseenter="AnimateCss('wb_Guides_Stuff', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_Guides_Stuff', '', 0, 500);return false;"><img src="images/Guides&Stuff.png" id="Guides_Stuff" alt="" width="176" height="159"></a>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:18;">
+<a href="./IWHI.html" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHIpodcastLogo.png" id="IWHIimage" alt="" width="393" height="435"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_OldCringe">
+<span style="color:#4F4F4F;font-family:Arial;font-size:16px;"><sup><a href="./OldGallery.html" class="SecretLink">Old &amp; Cringe</a></sup></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1015px;width:100%;height:65px;z-index:35;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:23;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:24;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2496,7 +3319,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:8px;text-align:center;z-index:24;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:8px;text-align:center;z-index:25;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:13px;">All Rights Reserved • Email: theareazone@gmail.com</span></div>
 </div>
 </div>

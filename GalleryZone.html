@@ -500,7 +500,7 @@ a.SecretLink:hover
    margin-right: auto;
    margin-left: auto;
 }
-#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3, #ComicsGrid > .col-4
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -509,7 +509,7 @@ a.SecretLink:hover
    padding-left: 15px;
    position: relative;
 }
-#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3, #ComicsGrid > .col-4
 {
    -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
@@ -519,8 +519,8 @@ a.SecretLink:hover
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   flex-basis: 33.33333333%;
-   max-width: 33.33333333%;
+   flex-basis: 25%;
+   max-width: 25%;
    display: -webkit-flex;
    -webkit-flex-wrap: wrap;
    -webkit-align-content: flex-start;
@@ -540,8 +540,8 @@ a.SecretLink:hover
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   flex-basis: 33.33333333%;
-   max-width: 33.33333333%;
+   flex-basis: 25%;
+   max-width: 25%;
    display: -webkit-flex;
    -webkit-flex-wrap: wrap;
    -webkit-align-content: flex-start;
@@ -561,8 +561,8 @@ a.SecretLink:hover
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   flex-basis: 33.33333333%;
-   max-width: 33.33333333%;
+   flex-basis: 25%;
+   max-width: 25%;
    display: -webkit-flex;
    -webkit-flex-wrap: wrap;
    -webkit-align-content: flex-start;
@@ -577,9 +577,30 @@ a.SecretLink:hover
    justify-content: center;
    text-align: center;
 }
+#ComicsGrid > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: flex-start;
+   -webkit-align-self: stretch;
+   -webkit-align-items: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
 @media (max-width: 480px)
 {
-#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3
+#ComicsGrid > .col-1, #ComicsGrid > .col-2, #ComicsGrid > .col-3, #ComicsGrid > .col-4
 {
    -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
@@ -753,12 +774,12 @@ a.SecretLink:hover
    margin-right: auto;
    vertical-align: top;
 }
-#wb_StingOpsImage
+#wb_StingOpsLink
 {
    margin: 0;
    vertical-align: top;
 }
-#StingOpsImage
+#StingOpsLink
 {
    border: 0px solid #000000;
    padding: 0;
@@ -2158,6 +2179,24 @@ a.SecretLink:hover
    border-top-color: #FFFFFF;
 }
 }
+#wb_CretaceousUFOLink
+{
+   margin: 0;
+   vertical-align: top;
+}
+#CretaceousUFOLink
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
 #Footer
 {
    background-color: #000000;
@@ -2356,7 +2395,7 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_StingOpsImage
+#wb_StingOpsLink
 {
    width: 200px !important;
    height: 43px !important;
@@ -2365,7 +2404,7 @@ body
    margin: 0;
    padding: 0;
 }
-#StingOpsImage
+#StingOpsLink
 {
    width: 200px;
    height: 43px;
@@ -2609,6 +2648,14 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_CretaceousUFOLink
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
    top: 1005px !important;
@@ -2683,7 +2730,7 @@ body
    left: 0px !important;
    top: 23px !important;
    width: 320px !important;
-   height: 13px !important;
+   height: 9px !important;
    visibility: visible !important;
    display: inline !important;
 }
@@ -2821,7 +2868,7 @@ body
    margin: 0;
    padding: 5px 5px 5px 5px;
 }
-#wb_StingOpsImage
+#wb_StingOpsLink
 {
    width: 200px !important;
    height: 43px !important;
@@ -2830,7 +2877,7 @@ body
    margin: 0;
    padding: 0;
 }
-#StingOpsImage
+#StingOpsLink
 {
    width: 200px;
    height: 43px;
@@ -3074,9 +3121,17 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_CretaceousUFOLink
+{
+   width: 100% !important;
+   visibility: visible !important;
+   display: block !important;
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
-   top: 1635px !important;
+   top: 1900px !important;
    height: 65px !important;
    visibility: visible !important;
    font-size: 13px;
@@ -3196,7 +3251,7 @@ $(document).ready(function()
 <a href="https://twitter.com/TheAreaZone" title="Twitter"><div id="TwitterSocialLink"><i class="fa fa-twitter-square"></i></div></a>
 </div>
 <div id="wb_PortfolioPDF" style="display:inline-block;width:100%;height:auto;z-index:7;">
-<a href="https://drive.google.com/file/d/1lTPj-ogBgBkjEr92j31bkd-WZ3CkDvzl/view?usp=sharing" title="Portfolio PDF" onmouseenter="AnimateCss('wb_PortfolioPDF', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_PortfolioPDF', '', 0, 500);return false;"><img src="images/PortfolioPDF.png" id="PortfolioPDF" alt="" width="1270" height="126"></a>
+<a href="https://drive.google.com/file/d/1lTPj-ogBgBkjEr92j31bkd-WZ3CkDvzl/view?usp=sharing" title="Portfolio PDF" onmouseenter="AnimateCss('wb_PortfolioPDF', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_PortfolioPDF', '', 0, 500);return false;"><img src="https://i.imgur.com/vsOURGj.png" id="PortfolioPDF" alt="" width="1270" height="126"></a>
 </div>
 <div id="wb_Resume">
 <span style="background-color:#000000;color:#BA55D3;font-family:'Courier New';font-size:32px;"><strong><a href="https://drive.google.com/file/d/1J8xJvmppNKm_M9kQ-uByXzXz_FN-ODB8/view?usp=sharing">RÉSUMÉ</a></strong></span>
@@ -3210,7 +3265,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_ComicsImage" style="display:inline-block;width:226px;height:67px;z-index:9;">
-<a href="./GalleryZone.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/comics.png" id="ComicsImage" alt="" width="226" height="60"></a>
+<a href="./GalleryZone.html" title="comics" onmouseenter="AnimateCss('wb_ComicsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_ComicsImage', '', 0, 500);return false;"><img src="images/bzIz6w5.png" id="ComicsImage" alt="" width="226" height="60"></a>
 </div>
 </div>
 </div>
@@ -3219,18 +3274,23 @@ $(document).ready(function()
 <div id="wb_ComicsGrid">
 <div id="ComicsGrid">
 <div class="col-1">
-<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:10;">
-<a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedIcon" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_MassLocked.jpg" id="MassLockedIcon" alt="" width="403" height="202"></a>
+<div id="wb_CretaceousUFOLink" style="display:inline-block;width:100%;height:auto;z-index:10;">
+<a href="https://www.webtoons.com/en/challenge/cretaceous-ufo/cretaceous-ufo/viewer?title_no=864053&episode_no=1" title="Cretaceous UFO" onmouseenter="AnimateCss('wb_CretaceousUFOLink', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_CretaceousUFOLink', '', 0, 500);return false;"><img src="https://i.imgur.com/nyBMyLz.jpg" id="CretaceousUFOLink" alt="" width="295" height="148"></a>
 </div>
 </div>
 <div class="col-2">
 <div id="wb_DevicemanIcon" style="display:inline-block;width:100%;height:auto;z-index:11;">
-<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanIcon', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanIcon', '', 0, 500);return false;"><img src="images/AZIcon_Deviceman.jpg" id="DevicemanIcon" alt="" width="403" height="202"></a>
+<a href="./Deviceman.html" title="Deviceman" onmouseenter="AnimateCss('wb_DevicemanIcon', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanIcon', '', 0, 500);return false;"><img src="https://i.imgur.com/ZKXCNZJ.jpg" id="DevicemanIcon" alt="" width="295" height="148"></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:12;">
-<a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_DeforminNorman.jpg" id="DeforminNormanIcon" alt="" width="403" height="202"></a>
+<div id="wb_MassLockedIcon" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<a href="https://drive.google.com/file/d/1xvHeONJ-D77fqdL-7uGnpdccNW-ZdKIi/view?usp=sharing" title="MassLockedLink" onmouseenter="AnimateCss('wb_MassLockedIcon', 'transform-shiver', 0, 500);return false;"><img src="https://i.imgur.com/CN97CpD.jpg" id="MassLockedIcon" alt="" width="295" height="148"></a>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_DeforminNormanIcon" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<a href="https://drive.google.com/file/d/1XwYzLk-fXkEK0GNnESulqX3C6lAVcXAT/view?usp=sharing" title="Deformin&#39; Norman" onmouseenter="AnimateCss('wb_DeforminNormanIcon', 'transform-shiver', 0, 500);return false;"><img src="https://i.imgur.com/kelYLnr.jpg" id="DeforminNormanIcon" alt="" width="295" height="148"></a>
 </div>
 </div>
 </div>
@@ -3250,8 +3310,8 @@ $(document).ready(function()
 <div id="VideoArea">
 <div class="row">
 <div class="col-1">
-<div id="wb_StingOpsImage" style="display:inline-block;width:200px;height:43px;z-index:14;">
-<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsImage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsImage', '', 0, 500);return false;"><img src="images/StingOps.png" id="StingOpsImage" alt="Sting Ops" width="200" height="44"></a>
+<div id="wb_StingOpsLink" style="display:inline-block;width:200px;height:43px;z-index:15;">
+<a href="./StingOps.html" title="Sting Ops" onmouseenter="AnimateCss('wb_StingOpsLink', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_StingOpsLink', '', 0, 500);return false;"><img src="https://i.imgur.com/Vzrrqkx.png" id="StingOpsLink" alt="Sting Ops" width="200" height="44"></a>
 </div>
 </div>
 </div>
@@ -3276,17 +3336,17 @@ $(document).ready(function()
 <div id="OtherStuffGrid">
 <div class="row">
 <div class="col-1">
-<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:16;">
-<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="images/AZIcon_CinematographyComic.jpg" id="CinematographyComic" alt="" title="Cinematography Comic / Infographic" width="393" height="197"></a>
+<div id="wb_CinematographyComic" style="display:inline-block;width:100%;height:auto;z-index:17;">
+<a href="https://drive.google.com/file/d/1aqSQkbPT95TVqJbO1ZP1tKUiIDJbPHgi/view?usp=sharing" title="Cinematography Infographic" onmouseenter="AnimateCss('wb_CinematographyComic', 'transform-shiver', 0, 500);return false;"><img src="https://i.imgur.com/DExchBk.jpg" id="CinematographyComic" alt="" width="393" height="197"></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:17;">
-<a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing" title="Guides&amp;Stuff" onmouseenter="AnimateCss('wb_Guides_Stuff', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_Guides_Stuff', '', 0, 500);return false;"><img src="images/Guides&Stuff.png" id="Guides_Stuff" alt="" width="176" height="159"></a>
+<div id="wb_Guides_Stuff" style="display:inline-block;width:176px;height:160px;z-index:18;">
+<a href="https://drive.google.com/drive/folders/15fwuepeOQe8L27-rE9_6AWfzkb473h_Y?usp=sharing" title="Guides&amp;Stuff" onmouseenter="AnimateCss('wb_Guides_Stuff', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_Guides_Stuff', '', 0, 500);return false;"><img src="images/9Hol2L8.png" id="Guides_Stuff" alt="" width="176" height="159"></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:18;">
+<div id="wb_IWHIimage" style="display:inline-block;width:100%;height:auto;z-index:19;">
 <a href="./IWHI.html" title="IWHI" onmouseenter="AnimateCss('wb_IWHIimage', 'transform-wobble-center', 0, 500);return false;" onmouseleave="AnimateCss('wb_IWHIimage', '', 0, 500);return false;"><img src="images/IWHIpodcastLogo.png" id="IWHIimage" alt="" width="393" height="435"></a>
 </div>
 </div>
@@ -3300,9 +3360,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1015px;width:100%;height:65px;z-index:35;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1015px;width:100%;height:65px;z-index:36;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:24;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:1px;width:1300px;height:23px;z-index:25;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -3319,7 +3379,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:25;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:26;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:13px;">ALL RIGHTS RESERVED </span><span style="color:#87CEEB;font-family:'Segoe UI Emoji';font-size:13px;">👁️</span><span style="color:#87CEEB;font-family:Tahoma;font-size:13px;"> AREAZONE.ORG</span></div>
 </div>
 </div>

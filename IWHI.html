@@ -1337,6 +1337,42 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1
+{
+   color: #E3FF00;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+}
+#wb_Text1 p, #wb_Text1 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1:hover
+{
+   z-index: 50;
+   -webkit-transition: z-index 500ms linear 0ms;
+   transition: z-index 500ms linear 0ms;
+}
 #Footer
 {
    background-color: #000000;
@@ -2189,7 +2225,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:21;">
+<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:23;">
 <div id="SPLASH-overlay"></div>
 <div id="SPLASH_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="FlexGrid1">
@@ -2213,15 +2249,50 @@ $(document).ready(function()
 <img src="images/IwannaHateItLogo%2dNoBG.png" id="IWHIlogo" alt="" width="400" height="398">
 </div>
 <div id="wb_IWHIdescription">
-<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">I Wanna Hate It (IWHI) is a podcast where a pair of idiots break down movies and shows. Before watching, we view a trailer and declare whether we want to hate it, love it, or think it'll be cheesy; off-air, we watch it and take studious notes; lastly, we record a post-watch section recapping what we just saw so that we can definitively tell you, the audience, whether we hated it or not! We also have fun segments such as a death battle against previous episode characters, trivia, goofs, and educational content for the whole family! (NOTE: IWHI contains content not suitable for the whole family)</span>
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">I Wanna Hate It (IWHI) is a podcast where a pair of idiots break down movies and shows. Before watching, we view a trailer and declare whether we want to hate it, love it, or think it'll be cheesy; off-air, we watch it and take studious notes; lastly, we record a post-watch section recapping what we just saw so that we can definitively tell you, the audience, whether we hated it or not! We also have fun segments such as a death battle against previous episode characters, trivia, goofs, and educational content for the whole family! (NOTE: IWHI contains content not suitable for the whole family)<br></span>
+</div>
+<div id="wb_Text1">
+<p style="font-size:8px;line-height:8px;">IWHI FILM RANKING LIST, BEST TO WORST (as of episode 16):</p>
+<ul style="font-size:8px;line-height:8px;color:#FFFFFF;list-style-type:decimal;">
+<li style="margin:0 0 0 24px;">Bad Lieutenant: Port of Call New Orleans 
+</li>
+<li style="margin:0 0 0 24px;">Batman &amp; Robin (1997) (because Arden would not allow it to be ranked lower than The Batman)
+</li>
+<li style="margin:0 0 0 24px;">The Batman 
+</li>
+<li style="margin:0 0 0 24px;">Jurassic World Dominion (based on nostalgia alone)
+</li>
+<li style="margin:0 0 0 24px;">Fear and Loathing in Las Vegas &amp; Soldier (tied)
+</li>
+<li style="margin:0 0 0 24px;">SMB pt. 2 2023
+</li>
+<li style="margin:0 0 0 24px;">xXx
+</li>
+<li style="margin:0 0 0 24px;">Blood Freak
+</li>
+<li style="margin:0 0 0 24px;">Krull
+</li>
+<li style="margin:0 0 0 24px;">The Guyver
+</li>
+<li style="margin:0 0 0 24px;">SMB93
+</li>
+<li style="margin:0 0 0 24px;">Morbius
+</li>
+<li style="margin:0 0 0 24px;">Donnie Darko
+</li>
+<li style="margin:0 0 0 24px;">Gummo
+</li>
+<li style="margin:0 0 0 24px;">Old Boy 2003
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1004px;width:100%;height:65px;z-index:22;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1004px;width:100%;height:65px;z-index:24;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:17;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:19;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2238,7 +2309,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:18;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:20;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:13px;">ALL RIGHTS RESERVED </span><span style="color:#87CEEB;font-family:'Segoe UI Emoji';font-size:13px;">👁️</span><span style="color:#87CEEB;font-family:Tahoma;font-size:13px;"> AREAZONE.ORG</span></div>
 </div>
 </div>

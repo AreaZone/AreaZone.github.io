@@ -1337,7 +1337,7 @@ input:focus, textarea:focus, select:focus
    border-top-color: #FFFFFF;
 }
 }
-#wb_Text1 
+#wb_IWHIRanking 
 {
    background-color: transparent;
    background-image: none;
@@ -1354,7 +1354,7 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: left;
 }
-#wb_Text1
+#wb_IWHIRanking
 {
    color: #E3FF00;
    font-family: Arial;
@@ -1362,16 +1362,29 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    line-height: 16px;
 }
-#wb_Text1 p, #wb_Text1 ul
+#wb_IWHIRanking p, #wb_IWHIRanking ul
 {
    margin: 0;
    padding: 0;
 }
-#wb_Text1:hover
+#wb_IWHIRanking:hover
 {
    z-index: 50;
    -webkit-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
 }
 #Footer
 {
@@ -1459,7 +1472,7 @@ body
    left: 0px !important;
    top: 23px !important;
    width: 1000px !important;
-   height: 13px !important;
+   height: 9px !important;
    visibility: visible !important;
    display: inline !important;
 }
@@ -1724,9 +1737,29 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_IWHIRanking
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_IWHIRanking
+{
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
-   top: 955px !important;
+   top: 1000px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -1819,7 +1852,7 @@ body
    left: 0px !important;
    top: 23px !important;
    width: 320px !important;
-   height: 13px !important;
+   height: 9px !important;
    visibility: visible !important;
    display: inline !important;
 }
@@ -2120,9 +2153,43 @@ body
    margin: 0;
    text-align: right;
 }
+#wb_IWHIRanking
+{
+   width: auto !important;
+   height: auto !important;
+   visibility: visible !important;
+   display: inline !important;
+   -webkit-flex-grow: 1;
+   flex-grow: 1;
+   -webkit-flex-shrink: 1;
+   flex-shrink: 1;
+   -webkit-flex-basis: 100%;
+   flex-basis: 100%;
+   -webkit-align-self: auto;
+   align-self: auto;
+}
+#wb_IWHIRanking
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 225px !important;
+   top: 448px !important;
+   width: 125px !important;
+   height: 9px !important;
+   visibility: visible !important;
+   display: inline !important;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
 #Footer
 {
-   top: 731px !important;
+   top: 1320px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -2239,7 +2306,7 @@ $(document).ready(function()
 <a href="./IWHI.html" title="I Wanna Hate It" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/IWHItextLogo.png" id="DevicemanLogoText" alt="IWHItextLogo" width="400" height="204"></a>
 </div>
 <div id="wb_InfoText">
-<span style="color:#FFFFFF;font-family:Arial;font-size:27px;">I WANNA HATE IT!<br><br>RSS: https://anchor.fm/s/754f86b4/podcast/rss<br>[<a href="https://anchor.fm/iwhi">Listen on Anchor</a>]<br>[<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ">Listen on Spotify</a>]<br><br>SOCIAL MEDIA<br>[<a href="https://www.facebook.com/IWannaHateIt">IWHI Facebook</a>]<br>[<a href="https://discord.gg/uzurTfUKVS">IWHI Discord</a>]<br>[<a href="https://twitter.com/IWannaHateIt">IWHI Twitter</a>]<br><br>Check out our latest episode below!</span>
+<span style="color:#FFFFFF;font-family:Arial;font-size:27px;">I WANNA HATE IT!<br><br>RSS: https://anchor.fm/s/754f86b4/podcast/rss<br></span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;">▲ </span><span style="color:#FF8A00;font-family:Arial;font-size:21px;">Use our RSS feed with your favorite podcatcher!</span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;"> ▲</span><span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><br>[<a href="https://anchor.fm/iwhi">Listen on Anchor</a>]<br>[<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ">Listen on Spotify</a>]<br><br>SOCIAL MEDIA<br>[<a href="https://www.facebook.com/IWannaHateIt">IWHI Facebook</a>]<br>[<a href="https://discord.gg/uzurTfUKVS">IWHI Discord</a>]<br>[<a href="https://twitter.com/IWannaHateIt">IWHI Twitter</a>]<br><br></span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Listen to our latest episode right now and be sure to leave a comment!</span>
 </div>
 <!-- IWHI RSS Feed -->
 <iframe src="https://anchor.fm/iwhi/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
@@ -2251,36 +2318,40 @@ $(document).ready(function()
 <div id="wb_IWHIdescription">
 <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">I Wanna Hate It (IWHI) is a podcast where a pair of idiots break down movies and shows. Before watching, we view a trailer and declare whether we want to hate it, love it, or think it'll be cheesy; off-air, we watch it and take studious notes; lastly, we record a post-watch section recapping what we just saw so that we can definitively tell you, the audience, whether we hated it or not! We also have fun segments such as a death battle against previous episode characters, trivia, goofs, and educational content for the whole family! (NOTE: IWHI contains content not suitable for the whole family)<br></span>
 </div>
-<div id="wb_Text1">
-<p style="font-size:8px;line-height:8px;">IWHI FILM RANKING LIST, BEST TO WORST (as of episode 16):</p>
+<div id="wb_IWHIRanking">
+<p style="font-size:8px;line-height:8px;">IWHI FILM RANKING LIST, BEST TO WORST (as of episode 18):</p>
 <ul style="font-size:8px;line-height:8px;color:#FFFFFF;list-style-type:decimal;">
-<li style="margin:0 0 0 24px;">Bad Lieutenant: Port of Call New Orleans 
+<li style="margin:0 0 0 24px;">Bad Lieutenant: Port of Call: New Orleans 
 </li>
-<li style="margin:0 0 0 24px;">Batman &amp; Robin (1997) (because Arden would not allow it to be ranked lower than The Batman)
+<li style="margin:0 0 0 24px;">Batman &amp; Robin (1997) (because Arden would not allow it to be ranked lower than <span style="font-style:italic;">The Batman</span>)
 </li>
-<li style="margin:0 0 0 24px;">The Batman 
+<li style="margin:0 0 0 24px;">The Batman (starring Bob Bats)
 </li>
 <li style="margin:0 0 0 24px;">Jurassic World Dominion (based on nostalgia alone)
 </li>
-<li style="margin:0 0 0 24px;">Fear and Loathing in Las Vegas &amp; Soldier (tied)
+<li style="margin:0 0 0 24px;">(A tie between) Fear and Loathing in Las Vegas &amp; Soldier (starring the badass Kurt Russell as <span style="font-style:italic;">Todd Soldier</span>)
 </li>
-<li style="margin:0 0 0 24px;">SMB pt. 2 2023
+<li style="margin:0 0 0 24px;">The Super Mario Bros. Movie Part 2 (2023)
 </li>
-<li style="margin:0 0 0 24px;">xXx
+<li style="margin:0 0 0 24px;">xXx (starring <span style="font-style:italic;">Van Diesel</span>)
+</li>
+<li style="margin:0 0 0 24px;">Michael Keaton Batman 3: The Flash (2023)
 </li>
 <li style="margin:0 0 0 24px;">Blood Freak
+</li>
+<li style="margin:0 0 0 24px;">Carnosaur
 </li>
 <li style="margin:0 0 0 24px;">Krull
 </li>
 <li style="margin:0 0 0 24px;">The Guyver
 </li>
-<li style="margin:0 0 0 24px;">SMB93
+<li style="margin:0 0 0 24px;">Super Mario Bros. Part 1 (1993)
 </li>
 <li style="margin:0 0 0 24px;">Morbius
 </li>
 <li style="margin:0 0 0 24px;">Donnie Darko
 </li>
-<li style="margin:0 0 0 24px;">Gummo
+<li style="margin:0 0 0 24px;">Gummo (more like “GUM-NO,” <span style="font-style:italic;">am I right?</span>)
 </li>
 <li style="margin:0 0 0 24px;">Old Boy 2003
 </li>
@@ -2290,7 +2361,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1004px;width:100%;height:65px;z-index:24;">
+<div id="wb_Text1" style="position:absolute;left:225px;top:448px;width:125px;height:9px;z-index:24;">
+<span style="color:#000000;font-family:;font-size:13px;">&#9650;</span></div>
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1225px;width:100%;height:65px;z-index:25;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:19;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>

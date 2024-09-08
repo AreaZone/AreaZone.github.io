@@ -1373,18 +1373,145 @@ input:focus, textarea:focus, select:focus
    -webkit-transition: z-index 500ms linear 0ms;
    transition: z-index 500ms linear 0ms;
 }
-#wb_Text1 
+#wb_YouTubeLink
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
+   border: 0px solid #05CC47;
+   text-align: center;
    margin: 0;
-   text-align: left;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
 }
-#wb_Text1 div
+#wb_YouTubeLink:hover
 {
-   text-align: left;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#YouTubeLink
+{
+   height: 50px;
+   width: 50px;
+}
+#YouTubeLink i
+{
+   color: #A970FF;
+   display: inline-block;
+   font-size: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   width: 42px;
+}
+#wb_YouTubeLink:hover i
+{
+   color: #FFFFFF;
+}
+#wb_IconFont1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #05CC47;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_IconFont1:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#IconFont1
+{
+   height: 50px;
+   width: 50px;
+}
+#IconFont1 i
+{
+   color: #FF0000;
+   display: inline-block;
+   font-size: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   width: 49px;
+}
+#wb_IconFont1:hover i
+{
+   color: #FFFFFF;
+}
+#wb_Iconz
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#Iconz
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#Iconz > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#Iconz > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#Iconz > .row > .col-1
+{
+   float: left;
+}
+#Iconz > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#Iconz:before,
+#Iconz:after,
+#Iconz .row:before,
+#Iconz .row:after
+{
+   display: table;
+   content: " ";
+}
+#Iconz:after,
+#Iconz .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#Iconz > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
 }
 #Footer
 {
@@ -1757,9 +1884,79 @@ body
    margin: 0;
    padding: 0;
 }
+#wb_YouTubeLink
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#YouTubeLink
+{
+   width: 50px;
+   height: 50px;
+}
+#YouTubeLink i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
+#wb_IconFont1
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 50px;
+   height: 50px;
+}
+#IconFont1 i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 49px;
+}
+#wb_Iconz
+{
+   visibility: visible !important;
+   display: table !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Iconz
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Iconz
+{
+   padding: 0px 15px 0px 15px;
+}
+#Iconz .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
 #Footer
 {
-   top: 1000px !important;
+   top: 955px !important;
    height: 65px !important;
    visibility: visible !important;
 }
@@ -2173,19 +2370,75 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_Text1
+#wb_YouTubeLink
 {
-   left: 225px !important;
-   top: 448px !important;
-   width: 125px !important;
-   height: 9px !important;
+   width: 50px !important;
+   height: 50px !important;
    visibility: visible !important;
-   display: inline !important;
-}
-#wb_Text1
-{
+   display: inline-block !important;
    margin: 0;
    padding: 0;
+}
+#YouTubeLink
+{
+   width: 50px;
+   height: 50px;
+}
+#YouTubeLink i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 42px;
+}
+#wb_IconFont1
+{
+   width: 50px !important;
+   height: 50px !important;
+   visibility: visible !important;
+   display: inline-block !important;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 50px;
+   height: 50px;
+}
+#IconFont1 i
+{
+   line-height: 50px;
+   font-size: 50px;
+   width: 49px;
+}
+#wb_Iconz
+{
+   visibility: visible !important;
+   display: table !important;
+   -webkit-flex-grow: 0;
+   flex-grow: 0;
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+   -webkit-align-self: auto;
+   align-self: auto;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: 0;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Iconz
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Iconz
+{
+   padding: 0px 15px 0px 15px;
+}
+#Iconz .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
 }
 #Footer
 {
@@ -2292,7 +2545,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:23;">
+<div id="SPLASH" style="position:relative;text-align:center;width:100%;height:906px;float:left;clear:left;display:block;z-index:31;">
 <div id="SPLASH-overlay"></div>
 <div id="SPLASH_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="FlexGrid1">
@@ -2302,8 +2555,22 @@ $(document).ready(function()
 <div id="wb_AZpresents">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;">THE AREA ZONE PRESENTS</span>
 </div>
-<div id="wb_DevicemanLogoText" style="display:inline-block;width:400px;z-index:5;">
+<div id="wb_DevicemanLogoText" style="display:inline-block;width:400px;z-index:7;">
 <a href="./IWHI.html" title="I Wanna Hate It" onmouseenter="AnimateCss('wb_DevicemanLogoText', 'heartbeat-1', 0, 1000);return false;" onmouseleave="AnimateCss('wb_DevicemanLogoText', '', 0, 500);return false;"><img src="images/IWHItextLogo.png" id="DevicemanLogoText" alt="IWHItextLogo" width="400" height="204"></a>
+</div>
+<div id="wb_Iconz">
+<div id="Iconz">
+<div class="row">
+<div class="col-1">
+<div id="wb_YouTubeLink" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:4;">
+<a href="https://podcasters.spotify.com/pod/show/iwhi" title="Spotify"><div id="YouTubeLink"><i class="fa fa-spotify"></i></div></a>
+</div>
+<div id="wb_IconFont1" style="display:inline-block;width:50px;height:50px;text-align:center;z-index:5;">
+<a href="https://www.youtube.com/@IWannaHateIt" title="YouTube"><div id="IconFont1"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="wb_InfoText">
 <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">I WANNA HATE IT!<br></span><span style="color:#00BFFF;font-family:Arial;font-size:13px;">Hate Movies, Not People<br>(unless they're jerks)</span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><br><br>RSS: https://anchor.fm/s/754f86b4/podcast/rss<br>▲ </span><span style="color:#FF8A00;font-family:Arial;font-size:13px;">Use our RSS feed with your favorite podcatcher!</span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;"> ▲<br>[<a href="https://anchor.fm/iwhi">Listen on Spotify for Podcasters</a>]<br>[<a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ">Listen on Regular Spotify</a>]<br>[<a href="https://www.youtube.com/@IWannaHateIt">Listen on YouTube</a>]<br><br>Leave comments and suggestions suggestion at <a href="mailto:IWannaHateIt@gmail.com">IWannaHateIt@gmail.com</a>!<br>If it's not hate mail, we'll mention you in our next episode!<br><br>SOCIAL MEDIA<br>[<a href="https://www.youtube.com/@IWannaHateIt">IWHI YouTube</a>]<br>[<a href="https://www.facebook.com/IWannaHateIt">IWHI Facebook</a>]<br>[<a href="https://discord.gg/uzurTfUKVS">IWHI Discord</a>]<br>[<a href="https://twitter.com/IWannaHateIt">IWHI Twitter</a>]<br><br>Listen to our latest episode right now and be sure to leave a comment!</span>
@@ -2312,7 +2579,7 @@ $(document).ready(function()
 <iframe src="https://anchor.fm/iwhi/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 </div>
 <div class="R">
-<div id="wb_IWHIlogo" style="display:inline-block;width:400px;z-index:8;">
+<div id="wb_IWHIlogo" style="display:inline-block;width:400px;z-index:11;">
 <img src="images/IwannaHateItLogo%2dNoBG.png" id="IWHIlogo" alt="" width="400" height="398">
 </div>
 <div id="wb_IWHIdescription">
@@ -2363,11 +2630,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text1" style="position:absolute;left:225px;top:448px;width:125px;height:9px;z-index:24;">
-<span style="color:#000000;font-family:;font-size:13px;">&#9650;</span></div>
-<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:1225px;width:100%;height:65px;z-index:25;">
+<div id="Footer" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:954px;width:100%;height:65px;z-index:32;">
 <div id="Footer_Container" style="width:1300px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:19;">
+<div id="wb_FooterYear" style="position:absolute;left:0px;top:0px;width:1300px;height:23px;z-index:27;">
 <div style="color:#87CEEB;font-size:16px;font-family:Tahoma;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="copyrightnotice"></div>
 <script>
    var now = new Date();
@@ -2384,7 +2649,7 @@ $(document).ready(function()
 
 
 </div>
-<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:20;">
+<div id="wb_FooterText" style="position:absolute;left:0px;top:23px;width:1300px;height:9px;text-align:center;z-index:28;">
 <span style="color:#87CEEB;font-family:Tahoma;font-size:13px;">ALL RIGHTS RESERVED </span><span style="color:#87CEEB;font-family:'Segoe UI Emoji';font-size:13px;">👁️</span><span style="color:#87CEEB;font-family:Tahoma;font-size:13px;"> AREAZONE.ORG</span></div>
 </div>
 </div>

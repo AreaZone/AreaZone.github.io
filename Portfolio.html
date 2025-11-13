@@ -119,6 +119,15 @@ body
    max-width: 100% !important;
 }
 }
+#wb_Storytelling
+{
+   background-color: #7E35FF;
+   background-image: none;
+   border: 5px solid #000000;
+   border-radius: 5px;
+   box-sizing: border-box;
+   position: relative;
+}
 #Storytelling
 {
    display: flex;
@@ -130,11 +139,11 @@ body
    justify-content: center;
    align-items: center;
    align-content: stretch;
-   margin: 0;
-   background-color: #7E35FF;
-   background-image: none;
-   border: 5px solid #000000;
-   border-radius: 5px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 260px;
    box-sizing: border-box;
    font-size: 0;
 }
@@ -162,6 +171,7 @@ body
    padding: 40px 40px 40px 40px;
    margin-right: auto;
    margin-left: auto;
+   max-width: 1000px;
 }
 #LinksGrid > .col-1, #LinksGrid > .col-2, #LinksGrid > .col-3
 {
@@ -182,8 +192,8 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
@@ -204,8 +214,8 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 50%;
-   max-width: 50%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
@@ -226,8 +236,8 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
@@ -245,6 +255,96 @@ body
 @media (max-width: 1000px)
 {
 #LinksGrid > .col-1, #LinksGrid > .col-2, #LinksGrid > .col-3
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_Bio
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#Bio
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 40px 0 40px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#Bio > .col-1, #Bio > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#Bio > .col-1, #Bio > .col-2
+{
+   flex: 0 0 auto;
+}
+#Bio > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 8.33333333%;
+   max-width: 8.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#Bio > .col-1 > .col-1-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 20px 0 20px 0;
+}
+#Bio > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 91.66666667%;
+   max-width: 91.66666667%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#Bio > .col-2 > .col-2-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 20px 0 20px 0;
+}
+@media (max-width: 1200px)
+{
+#Bio > .col-1, #Bio > .col-2
 {
    flex-basis: 100% !important;
    max-width: 100% !important;
@@ -348,29 +448,33 @@ body
    box-sizing: border-box;
    width: 100%;
 }
-#wb_Bio 
+#wb_Text1 
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   flex-grow: 1;
-   flex-shrink: 1;
-   align-self: auto;
    padding: 0;
    margin: 0;
    text-align: left;
 }
-#wb_Bio
+#wb_Text1
 {
    color: #FFFFFF;
    font-family: Arial;
    font-weight: normal;
    font-size: 16px;
 }
-#wb_Bio div
+#wb_Text1 div
 {
    text-align: left;
+}
+#wb_Text1
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
 }
 #wb_HeaderLinks
 {
@@ -837,50 +941,14 @@ body
    box-sizing: border-box;
    font-size: 0;
 }
-#Video
+#wb_Art
 {
-   display: flex;
-   position: relative;
-   height: 260px;
-   padding: 10px 10px 10px 10px;
-   flex-direction: column;
-   flex-wrap: nowrap;
-   justify-content: center;
-   align-items: center;
-   align-content: stretch;
-   margin: 0;
    background-color: #7E35FF;
    background-image: none;
    border: 5px solid #000000;
    border-radius: 5px;
    box-sizing: border-box;
-   font-size: 0;
-}
-#wb_VideoText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   flex-grow: 0;
-   flex-shrink: 1;
-   align-self: auto;
-   padding: 0;
-   margin: -60px 0 0 0 ;
-   text-align: center;
-}
-#wb_VideoText
-{
-   color: #FFFFFF;
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 32px;
-   line-height: 37px;
-}
-#wb_VideoText p, #wb_VideoText ul
-{
-   margin: 0;
-   padding: 0;
+   position: relative;
 }
 #Art
 {
@@ -893,11 +961,11 @@ body
    justify-content: center;
    align-items: center;
    align-content: stretch;
-   margin: 0;
-   background-color: #7E35FF;
-   background-image: none;
-   border: 5px solid #000000;
-   border-radius: 5px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 260px;
    box-sizing: border-box;
    font-size: 0;
 }
@@ -1004,12 +1072,6 @@ body
 {
    margin: 0;
    padding: 0;
-}
-#YouTubeEmbed
-{
-   flex-grow: 0;
-   flex-shrink: 0;
-   align-self: auto;
 }
 #wb_ArtLine 
 {
@@ -1473,6 +1535,216 @@ body
 {
    color: #7E35FF;
 }
+#wb_Resume
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_Resume a
+{
+   text-decoration: none;
+}
+#wb_Resume a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#Resume
+{
+   height: 100px;
+   width: 86px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+#Resume i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 86px;
+   line-height: 100px;
+   vertical-align: middle;
+}
+#wb_Resume:hover #Resume i
+{
+   color: #7E35FF;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text2
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 19px;
+   line-height: 21px;
+}
+#wb_Text2 p, #wb_Text2 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_FlexContainer1
+{
+   background-color: #7E35FF;
+   background-image: none;
+   border: 5px solid #000000;
+   border-radius: 5px;
+   box-sizing: border-box;
+   position: relative;
+}
+#FlexContainer1
+{
+   display: flex;
+   position: relative;
+   height: 260px;
+   padding: 10px 10px 10px 10px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: stretch;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 260px;
+   box-sizing: border-box;
+   font-size: 0;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   flex-grow: 0;
+   flex-shrink: 1;
+   align-self: auto;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text3
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 37px;
+}
+#wb_Text3 p, #wb_Text3 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Icon1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   flex-grow: 0;
+   flex-shrink: 1;
+   align-self: center;
+   min-width: 100px;
+   min-height: 100px;
+   display:inline-block;
+   position:relative;
+}
+#wb_Icon1 a
+{
+   text-decoration: none;
+}
+#wb_Icon1 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#Icon1
+{
+   width: 115px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+#Icon1 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 100px;
+   line-height: 100px;
+   vertical-align: middle;
+}
+#wb_Icon1:hover #Icon1 i
+{
+   color: #4B0082;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   flex-grow: 0;
+   flex-shrink: 1;
+   align-self: auto;
+   padding: 10px 0 0 0;
+   margin: -40px 0 0 0 ;
+   text-align: center;
+}
+#wb_Text4
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 37px;
+}
+#wb_Text4 p, #wb_Text4 ul
+{
+   margin: 0;
+   padding: 0;
+}
 #wb_Footer
 {
    clear: both;
@@ -1619,7 +1891,8 @@ body
 <div id="LinksGrid">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="Storytelling" onclick="window.location.href='./Storytelling.html';return false;">
+<div id="wb_Storytelling" onclick="window.location.href='./Storytelling.html';return false;">
+<div id="Storytelling">
 <div id="wb_StorytellingText">
 <p>STORYTELLING</p>
 </div>
@@ -1632,25 +1905,32 @@ body
 </div>
 </div>
 </div>
+</div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="Video">
-<div id="wb_VideoText">
+<div id="wb_FlexContainer1" onclick="window.location.href='./Video.html';return false;">
+<div id="FlexContainer1">
+<div id="wb_Text3">
 <p>VIDEO</p>
 </div>
-<!-- YouTube Demo Reel -->
-<div id="YouTubeEmbed" style="display:inline-block;width:100%;height:132px;z-index:18">
-<iframe width="320" height="180" src="https://www.youtube.com/embed/videoseries?si=ahRcxuwUMi23BH9v&amp;list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB&amp;modestbranding=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div id="wb_Icon1" style="display:block;width:115px;text-align:center;z-index:18;">
+<a href="./Video.html"><div id="Icon1"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+<div id="wb_Text4">
+<p>_____________</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="Art" onclick="window.location.href='./Art.html';return false;">
+<div id="wb_Art" onclick="window.location.href='./Art.html';return false;">
+<div id="Art">
 <div id="wb_ArtText">
 <p>ART</p>
 </div>
-<div id="wb_ArtIcon" style="display:block;width:115px;text-align:center;z-index:21;">
+<div id="wb_ArtIcon" style="display:block;width:115px;text-align:center;z-index:22;">
 <a href="./Art.html"><div id="ArtIcon"><i class="fa fa-pencil-square"></i></div></a>
 </div>
 <div id="wb_ArtLine">
@@ -1661,10 +1941,29 @@ body
 </div>
 </div>
 </div>
-<div id="BioFlexContainer">
+</div>
 <div id="wb_Bio">
+<div id="Bio">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Resume" style="display:inline-block;width:86px;height:100px;text-align:center;z-index:25;">
+<a href="https://drive.google.com/file/d/1J8xJvmppNKm_M9kQ-uByXzXz_FN-ODB8/view?usp=sharing"><div id="Resume"><i class="fa fa-file-pdf-o"></i></div></a>
+</div>
+<div id="wb_Text2">
+<p>RÉSUMÉ</p>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Text1">
 <span style="color:#FFFFFF;"><strong>BIO</strong>: Forged by past lives as a United States Marine, a student of Criminology (BS), and of Sequential Art (MFA), I now channel this fringe, interloper's perspective into my storytelling. As a Dramatic Writing graduate student at SCAD, my interests span comedy, action, adventure, science fiction, mystery—and occasionally, the spooky. My goal is to craft compelling, thrilling, unique, and funny stories from my unique point of view.<strong><br><br>SKILLS</strong>: Writing for Fiction and Nonfiction in a variety of media and formats, Sequential Art, Illustration, Storyboarding, 3D Modeling, Production Management, Animation, Compositing, Graphic Design, Videography, Editing, Podcasting, Sound Design, Improv Comedy, Public Speaking, Mentoring<br><br><strong>SOFTWARE</strong>: Final Draft, Fade In Pro, Clip Studio Paint, Blender, Reaper, DaVinci Resolve, Adobe Suite, Microsoft Office Suite</span>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="BioFlexContainer">
 </div>
 <div id="wb_Footer" style="z-index: 10000 !important;">
 <div id="Footer">
@@ -1676,30 +1975,30 @@ body
 </div>
 </div>
 <div class="col-2">
-<div id="wb_story_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:37;">
+<div id="wb_story_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:41;">
 <a href="./Storytelling.html"><div id="story_f"><i class="story_f"></i></div></a>
 </div>
-<div id="wb_videos_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:38;">
+<div id="wb_videos_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:42;">
 <a href="https://youtube.com/playlist?list=PLFcScnQPffelL5FXqVnPlYxV306EVG0EB&si=qunjNTgTT7jJVtCh"><div id="videos_f"><i class="fa fa-youtube-play"></i></div></a>
 </div>
-<div id="wb_art_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:39;">
+<div id="wb_art_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:43;">
 <a href="./Art.html"><div id="art_f"><i class="fa fa-pencil-square"></i></div></a>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_email_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:40;">
+<div id="wb_email_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:44;">
 <a href="mailto:pomorski.alex@gmail.com"><div id="email_f"><i class="fa fa-envelope-o"></i></div></a>
 </div>
-<div id="wb_instagram_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:41;">
+<div id="wb_instagram_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:45;">
 <a href="https://instagram.com/theareazone"><div id="instagram_f"><i class="fa fa-instagram"></i></div></a>
 </div>
-<div id="wb_youtube_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:42;">
+<div id="wb_youtube_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:46;">
 <a href="https://www.youtube.com/channel/UCvtPmUPpNoR8t2yXk-MGFZg"><div id="youtube_f"><i class="fa fa-youtube-play"></i></div></a>
 </div>
-<div id="wb_linkedin_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:43;">
+<div id="wb_linkedin_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:47;">
 <a href="https://www.linkedin.com/in/alex-pomorski-a6389945/"><div id="linkedin_f"><i class="fa fa-linkedin-square"></i></div></a>
 </div>
-<div id="wb_spotify_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:44;">
+<div id="wb_spotify_f" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:48;">
 <a href="https://open.spotify.com/show/2vi8I5pjpM1zpl7fXRMBhJ"><div id="spotify_f"><i class="fa fa-spotify"></i></div></a>
 </div>
 </div>
